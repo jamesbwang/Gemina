@@ -1,17 +1,72 @@
 import pandas as pd
 import os
+import urllib3
+
+dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
 
 
-def main():
-    dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
+newdir = os.path.join(dir, 'infections_new')
+
+def reformat():
+    #edit the old Gemina database such that the columns are reformated appropriately
+    #create new .csv files, print the beginnings of the new csvs, and eliminate the last col. (will use for links to the folder)
     for filename in os.listdir(dir):
         if filename.endswith(".csv"):
-            df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'TBD'])
-            df.to_csv("new" + filename)
+            df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'links'])
+            df.to_csv(os.path.join(newdir, 'new' + filename))
             print(df.head())
+            df.drop('links', 1)
+#            os.remove(os.path.join(dir, filename))
+            #add all the abstracts of the paper(or html for now)
+            addabstract(df)
             continue
         else:
             continue
+
+
+def addabstract(file):
+    #for the column infection_tatts, separate the urls and the PMID's: we will treat these two cases separately.
+    file = file[["pathogen", "tatts"]]
+    for k in file['tatts']:
+        v = k
+        while isinstance(v, str) and len(v) != 0:
+            if v.startswith('URL:'):
+                v = v[4:]
+                count = 0
+                while count < len(v) and v[count] != ';':
+                    count+= 1
+                j = v[: count]
+                v = v[count:]
+                print(j)
+                #http = urllib3.PoolManager()
+               # r = http.request('GET', j)
+               # webContent = r.read()
+               # fileDirectory = os.path.join(newdir,name)
+               # fileDirectory = os.path.join(fileDirectory, j + ".html")
+               # f = open(fileDirectory, 'w')
+               # f.write(webContent)
+               # f.close
+            if v.startswith('PMID:'):
+                v = v[5:]
+                count = 0
+                while count < len(v) and v[count] != ';':
+                    count+= 1
+                j = v[: count]
+                v = v[count:]
+                print(j)
+                # response = urllib3.urlopen(j)
+                # webContent = response.read()
+
+                # f = open(os.join(newdir, ''), 'w')
+                # f.write(webContent)
+                # f.close
+            else:
+                v = v[1:]
+                continue
+
+
+def main():
+    reformat()
 
 
 if __name__=="__main__":
