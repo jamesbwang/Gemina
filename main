@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import urllib3
 
+#replace the code below with the pathway to the infections folder
 dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
 
 
@@ -14,55 +15,79 @@ def reformat():
         if filename.endswith(".csv"):
             df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'links'])
             df.to_csv(os.path.join(newdir, 'new' + filename))
-            print(df.head())
+            #print(df.head())
             df.drop('links', 1)
 #            os.remove(os.path.join(dir, filename))
             #add all the abstracts of the paper(or html for now)
-            addabstract(df)
+            addAbstract(df)
             continue
         else:
             continue
 
 
-def addabstract(file):
+def addAbstract(file):
     #for the column infection_tatts, separate the urls and the PMID's: we will treat these two cases separately.
-    file = file[["pathogen", "tatts"]]
-    for k in file['tatts']:
-        v = k
-        while isinstance(v, str) and len(v) != 0:
-            if v.startswith('URL:'):
-                v = v[4:]
-                count = 0
-                while count < len(v) and v[count] != ';':
-                    count+= 1
-                j = v[: count]
-                v = v[count:]
-                print(j)
-                #http = urllib3.PoolManager()
-               # r = http.request('GET', j)
-               # webContent = r.read()
-               # fileDirectory = os.path.join(newdir,name)
-               # fileDirectory = os.path.join(fileDirectory, j + ".html")
-               # f = open(fileDirectory, 'w')
-               # f.write(webContent)
-               # f.close
-            if v.startswith('PMID:'):
-                v = v[5:]
-                count = 0
-                while count < len(v) and v[count] != ';':
-                    count+= 1
-                j = v[: count]
-                v = v[count:]
-                print(j)
-                # response = urllib3.urlopen(j)
-                # webContent = response.read()
+    file = file[["pathogen", "tatts", "infection_atts"]]
+    k = 0
+    for v in file['tatts']:
+        #find the name in the corresponding pathogen column
+        name = file.iloc[k,0]
+        k+=1
+        print(name)
+        if isinstance(v, str):
+            addAbstractHelper(v)
+    k = 0
+    for v in file['infection_atts']:
+        #find the name in the corresponding pathogen column
+        name = file.iloc[k,0]
+        k+=1
+        print(name)
+        if isinstance(v, str):
+            addAbstractHelper(v)
 
-                # f = open(os.join(newdir, ''), 'w')
-                # f.write(webContent)
-                # f.close
-            else:
-                v = v[1:]
-                continue
+
+def addAbstractHelper(v):
+    if len(v) == 0:
+        return;
+        #reformats the URL to a useful form
+    if v.startswith('URL:'):
+        v = v[4:]
+        count = 0
+        while count < len(v) and v[count] != ';':
+            count+= 1
+        j = v[: count]
+        v = v[count:]
+        print('\t' + j)
+        addAbstractHelper(v)
+    if v.startswith('PMID:'):
+        v = v[5:]
+        count = 0
+        while count < len(v) and v[count] != ';':
+            count += 1
+        j = v[: count]
+        v = v[count:]
+        print('\t' + j)
+        addAbstractHelper(v)
+    if v.startswith("toxin="):
+        v = v[6:]
+        count = 0
+        while count < len(v) and v[count] != ';':
+            count += 1
+        j = v[: count]
+        v = v[count:]
+        print('\t' + j)
+        addAbstractHelper(v)
+    if v.startswith("symptom="):
+        v = v[8:]
+        count = 0
+        while count < len(v) and v[count] != ';':
+            count += 1
+        j = v[: count]
+        v = v[count:]
+        print('\t' + j)
+        addAbstractHelper(v)
+    else:
+        v = v[1:]
 
 
 def main():
