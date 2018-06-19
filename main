@@ -1,0 +1,18 @@
+import pandas as pd
+import os
+
+
+def main():
+    dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
+    for filename in os.listdir(dir):
+        if filename.endswith(".csv"):
+            df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'TBD'])
+            df.to_csv("new" + filename)
+            print(df.head())
+            continue
+        else:
+            continue
+
+
+if __name__=="__main__":
+    main()
