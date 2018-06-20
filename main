@@ -9,6 +9,8 @@ dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\i
 
 newdir = os.path.join(dir, 'infections_new')
 
+
+
 def reformat():
     #edit the old Gemina database such that the columns are reformated appropriately
     #create new .csv files, print the beginnings of the new csvs, and eliminate the last col. (will use for links to the folder)
@@ -52,77 +54,97 @@ def addAbstractHelper(v, path):
     if len(v) == 0:
         return;
         #reformats the URL to a useful for use
-    if v.startswith('URL:'):
-        v = v[4:]
-        count = 0
-        while count < len(v) and v[count] != ';':
-            count+= 1
-        j = v[: count]
-        v = v[count:]
+    while len(v) > 0:
+        if v.startswith('URL:'):
+            v = v[4:]
+            count = 0
+            while count < len(v) and v[count] != ';':
+                count+= 1
+            j = v[: count]
+            v = v[count:]
         #print('\t' + j)
 
-        #http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+            http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
-        #r = http.request('GET', j)
-        #j = j.replace('.', '_')
-        #j = j.replace('/', '-')
-        #newpath = os.path.join(path, j)
-        #file = open(newpath, 'w+')
+            try:
+                r = http.request('GET', j)
+            except:
+                continue
+            j = j.replace('.', '_')
+            j = j.replace('/', '-')
+            j = j.replace(':', ';')
+            j = j.replace('?', '!')
+            j = j.replace('&', 'a')
+            newpath = os.path.join(path, j + '.html')
+            with open(newpath, 'w', encoding='utf-8') as file:
+                try:
+                    file.write(r.data.decode('utf-8'))
+                    file.close()
+                except:
+                    file.close()
 
-        #file.write(r.data.decode('utf-8'))
-        #file.close()
-        addAbstractHelper(v, path)
-        return
-    if v.startswith('PMID:'):
-        v = v[5:]
-        count = 0
-        while count < len(v) and v[count] != ';':
-            count += 1
-        j = v[: count]
-        v = v[count:]
-        #print('\t' + j)
-        addAbstractHelper(v, path)
-        return
-    if v.startswith("toxin="):
-        v = v[6:]
-        count = 0
-        while count < len(v) and v[count] != ';':
-            count += 1
-        j = v[: count]
-        v = v[count:]
-        #print('\t' + j)
-        newpath = os.path.join(path, "toxins.txt")
-        #print(newpath)
-        if os.path.isfile(newpath):
-            file = open(newpath, "a")
+
+            continue
+        if v.startswith('PMID:'):
+            v = v[5:]
+            count = 0
+            while count < len(v) and v[count] != ';':
+                count += 1
+            j = v[: count]
+            v = v[count:]
+            http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+
+            try:
+                r = http.request('GET', 'https://www.ncbi.nlm.nih.gov/pubmed/?term=' + j)
+            except:
+                continue
+            newpath = os.path.join(path, j + '.html')
+            with open(newpath, 'w', encoding='utf-8') as file:
+                try:
+                    file.write(r.data.decode('utf-8'))
+                    file.close()
+                except:
+                    file.close()
+            #print('\t' + j)
+            continue
+
+        if v.startswith("toxin="):
+            v = v[6:]
+            count = 0
+            while count < len(v) and v[count] != ';':
+                count += 1
+            j = v[: count]
+            v = v[count:]
+            #print('\t' + j)
+            newpath = os.path.join(path, "toxins.txt")
+            #print(newpath)
+            if os.path.isfile(newpath):
+                file = open(newpath, "a")
+            else:
+                file = open(newpath, "w+")
+            file.write("toxin:" + j + " ")
+            file.close()
+            continue
+        if v.startswith("symptom="):
+            v = v[8:]
+            count = 0
+            while count < len(v) and v[count] != ';':
+                count += 1
+            j = v[: count]
+            v = v[count:]
+            #print('\t' + j)
+            newpath = os.path.join(path, "symptoms.txt")
+            #print(newpath)
+            if os.path.isfile(newpath):
+                file = open(newpath, "a")
+            else:
+                file = open(newpath, "w+")
+            file.write("symptom:" + j + " ")
+            file.close()
+            continue
         else:
-            file = open(newpath, "w+")
-        file.write("toxin:" + j + " ")
-        file.close()
-        addAbstractHelper(v, path)
-        return
-    if v.startswith("symptom="):
-        v = v[8:]
-        count = 0
-        while count < len(v) and v[count] != ';':
-            count += 1
-        j = v[: count]
-        v = v[count:]
-        #print('\t' + j)
-        newpath = os.path.join(path, "symptoms.txt")
-        #print(newpath)
-        if os.path.isfile(newpath):
-            file = open(newpath, "a")
-        else:
-            file = open(newpath, "w+")
-        file.write("symptom:" + j + " ")
-        file.close()
-        addAbstractHelper(v, path)
-        return
-    else:
-        v = v[1:]
-        addAbstractHelper(v, path)
-        return
+            v = v[1:]
+            continue
 
 
 def main():
