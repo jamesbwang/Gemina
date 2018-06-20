@@ -15,7 +15,7 @@ def reformat():
         if filename.endswith(".csv"):
             df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'links'])
             df.to_csv(os.path.join(newdir, 'new' + filename))
-            #print(df.head())
+            print(df.head())
             df.drop('links', 1)
 #            os.remove(os.path.join(dir, filename))
             #add all the abstracts of the paper(or html for now)
@@ -27,26 +27,24 @@ def reformat():
 
 def addAbstract(file):
     #for the column infection_tatts, separate the urls and the PMID's: we will treat these two cases separately.
-    file = file[["pathogen", "tatts", "infection_atts"]]
-    k = 0
-    for v in file['tatts']:
-        #find the name in the corresponding pathogen column
-        name = file.iloc[k,0]
-        k+=1
-        print(name)
-        if isinstance(v, str):
-            addAbstractHelper(v)
     k = 0
     for v in file['infection_atts']:
         #find the name in the corresponding pathogen column
-        name = file.iloc[k,0]
+        dirname = name = file.iloc[k,0]
+        if ':' in name or '/' in name or '*' in name or '?' in name or '<' in name or '>' in name or '|' in name:
+            dirname = name[:(len(name) - name.find(':' or '*' or '/' or '?' or '<' or '>' or '|'))*-1]
+        dirname = dirname.replace(' ', '_')
+        path = os.path.join(newdir, dirname)
+        file.iloc[k, 8] = path
+        if not os.path.exists(path):
+            os.makedirs(path)
         k+=1
         print(name)
         if isinstance(v, str):
-            addAbstractHelper(v)
+            addAbstractHelper(v, path)
 
 
-def addAbstractHelper(v):
+def addAbstractHelper(v, path):
     if len(v) == 0:
         return;
         #reformats the URL to a useful form
@@ -58,7 +56,8 @@ def addAbstractHelper(v):
         j = v[: count]
         v = v[count:]
         print('\t' + j)
-        addAbstractHelper(v)
+        addAbstractHelper(v, path)
+        return
     if v.startswith('PMID:'):
         v = v[5:]
         count = 0
@@ -67,7 +66,8 @@ def addAbstractHelper(v):
         j = v[: count]
         v = v[count:]
         print('\t' + j)
-        addAbstractHelper(v)
+        addAbstractHelper(v, path)
+        return
     if v.startswith("toxin="):
         v = v[6:]
         count = 0
@@ -76,7 +76,16 @@ def addAbstractHelper(v):
         j = v[: count]
         v = v[count:]
         print('\t' + j)
-        addAbstractHelper(v)
+        newpath = os.path.join(path, "toxins.txt")
+        print(newpath)
+        if os.path.isfile(newpath):
+            file = open(newpath, "a")
+        else:
+            file = open(newpath, "w+")
+        file.write("toxin:" + j + " ")
+        file.close()
+        addAbstractHelper(v, path)
+        return
     if v.startswith("symptom="):
         v = v[8:]
         count = 0
@@ -85,9 +94,20 @@ def addAbstractHelper(v):
         j = v[: count]
         v = v[count:]
         print('\t' + j)
-        addAbstractHelper(v)
+        newpath = os.path.join(path, "symptoms.txt")
+        print(newpath)
+        if os.path.isfile(newpath):
+            file = open(newpath, "a")
+        else:
+            file = open(newpath, "w+")
+        file.write("symptom:" + j + " ")
+        file.close()
+        addAbstractHelper(v, path)
+        return
     else:
         v = v[1:]
+        addAbstractHelper(v, path)
+        return
 
 
 def main():
