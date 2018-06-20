@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import urllib3
+import certifi
 
 #replace the code below with the pathway to the infections folder
 dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
@@ -13,41 +14,44 @@ def reformat():
     #create new .csv files, print the beginnings of the new csvs, and eliminate the last col. (will use for links to the folder)
     for filename in os.listdir(dir):
         if filename.endswith(".csv"):
-            df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'links'])
-            df.to_csv(os.path.join(newdir, 'new' + filename))
-            print(df.head())
-            df.drop('links', 1)
-#            os.remove(os.path.join(dir, filename))
+            df = pd.read_table(os.path.join(dir, filename), sep="\t", comment="#", names=['index', 'pathogen','source', 'disease', 'tsource', 'ttype', 'portal', 'infection_atts', 'tatts', 'comments'])
+            df.reset_index()
+            #print(df.head())
             #add all the abstracts of the paper(or html for now)
-            addAbstract(df)
+            addAbstract(df, filename)
             continue
         else:
             continue
 
 
-def addAbstract(file):
+def addAbstract(file, fileName):
     #for the column infection_tatts, separate the urls and the PMID's: we will treat these two cases separately.
     k = 0
     for v in file['infection_atts']:
         #find the name in the corresponding pathogen column
-        dirname = name = file.iloc[k,0]
-        if ':' in name or '/' in name or '*' in name or '?' in name or '<' in name or '>' in name or '|' in name:
-            dirname = name[:(len(name) - name.find(':' or '*' or '/' or '?' or '<' or '>' or '|'))*-1]
+        dirname = name = file.iloc[k,1]
+
         dirname = dirname.replace(' ', '_')
+        dirname = dirname.replace(':', ';')
+        dirname = dirname.replace('?', '!')
         path = os.path.join(newdir, dirname)
-        file.iloc[k, 8] = path
+        print(path)
         if not os.path.exists(path):
             os.makedirs(path)
+        file.at[k, 'links'] = path
+
         k+=1
-        print(name)
+        #print(name)
         if isinstance(v, str):
             addAbstractHelper(v, path)
-
+    filepath = os.path.join(newdir, 'new' + fileName)
+    print(filepath)
+    file.to_csv(filepath)
 
 def addAbstractHelper(v, path):
     if len(v) == 0:
         return;
-        #reformats the URL to a useful form
+        #reformats the URL to a useful for use
     if v.startswith('URL:'):
         v = v[4:]
         count = 0
@@ -55,7 +59,18 @@ def addAbstractHelper(v, path):
             count+= 1
         j = v[: count]
         v = v[count:]
-        print('\t' + j)
+        #print('\t' + j)
+
+        #http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+
+        #r = http.request('GET', j)
+        #j = j.replace('.', '_')
+        #j = j.replace('/', '-')
+        #newpath = os.path.join(path, j)
+        #file = open(newpath, 'w+')
+
+        #file.write(r.data.decode('utf-8'))
+        #file.close()
         addAbstractHelper(v, path)
         return
     if v.startswith('PMID:'):
@@ -65,7 +80,7 @@ def addAbstractHelper(v, path):
             count += 1
         j = v[: count]
         v = v[count:]
-        print('\t' + j)
+        #print('\t' + j)
         addAbstractHelper(v, path)
         return
     if v.startswith("toxin="):
@@ -75,9 +90,9 @@ def addAbstractHelper(v, path):
             count += 1
         j = v[: count]
         v = v[count:]
-        print('\t' + j)
+        #print('\t' + j)
         newpath = os.path.join(path, "toxins.txt")
-        print(newpath)
+        #print(newpath)
         if os.path.isfile(newpath):
             file = open(newpath, "a")
         else:
@@ -93,9 +108,9 @@ def addAbstractHelper(v, path):
             count += 1
         j = v[: count]
         v = v[count:]
-        print('\t' + j)
+        #print('\t' + j)
         newpath = os.path.join(path, "symptoms.txt")
-        print(newpath)
+        #print(newpath)
         if os.path.isfile(newpath):
             file = open(newpath, "a")
         else:
