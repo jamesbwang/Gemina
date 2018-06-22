@@ -1,12 +1,10 @@
 import pandas as pd
 import os
-import urllib3
-import certifi
+import spiders
+from scrapy.crawler import CrawlerProcess
 
 #replace the code below with the pathway to the infections folder
 dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\infections"
-
-
 newdir = os.path.join(dir, 'infections_new')
 
 
@@ -50,6 +48,8 @@ def addAbstract(file, fileName):
     print(filepath)
     file.to_csv(filepath)
 
+
+
 def addAbstractHelper(v, path):
     if len(v) == 0:
         return;
@@ -63,26 +63,10 @@ def addAbstractHelper(v, path):
             j = v[: count]
             v = v[count:]
         #print('\t' + j)
-
-            http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
-
-            try:
-                r = http.request('GET', j)
-            except:
-                continue
-            j = j.replace('.', '_')
-            j = j.replace('/', '-')
-            j = j.replace(':', ';')
-            j = j.replace('?', '!')
-            j = j.replace('&', 'a')
-            newpath = os.path.join(path, j + '.html')
-            with open(newpath, 'w', encoding='utf-8') as file:
-                try:
-                    file.write(r.data.decode('utf-8'))
+            newpath = os.path.join(path, 'url.txt')
+            with open(newpath, 'a', encoding='utf-8') as file:
+                    file.write(j)
                     file.close()
-                except:
-                    file.close()
-
 
             continue
         if v.startswith('PMID:'):
@@ -92,19 +76,11 @@ def addAbstractHelper(v, path):
                 count += 1
             j = v[: count]
             v = v[count:]
-            http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
+            newpath = os.path.join(path, 'PMID.txt')
+            with open(newpath, 'a', encoding='utf-8') as file:
+                    file.write('https://www.ncbi.nlm.nih.gov/pubmed/?term=' + j)
+                    file.close()
 
-            try:
-                r = http.request('GET', 'https://www.ncbi.nlm.nih.gov/pubmed/?term=' + j)
-            except:
-                continue
-            newpath = os.path.join(path, j + '.html')
-            with open(newpath, 'w', encoding='utf-8') as file:
-                try:
-                    file.write(r.data.decode('utf-8'))
-                    file.close()
-                except:
-                    file.close()
             #print('\t' + j)
             continue
 
@@ -146,9 +122,20 @@ def addAbstractHelper(v, path):
             v = v[1:]
             continue
 
+def crawlPMID():
+    process = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+    })
+
+    process.crawl(spiders.QuotesSpider)
+    process.start() # the script will block here until the crawling is finished
+
+
 
 def main():
-    reformat()
+    #reformat()
+    crawlPMID()
+
 
 
 if __name__=="__main__":
