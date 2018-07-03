@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import requests
 import scipy.spatial.distance as dist
+
 from pycorenlp import StanfordCoreNLP
 
 
