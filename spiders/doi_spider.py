@@ -85,6 +85,7 @@ class DOISpider(scrapy.Spider):
 		# map all the url-> file relationships, find all URLs, yield requests for all URLS
 		generatePathogenDictionary()
 		urls = a
+		self.log(str(len(a)) + " doiURLs passed to second spider." )
 		for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)
 
@@ -117,6 +118,7 @@ class InitialSpider(scrapy.Spider):
 	def start_requests(self):
 		# map all the url-> file relationships, find all URLs, yield requests for all URLS
 		generatePathogenDictionary()
+		i = 0
 		urls = getURLList()
 		for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)

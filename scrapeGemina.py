@@ -62,13 +62,15 @@ def addAbstract(file, fileName):
 
 		# insert the directory into the dataframe
 		file.at[k, 'links'] = path
-
+		disease = file.at[k, 'disease']
+		if isinstance(disease, str):
+			with open(os.path.join(path, 'disease.txt'), 'w', encoding='utf-8') as f:
+				f.write(disease)
 		k += 1
-		# print(name)
-
 		# break down the PMID/URL's, address them accordingly
 		if isinstance(v, str):
 			addAbstractHelper(v, path)
+
 	# create the file we'll insert into the new_infection database
 	filepath = os.path.join(constants.newdir, 'new' + fileName)
 	print(filepath)
@@ -191,19 +193,24 @@ sympCount = 0
 toxCount = 0
 sympReference = 0
 toxReference = 0
+diseaseCount = 0
+disReference = 0
 
-
-def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 = []):
+def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 = [], col5 = []):
 	nlp = StanfordCoreNLP('http://localhost:9000')
 	# used to find all instances of a given reference in a PMID or DOI file
 	sympPath = os.path.join(path, 'symptoms.txt')
 	toxPath = os.path.join(path, 'toxins.txt')
+	disPath = os.path.join(path, 'disease.txt')
 	symp = ''
 	tox = ''
+	dis = ''
 	global sympCount
 	global toxCount
 	global sympReference
 	global toxReference
+	global diseaseCount
+	global disReference
 	if os.path.isfile(sympPath):
 		sympFile = open(sympPath, 'r')
 		sympCount += 1
@@ -213,6 +220,12 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 		toxFile = open(toxPath, 'r')
 		tox = toxFile.read().lower()
 		toxCount += 1
+
+	if os.path.isfile(disPath):
+		disFile = open(disPath, 'r')
+		dis = disFile.read().lower()
+		diseaseCount += 1
+
 	s = s.replace('\n', ' ')
 	s = s.replace('\t', ' ')
 	s = s.replace('-', ' ')
@@ -223,10 +236,13 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 	filename = ' '.join(unique_list(filename.split(' ')))
 	symp = ' '.join(unique_list(symp.split(' ')))
 	tox = ' '.join(unique_list(tox.split(' ')))
+	dis = ' '.join(unique_list(dis.split(' ')))
 
 	reference = 0
 	symptomReference = 0
 	toxinReference = 0
+	diseaseReference = 0
+
 	a = []
 	for sentence in output["sentences"]:
 		for t in sentence["tokens"]:
@@ -252,10 +268,15 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 			if (len(toxin) == len(w) and dist.hamming([i for i in w], [j for j in toxin]) * len(w) <= int(
 					len(w) * .2) and toxin not in filename):
 				toxinReference += 1
+		for disease in dis.split(" "):
+			if (len(disease) == len(w) and dist.hamming([i for i in w], [j for j in disease]) * len(w) <= int(
+					len(w) * .2) and disease not in filename):
+				diseaseReference += 1
 
 	print(filename + ' reference No. ' + str(i) + ':    ' + str(reference))
 	print('\t' + 'symptom references: ' + (str(-1) if symp == '' else str(symptomReference)))
 	print('\t' + 'toxin references: ' + (str(-1) if tox == '' else str(toxinReference)))
+	print('\t' + 'disease references: ' + (str(-1) if dis == '' else str(diseaseReference)))
 
 	col1.append(filename + ' no.: ' + str(i))
 	col2.append(reference)
@@ -267,8 +288,13 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 		col4.append(toxinReference)
 	else:
 		col4.append(-1)
+	if dis != '':
+		col5.append(diseaseReference)
+	else:
+		col5.append(-1)
 	sympReference += symptomReference
 	toxReference += toxinReference
+	disReference += diseaseReference
 	return reference
 
 
@@ -278,10 +304,12 @@ def finishedStatsDOI():
 	global toxCount
 	global sympReference
 	global toxReference
+	global diseaseCount
 	sympCount = 0
 	toxCount = 0
 	sympReference = 0
 	toxReference = 0
+	diseaseCount = 0
 
 	numDOI = 0
 	referenceTotal = 0
@@ -289,6 +317,7 @@ def finishedStatsDOI():
 	col2 = []
 	col3 = []
 	col4 = []
+	coldisease = []
 	for file in os.listdir(constants.newdir):
 		filename = file.replace('_', ' ')
 		filename = filename.replace(';', ':')
@@ -303,101 +332,115 @@ def finishedStatsDOI():
 					numDOI += 1
 					f = open(os.path.join(constants.newdir, file, innerFile), 'r', encoding='utf-8')
 					s = f.read().lower()
-					j = checkReference(s, filename.lower(), i, os.path.join(constants.newdir, file), col1, col2, col3,
-									   col4)
+					j = checkReference(s, filename.lower(), i, os.path.join(constants.newdir, file), col1, col2, col3, col4, coldisease)
 					referenceTotal += j
 	print(
 		"On average, names are listed below the hamming threshold " + str(referenceTotal / numDOI) + ' times per DOI.')
+	print("On average, diseases are listed below the hamming threshold " + str(disReference/diseaseCount) + ' times per DOI')
+
 	print("On average, if symptoms are available, they are listed below the hamming threshold  " + str(
 		sympReference / sympCount) + ' times per DOI.')
 	print('On average, if toxins are available, they are listed below the hamming threshold ' + str(
 		toxReference / toxCount) + ' times per DOI.')
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	finishedStats['Pathogen'] = col1
 	finishedStats['Name References'] = col2
 	finishedStats['Symptom References'] = col3
 	finishedStats['Toxin References'] = col4
+	finishedStats['Disease References'] = coldisease
 	finishedStats.set_index('Pathogen', inplace=True)
 	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReviewDOI.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 and col3[i] > 0 and col4[i] > 0:
+		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'allExistDOI.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 and col3[i] > 0 and col4[i] == -1:
+		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExistDOI.csv'))
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
 		if col2[i] > 0 and col3[i] == -1 and col4[i] == -1:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyNameDOI.csv'))
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0:
+		if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0 or coldisease[i] > 0:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomethingDOI.csv'))
@@ -409,10 +452,12 @@ def finishedStatsAbstracts():
 	global toxCount
 	global sympReference
 	global toxReference
+	global diseaseCount
 	sympCount = 0
 	toxCount = 0
 	sympReference = 0
 	toxReference = 0
+	diseaseCount = 0
 
 	numPathogens = 0
 	numDOI = 0
@@ -422,6 +467,7 @@ def finishedStatsAbstracts():
 	col2 = []
 	col3 = []
 	col4 = []
+	coldisease = []
 	for file in os.listdir(constants.newdir):
 		filename = file.replace('_', ' ')
 		filename = filename.replace(';', ':')
@@ -441,8 +487,7 @@ def finishedStatsAbstracts():
 						if (line.startswith(str(i) + '. ')):
 							numPMID += 1
 						if (line.startswith('PMID')):
-							j = checkReference(s.lower(), filename.lower(), i, os.path.join(constants.newdir, file),
-											   col1, col2, col3, col4)
+							j = checkReference(s.lower(), filename.lower(), i, os.path.join(constants.newdir, file), col1, col2, col3, col4, coldisease)
 							referenceTotal += j
 							i += 1
 							s = ''
@@ -453,101 +498,114 @@ def finishedStatsAbstracts():
 	print("Abstracts: " + str(numPMID))
 	print("On average, names are listed below the hamming threshold " + str(
 		referenceTotal / numPMID) + ' times per abstract')
+	print("On average, disease are listed below the hamming threshold " + str(disReference/diseaseCount) + ' times per abstract')
 	print("On average, if symptoms are available, they are listed below the hamming threshold  " + str(
 		sympReference / sympCount) + ' times per abstract.')
 	print('On average, if toxins are available, they are listed below the hamming threshold ' + str(
 		toxReference / toxCount) + ' times per abstract.')
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	finishedStats['Pathogen'] = col1
 	finishedStats['Name References'] = col2
 	finishedStats['Symptom References'] = col3
 	finishedStats['Toxin References'] = col4
+	finishedStats['Disease References'] = coldisease
 	finishedStats.set_index('Pathogen', inplace=True)
 	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReview.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 and col3[i] > 0 and col4[i] > 0:
+		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'allExist.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 and col3[i] > 0 and col4[i] == -1:
+		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExist.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 and col3[i] == -1 and col4[i] == -1:
+		if col2[i] > 0 and coldisease[i] > 0 and col3[i] == -1 and col4[i] == -1:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
 
 	finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyName.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References'])
+	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
 	i = 0
 	col5 = []
 	col6 = []
 	col7 = []
 	col8 = []
+	col9 = []
 	while i < len(col1):
-		if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0:
+		if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0 or coldisease[i] > 0:
 			col5.append(col1[i])
 			col6.append(col2[i])
 			col7.append(col3[i])
 			col8.append(col4[i])
+			col9.append(coldisease[i])
 		i += 1
 	finishedStats['Pathogen'] = col5
 	finishedStats['Name References'] = col6
 	finishedStats['Symptom References'] = col7
 	finishedStats['Toxin References'] = col8
+	finishedStats['Disease References'] = col9
 	finishedStats.set_index('Pathogen', inplace=True)
-
 	finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomething.csv'))
 
 
@@ -587,9 +645,9 @@ def examinePathogens():
 	print('number without DOI: ' + str(numWithoutDOI))
 
 def main():
-	# reformat()
-	# appendSuffixes()
-	# downloadPMID()
+	#reformat()
+	#appendSuffixes()
+	#downloadPMID()
 	#removeDOI()
 	finishedStatsDOI()
 	finishedStatsAbstracts()
