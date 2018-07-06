@@ -1,0 +1,389 @@
+DOID_label,NCBITaxon,Relationship,NCBITaxon_label,DOID
+human monocytic ehrlichiosis,NCBITaxon_945,has material basis in,Ehrlichia chaffeensis,DOID_0050026
+viral infectious disease,NCBITaxon_10239,has material basis in,Viruses,DOID_934
+human granulocytic anaplasmosis,NCBITaxon_948,has material basis in,Anaplasma phagocytophilum,DOID_0050025
+ehrlichiosis,NCBITaxon_948,has material basis in,Anaplasma phagocytophilum,DOID_10242
+ehrlichiosis,NCBITaxon_945,has material basis in,Ehrlichia chaffeensis,DOID_10242
+Astrakhan spotted fever,NCBITaxon_34632,has material basis in,Rhipicephalus sanguineus,DOID_0050041
+Astrakhan spotted fever,NCBITaxon_781,has material basis in,Rickettsia conorii,DOID_0050041
+Astrakhan spotted fever,NCBITaxon_127007,has material basis in,Rhipicephalus pumilio,DOID_0050041
+African tick-bite fever,NCBITaxon_35788,has material basis in,Rickettsia africae,DOID_0050035
+spotted fever,NCBITaxon_780,has material basis in,Rickettsia,DOID_11104
+erysipeloid,NCBITaxon_1648,has material basis in,Erysipelothrix rhusiopathiae,DOID_0050061
+Indian tick typhus,NCBITaxon_781,has material basis in,Rickettsia conorii,DOID_0050042
+Israeli tick typhus,NCBITaxon_781,has material basis in,Rickettsia conorii,DOID_0050043
+Far Eastern spotted fever,NCBITaxon_226665,has material basis in,Rickettsia heilongjiangensis,DOID_0050046
+Flinders Island spotted fever,NCBITaxon_37816,has material basis in,Rickettsia honei,DOID_0050047
+Japanese spotted fever,NCBITaxon_35790,has material basis in,Rickettsia japonica,DOID_0050050
+Rickettsia parkeri spotted fever,NCBITaxon_35792,has material basis in,Rickettsia parkeri,DOID_0050051
+Rocky Mountain spotted fever,NCBITaxon_783,has material basis in,Rickettsia rickettsii,DOID_0050052
+oropharyngeal anthrax,NCBITaxon_1392,has material basis in,Bacillus anthracis,DOID_0050059
+gastrointestinal anthrax,NCBITaxon_1392,has material basis in,Bacillus anthracis,DOID_13386
+adiaspiromycosis,NCBITaxon_41283,has material basis in,Chrysosporium parvum,DOID_0050072
+adiaspiromycosis,NCBITaxon_73230,has material basis in,Emmonsia crescens,DOID_0050072
+primary systemic mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_0050292
+ectothrix infectious disease,NCBITaxon_63418,has material basis in,Trichophyton equinum,DOID_0050097
+ectothrix infectious disease,NCBITaxon_63417,has material basis in,Trichophyton verrucosum,DOID_0050097
+disease by infectious agent,NCBITaxon_10239,has material basis in,Viruses,DOID_0050117
+disease by infectious agent,NCBITaxon_4751,has material basis in,Fungi,DOID_0050117
+disease by infectious agent,NCBITaxon_2,has material basis in,Bacteria <prokaryote>,DOID_0050117
+La Crosse encephalitis,NCBITaxon_11577,has material basis in,La Crosse virus,DOID_0050118
+tinea barbae,NCBITaxon_523103,has material basis in,Trichophyton mentagrophytes,DOID_0050096
+tinea barbae,NCBITaxon_63417,has material basis in,Trichophyton verrucosum,DOID_0050096
+dermatophytosis,NCBITaxon_4890,has material basis in,Ascomycota,DOID_8913
+endothrix infectious disease,NCBITaxon_4890,has material basis in,Ascomycota,DOID_0050105
+endothrix infectious disease,NCBITaxon_4751,has material basis in,Fungi,DOID_0050105
+tinea imbricata,NCBITaxon_63419,has material basis in,Trichophyton concentricum,DOID_0050116
+tinea corporis,NCBITaxon_4890,has material basis in,Ascomycota,DOID_12179
+tinea corporis,NCBITaxon_4751,has material basis in,Fungi,DOID_12179
+dengue shock syndrome,NCBITaxon_11053,has material basis in,Dengue virus 1,DOID_0050125
+dengue shock syndrome,NCBITaxon_12637,has material basis in,Dengue virus,DOID_0050125
+dengue disease,NCBITaxon_12637,has material basis in,Dengue virus,DOID_12205
+dengue disease,NCBITaxon_11053,has material basis in,Dengue virus 1,DOID_12205
+cutaneous mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_0050134
+subcutaneous mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_0050135
+superficial mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_0050133
+fungal infectious disease,NCBITaxon_4751,has material basis in,Fungi,DOID_1564
+intestinal botulism,NCBITaxon_36827,has material basis in,Clostridium botulinum B,DOID_0050141
+intestinal botulism,NCBITaxon_36830,has material basis in,Clostridium botulinum E,DOID_0050141
+intestinal botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_0050141
+intestinal botulism,NCBITaxon_36831,has material basis in,Clostridium botulinum F,DOID_0050141
+botulism,NCBITaxon_36830,has material basis in,Clostridium botulinum E,DOID_11976
+botulism,NCBITaxon_36831,has material basis in,Clostridium botulinum F,DOID_11976
+botulism,NCBITaxon_36827,has material basis in,Clostridium botulinum B,DOID_11976
+botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_11976
+legionellosis,NCBITaxon_446,has material basis in,Legionella pneumophila,DOID_10458
+asymptomatic dengue,NCBITaxon_12637,has material basis in,Dengue virus,DOID_0050143
+asymptomatic dengue,NCBITaxon_11053,has material basis in,Dengue virus 1,DOID_0050143
+anthrax disease,NCBITaxon_1392,has material basis in,Bacillus anthracis,DOID_7427
+Kunjin encephalitis,NCBITaxon_11082,has material basis in,West Nile virus,DOID_0050174
+Kunjin encephalitis,NCBITaxon_11077,has material basis in,Kunjin virus,DOID_0050174
+West Nile encephalitis,NCBITaxon_11082,has material basis in,West Nile virus,DOID_2365
+tick-borne encephalitis,NCBITaxon_11084,has material basis in,Tick-borne encephalitis virus,DOID_0050175
+Powassan encephalitis,NCBITaxon_11083,has material basis in,Powassan virus,DOID_0050179
+Argentine hemorrhagic fever,NCBITaxon_11619,has material basis in,Junin mammarenavirus,DOID_0050194
+nephropathia epidemica,NCBITaxon_11604,has material basis in,Puumala virus,DOID_0050201
+Epstein-Barr virus hepatitis,NCBITaxon_10376,has material basis in,Human herpesvirus 4,DOID_0050204
+Bolivian hemorrhagic fever,NCBITaxon_11628,has material basis in,Machupo mammarenavirus,DOID_0050195
+Venezuelan hemorrhagic fever,NCBITaxon_45219,has material basis in,Guanarito mammarenavirus,DOID_0050196
+Brazilian hemorrhagic fever,NCBITaxon_45709,has material basis in,Sabia mammarenavirus,DOID_0050197
+Chapare hemorrhagic fever,NCBITaxon_499556,has material basis in,Chapare mammarenavirus,DOID_0050198
+Whitewater Arroyo hemorrhagic fever,NCBITaxon_46919,has material basis in,Whitewater Arroyo mammarenavirus,DOID_0050199
+Korean hemorrhagic fever,NCBITaxon_11608,has material basis in,Seoul virus,DOID_0050200
+Korean hemorrhagic fever,NCBITaxon_11599,has material basis in,Hantaan virus,DOID_0050200
+hemorrhagic fever with renal syndrome,NCBITaxon_11608,has material basis in,Seoul virus,DOID_11266
+hemorrhagic fever with renal syndrome,NCBITaxon_11604,has material basis in,Puumala virus,DOID_11266
+hemorrhagic fever with renal syndrome,NCBITaxon_12506,has material basis in,Dobrava-Belgrade virus,DOID_11266
+hemorrhagic fever with renal syndrome,NCBITaxon_11599,has material basis in,Hantaan virus,DOID_11266
+swine influenza,NCBITaxon_11320,has material basis in,Influenza A virus,DOID_0050211
+swine influenza,NCBITaxon_11552,has material basis in,Influenza C virus,DOID_0050211
+parasitic protozoa infectious disease,NCBITaxon_5658,has material basis in,Leishmania,DOID_2789
+parasitic protozoa infectious disease,NCBITaxon_5820,has material basis in,Plasmodium,DOID_2789
+penicilliosis,NCBITaxon_37727,has material basis in,Talaromyces marneffei,DOID_0050288
+opportunistic mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_2473
+Alkhurma hemorrhagic fever,NCBITaxon_172148,has material basis in,Alkhumra hemorrhagic fever virus,DOID_0050308
+trichosporonosis,NCBITaxon_5552,has material basis in,Trichosporon <Trichosporonales>,DOID_0050290
+Kyasanur forest disease,NCBITaxon_33743,has material basis in,Kyasanur forest disease virus,DOID_11320
+bacterial infectious disease,NCBITaxon_2,has material basis in,Bacteria <prokaryote>,DOID_104
+foodborne botulism,NCBITaxon_36830,has material basis in,Clostridium botulinum E,DOID_0050352
+foodborne botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_0050352
+foodborne botulism,NCBITaxon_36831,has material basis in,Clostridium botulinum F,DOID_0050352
+foodborne botulism,NCBITaxon_36827,has material basis in,Clostridium botulinum B,DOID_0050352
+wound botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_0050353
+wound botulism,NCBITaxon_36831,has material basis in,Clostridium botulinum F,DOID_0050353
+wound botulism,NCBITaxon_36827,has material basis in,Clostridium botulinum B,DOID_0050353
+wound botulism,NCBITaxon_36830,has material basis in,Clostridium botulinum E,DOID_0050353
+infant botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_0050354
+infant botulism,NCBITaxon_36827,has material basis in,Clostridium botulinum B,DOID_0050354
+tularemia,NCBITaxon_263,has material basis in,Francisella tularensis,DOID_2123
+Carrion's disease,NCBITaxon_774,has material basis in,Bartonella bacilliformis,DOID_0050398
+Buruli ulcer disease,NCBITaxon_1809,has material basis in,Mycobacterium ulcerans,DOID_0050456
+endemic typhus,NCBITaxon_42862,has material basis in,Rickettsia felis,DOID_0050481
+endemic typhus,NCBITaxon_785,has material basis in,Rickettsia typhi,DOID_0050481
+epidemic typhus,NCBITaxon_782,has material basis in,Rickettsia prowazekii,DOID_0050480
+typhus,NCBITaxon_780,has material basis in,Rickettsia,DOID_11256
+typhus,NCBITaxon_2,has material basis in,Bacteria <prokaryote>,DOID_11256
+spinal polio,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_0050513
+spinal polio,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_0050513
+spinal polio,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_0050513
+paralytic poliomyelitis,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_0050515
+paralytic poliomyelitis,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_0050515
+paralytic poliomyelitis,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_0050515
+aneruptive fever,NCBITaxon_35789,has material basis in,Rickettsia helvetica,DOID_0050484
+sennetsu fever,NCBITaxon_951,has material basis in,Neorickettsia sennetsu,DOID_0050485
+exanthema subitum,NCBITaxon_10368,has material basis in,Human herpesvirus 6,DOID_0050495
+exanthema subitum,NCBITaxon_10372,has material basis in,Human herpesvirus 7,DOID_0050495
+variola major,NCBITaxon_10255,has material basis in,Variola virus,DOID_0050508
+smallpox,NCBITaxon_10255,has material basis in,Variola virus,DOID_8736
+bulbospinal polio,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_0050514
+bulbospinal polio,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_0050514
+bulbospinal polio,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_0050514
+poliomyelitis,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_4953
+poliomyelitis,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_4953
+poliomyelitis,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_4953
+Barmah Forest virus disease,NCBITaxon_11020,has material basis in,Barmah Forest virus,DOID_0050517
+Ross River fever,NCBITaxon_11029,has material basis in,Ross River virus,DOID_0050518
+Oropouche fever,NCBITaxon_118655,has material basis in,Oropouche virus,DOID_0050521
+Balkan hemorrhagic fever,NCBITaxon_12506,has material basis in,Dobrava-Belgrade virus,DOID_0050522
+adult T-cell leukemia,NCBITaxon_11908,has material basis in,Human T-lymphotropic virus 1,DOID_0050523
+taeniasis,NCBITaxon_6204,has material basis in,Taenia solium,DOID_0050596
+taeniasis,NCBITaxon_6206,has material basis in,Taenia saginata,DOID_0050596
+tuberculosis,NCBITaxon_1773,has material basis in,Mycobacterium tuberculosis,DOID_399
+ornithine translocase deficiency,NCBITaxon_29189,has material basis in,Ammonia,DOID_0050720
+leprosy,NCBITaxon_1769,has material basis in,Mycobacterium leprae,DOID_1024
+louping ill,NCBITaxon_11086,has material basis in,Louping ill virus,DOID_10250
+mumps,NCBITaxon_11161,has material basis in,Mumps virus,DOID_10264
+plague,NCBITaxon_632,has material basis in,Yersinia pestis,DOID_3482
+gonorrhea,NCBITaxon_485,has material basis in,Neisseria gonorrhoeae,DOID_7551
+Queensland tick typhus,NCBITaxon_787,has material basis in,Rickettsia australis,DOID_10784
+Eastern equine encephalitis,NCBITaxon_11021,has material basis in,Eastern equine encephalitis virus,DOID_10841
+Murray Valley encephalitis,NCBITaxon_11079,has material basis in,Murray Valley encephalitis virus,DOID_10842
+Western equine encephalitis,NCBITaxon_11039,has material basis in,Western equine encephalitis virus,DOID_10843
+Japanese encephalitis,NCBITaxon_11072,has material basis in,Japanese encephalitis virus,DOID_10844
+St. Louis encephalitis,NCBITaxon_11080,has material basis in,St. Louis encephalitis virus,DOID_10845
+viral encephalitis,NCBITaxon_11021,has material basis in,Eastern equine encephalitis virus,DOID_646
+hand foot and mouth disease,NCBITaxon_39054,has material basis in,Enterovirus A71,DOID_10881
+hand foot and mouth disease,NCBITaxon_31704,has material basis in,Coxsackievirus A16,DOID_10881
+epidemic pleurodynia,NCBITaxon_138949,has material basis in,Enterovirus B,DOID_10882
+herpangina,NCBITaxon_39054,has material basis in,Enterovirus A71,DOID_10883
+herpangina,NCBITaxon_31704,has material basis in,Coxsackievirus A16,DOID_10883
+herpangina,NCBITaxon_12066,has material basis in,Coxsackievirus,DOID_10883
+Siberian tick typhus,NCBITaxon_35793,has material basis in,Rickettsia sibirica,DOID_10921
+pasteurellosis,NCBITaxon_747,has material basis in,Pasteurella multocida,DOID_11055
+trench fever,NCBITaxon_803,has material basis in,Bartonella quintana,DOID_11101
+rickettsialpox,NCBITaxon_786,has material basis in,Rickettsia akari,DOID_11103
+common wart,NCBITaxon_173087,has material basis in,Human papillomavirus types,DOID_11165
+common wart,NCBITaxon_169495,has material basis in,This,DOID_11165
+pertussis,NCBITaxon_519,has material basis in,Bordetella parapertussis,DOID_1116
+pertussis,NCBITaxon_520,has material basis in,Bordetella pertussis,DOID_1116
+allescheriosis,NCBITaxon_5597,has material basis in,Scedosporium boydii,DOID_11186
+acute hemorrhagic conjunctivitis,NCBITaxon_12090,has material basis in,Human enterovirus 70,DOID_11227
+acute hemorrhagic conjunctivitis,NCBITaxon_12089,has material basis in,Coxsackievirus A24,DOID_11227
+cat-scratch disease,NCBITaxon_56426,has material basis in,Bartonella clarridgeiae,DOID_11258
+cat-scratch disease,NCBITaxon_38323,has material basis in,Bartonella henselae,DOID_11258
+trachoma,NCBITaxon_813,has material basis in,Chlamydia trachomatis,DOID_11265
+tetanus,NCBITaxon_1513,has material basis in,Clostridium tetani,DOID_11338
+pneumocystosis,NCBITaxon_42068,has material basis in,Pneumocystis jirovecii,DOID_11339
+Phlebotomus fever,NCBITaxon_28292,has material basis in,Sandfly fever Sicilian virus,DOID_11360
+Phlebotomus fever,NCBITaxon_206160,has material basis in,Sandfly fever Naples virus,DOID_11360
+Lyme disease,NCBITaxon_139,has material basis in,Borrelia burgdorferi,DOID_11729
+tinea cruris,NCBITaxon_4890,has material basis in,Ascomycota,DOID_11917
+tinea cruris,NCBITaxon_4751,has material basis in,Fungi,DOID_11917
+lymphocytic choriomeningitis,NCBITaxon_11623,has material basis in,Lymphocytic choriomeningitis mammarenavirus,DOID_12155
+Crimean-Congo hemorrhagic fever,NCBITaxon_11593,has material basis in,Crimean-Congo hemorrhagic fever virus,DOID_12287
+malaria,NCBITaxon_5833,has material basis in,Plasmodium falciparum,DOID_12365
+malaria,NCBITaxon_5855,has material basis in,Plasmodium vivax,DOID_12365
+malaria,NCBITaxon_36330,has material basis in,Plasmodium ovale,DOID_12365
+malaria,NCBITaxon_5820,has material basis in,Plasmodium,DOID_12365
+tinea pedis,NCBITaxon_34390,has material basis in,Epidermophyton,DOID_12403
+tinea pedis,NCBITaxon_5550,has material basis in,Trichophyton,DOID_12403
+hepatitis A,NCBITaxon_12092,has material basis in,Hepatitis A virus,DOID_12549
+paracoccidioidomycosis,NCBITaxon_121759,has material basis in,Paracoccidioides brasiliensis,DOID_12662
+respiratory syncytial virus infectious disease,NCBITaxon_11250,has material basis in,Human respiratory syncytial virus,DOID_1273
+Plasmodium ovale malaria,NCBITaxon_36330,has material basis in,Plasmodium ovale,DOID_12919
+Plasmodium vivax malaria,NCBITaxon_5855,has material basis in,Plasmodium vivax,DOID_12978
+tinea unguium,NCBITaxon_4751,has material basis in,Fungi,DOID_13074
+tinea unguium,NCBITaxon_4890,has material basis in,Ascomycota,DOID_13074
+lobomycosis,NCBITaxon_121752,has material basis in,Lacazia loboi,DOID_13026
+dermatomycosis,NCBITaxon_4890,has material basis in,Ascomycota,DOID_1563
+dermatomycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_1563
+relapsing fever,NCBITaxon_138,has material basis in,Borrelia,DOID_13034
+Haverhill fever,NCBITaxon_34105,has material basis in,Streptobacillus moniliformis,DOID_13238
+Rift Valley fever,NCBITaxon_11588,has material basis in,Rift Valley fever virus,DOID_1328
+toxoplasmosis,NCBITaxon_5811,has material basis in,Toxoplasma gondii,DOID_9965
+tinea profunda,NCBITaxon_523103,has material basis in,Trichophyton mentagrophytes,DOID_13368
+tinea manuum,NCBITaxon_4890,has material basis in,Ascomycota,DOID_13369
+tinea manuum,NCBITaxon_4751,has material basis in,Fungi,DOID_13369
+scrub typhus,NCBITaxon_784,has material basis in,Orientia tsutsugamushi,DOID_13371
+coccidioidomycosis,NCBITaxon_5501,has material basis in,Coccidioides immitis,DOID_13450
+chancroid,NCBITaxon_730,has material basis in,[Haemophilus] ducreyi,DOID_13778
+campylobacteriosis,NCBITaxon_197,has material basis in,Campylobacter jejuni,DOID_13622
+plantar wart,NCBITaxon_173087,has material basis in,Human papillomavirus types,DOID_13775
+inclusion conjunctivitis,NCBITaxon_813,has material basis in,Chlamydia trachomatis,DOID_13800
+pharyngoconjunctival fever,NCBITaxon_10519,has material basis in,Human adenovirus 7,DOID_13801
+pharyngoconjunctival fever,NCBITaxon_45659,has material basis in,Human adenovirus 3,DOID_13801
+lymphogranuloma venereum,NCBITaxon_813,has material basis in,Chlamydia trachomatis,DOID_13819
+granuloma inguinale,NCBITaxon_39824,has material basis in,Klebsiella granulomatis,DOID_9113
+boutonneuse fever,NCBITaxon_781,has material basis in,Rickettsia conorii,DOID_14095
+phaeohyphomycosis,NCBITaxon_66225,has material basis in,Phaeoannellomyces,DOID_14049
+phaeohyphomycosis,NCBITaxon_89940,has material basis in,Cladophialophora bantiana,DOID_14049
+phaeohyphomycosis,NCBITaxon_5600,has material basis in,Phialophora <Chaetothyriales>,DOID_14049
+phaeohyphomycosis,NCBITaxon_86056,has material basis in,Rhinocladiella mackenziei,DOID_14049
+phaeohyphomycosis,NCBITaxon_5970,has material basis in,Exophiala dermatitidis,DOID_14049
+phaeohyphomycosis,NCBITaxon_5498,has material basis in,Cladosporium,DOID_14049
+phaeohyphomycosis,NCBITaxon_5579,has material basis in,Aureobasidium,DOID_14049
+phaeohyphomycosis,NCBITaxon_5598,has material basis in,Alternaria,DOID_14049
+phaeohyphomycosis,NCBITaxon_91493,has material basis in,Exserohilum,DOID_14049
+Plasmodium falciparum malaria,NCBITaxon_5833,has material basis in,Plasmodium falciparum,DOID_14067
+toxic shock syndrome,NCBITaxon_1280,has material basis in,Staphylococcus aureus,DOID_14115
+toxic shock syndrome,NCBITaxon_1314,has material basis in,Streptococcus pyogenes,DOID_14115
+hantavirus pulmonary syndrome,NCBITaxon_37705,has material basis in,Sin Nombre virus,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_61172,has material basis in,Laguna Negra virus,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_37962,has material basis in,Bayou virus,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_46607,has material basis in,Andes virus,DOID_14472
+sporotrichosis,NCBITaxon_29908,has material basis in,Sporothrix schenckii,DOID_14484
+hepatitis C,NCBITaxon_11103,has material basis in,Hepatitis C virus,DOID_1883
+hepatitis B,NCBITaxon_10407,has material basis in,Hepatitis B virus,DOID_2043
+hepatitis D,NCBITaxon_12475,has material basis in,Hepatitis delta virus,DOID_2047
+hepatitis D,NCBITaxon_10407,has material basis in,Hepatitis B virus,DOID_2047
+leptospirosis,NCBITaxon_171,has material basis in,Leptospira,DOID_2297
+West Nile fever,NCBITaxon_11082,has material basis in,West Nile virus,DOID_2366
+Mycobacterium avium complex disease,NCBITaxon_37162,has material basis in,Mycobacterium avium complex,DOID_2755
+geotrichosis,NCBITaxon_27317,has material basis in,Geotrichum candidum [NCBITaxon:27317],DOID_2832
+Newcastle disease,NCBITaxon_11176,has material basis in,Newcastle disease virus,DOID_2929
+aleutian mink disease,NCBITaxon_28314,has material basis in,Aleutian mink disease virus,DOID_2934
+severe acute respiratory syndrome,NCBITaxon_227859,has material basis in,SARS coronavirus,DOID_2945
+tropical spastic paraparesis,NCBITaxon_11908,has material basis in,Human T-lymphotropic virus 1,DOID_321
+vaccinia,NCBITaxon_10245,has material basis in,Vaccinia virus,DOID_3298
+encephalitozoonosis,NCBITaxon_6035,has material basis in,Encephalitozoon cuniculi,DOID_4270
+encephalitozoonosis,NCBITaxon_58839,has material basis in,Encephalitozoon intestinalis,DOID_4270
+encephalitozoonosis,NCBITaxon_27973,has material basis in,Encephalitozoon hellem,DOID_4270
+microsporidiosis,NCBITaxon_6029,has material basis in,Microsporidia,DOID_4271
+Ebola hemorrhagic fever,NCBITaxon_186540,has material basis in,Sudan ebolavirus,DOID_4325
+Ebola hemorrhagic fever,NCBITaxon_565995,has material basis in,Bundibugyo virus,DOID_4325
+Ebola hemorrhagic fever,NCBITaxon_186538,has material basis in,Zaire ebolavirus,DOID_4325
+Marburg hemorrhagic fever,NCBITaxon_186537,has material basis in,Marburgvirus,DOID_4327
+hepatitis E,NCBITaxon_12461,has material basis in,Hepatitis E virus,DOID_4411
+avian influenza,NCBITaxon_11320,has material basis in,Influenza A virus,DOID_4492
+Colorado tick fever,NCBITaxon_46839,has material basis in,Colorado tick fever virus,DOID_4885
+postpoliomyelitis syndrome,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_4952
+postpoliomyelitis syndrome,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_4952
+postpoliomyelitis syndrome,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_4952
+actinobacillosis,NCBITaxon_723,has material basis in,Actinobacillus ureae,DOID_4974
+nonparalytic poliomyelitis,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_4986
+nonparalytic poliomyelitis,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_4986
+nonparalytic poliomyelitis,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_4986
+borna disease,NCBITaxon_12455,has material basis in,Borna disease virus,DOID_5154
+human immunodeficiency virus infectious disease,NCBITaxon_11676,has material basis in,Human immunodeficiency virus 1,DOID_526
+human immunodeficiency virus infectious disease,NCBITaxon_11709,has material basis in,Human immunodeficiency virus 2,DOID_526
+focal epithelial hyperplasia,NCBITaxon_173087,has material basis in,Human papillomavirus types,DOID_5362
+Kaposi's sarcoma,NCBITaxon_37296,has material basis in,Human herpesvirus 8,DOID_8632
+acquired immunodeficiency syndrome,NCBITaxon_11676,has material basis in,Human immunodeficiency virus 1,DOID_635
+acquired immunodeficiency syndrome,NCBITaxon_11709,has material basis in,Human immunodeficiency virus 2,DOID_635
+anisakiasis,NCBITaxon_6271,has material basis in,Pseudoterranova decipiens,DOID_7033
+anisakiasis,NCBITaxon_6269,has material basis in,Anisakis simplex,DOID_7033
+cutaneous anthrax,NCBITaxon_1392,has material basis in,Bacillus anthracis,DOID_7426
+actinomycosis,NCBITaxon_1655,has material basis in,Actinomyces naeslundii,DOID_8478
+actinomycosis,NCBITaxon_1750,has material basis in,Propionibacterium propionicum,DOID_8478
+actinomycosis,NCBITaxon_1656,has material basis in,Actinomyces viscosus,DOID_8478
+actinomycosis,NCBITaxon_52769,has material basis in,Actinomyces gerencseriae,DOID_8478
+actinomycosis,NCBITaxon_52773,has material basis in,Actinomyces meyeri,DOID_8478
+actinomycosis,NCBITaxon_1659,has material basis in,Actinomyces israelii,DOID_8478
+actinomycosis,NCBITaxon_1660,has material basis in,Actinomyces odontolyticus,DOID_8478
+herpes zoster,NCBITaxon_10335,has material basis in,Human herpesvirus 3,DOID_8536
+herpes simplex,NCBITaxon_10298,has material basis in,Human herpesvirus 1,DOID_8566
+herpes simplex,NCBITaxon_10310,has material basis in,Human herpesvirus 2,DOID_8566
+infectious mononucleosis,NCBITaxon_10376,has material basis in,Human herpesvirus 4,DOID_8568
+herpetic whitlow,NCBITaxon_10298,has material basis in,Human herpesvirus 1,DOID_8607
+herpetic whitlow,NCBITaxon_10310,has material basis in,Human herpesvirus 2,DOID_8607
+genital herpes,NCBITaxon_10298,has material basis in,Human herpesvirus 1,DOID_8704
+genital herpes,NCBITaxon_10310,has material basis in,Human herpesvirus 2,DOID_8704
+milker's nodule,NCBITaxon_129726,has material basis in,Pseudocowpox virus,DOID_8729
+contagious pustular dermatitis,NCBITaxon_10258,has material basis in,Orf virus,DOID_8771
+molluscum contagiosum,NCBITaxon_10279,has material basis in,Molluscum contagiosum virus,DOID_8867
+cowpox,NCBITaxon_10243,has material basis in,Cowpox virus,DOID_8956
+subacute sclerosing panencephalitis,NCBITaxon_11234,has material basis in,Measles virus,DOID_8970
+leishmaniasis,NCBITaxon_5658,has material basis in,Leishmania,DOID_9065
+eczema herpeticum,NCBITaxon_10298,has material basis in,Human herpesvirus 1,DOID_9123
+eczema herpeticum,NCBITaxon_10310,has material basis in,Human herpesvirus 2,DOID_9123
+variola minor,NCBITaxon_10255,has material basis in,Variola virus,DOID_9153
+gas gangrene,NCBITaxon_1502,has material basis in,Clostridium perfringens,DOID_9159
+geniculate herpes zoster,NCBITaxon_10335,has material basis in,Human herpesvirus 3,DOID_9210
+Venezuelan equine encephalitis,NCBITaxon_11036,has material basis in,Venezuelan equine encephalitis virus,DOID_9584
+Lassa fever,NCBITaxon_11620,has material basis in,Lassa mammarenavirus,DOID_9537
+staphyloenterotoxemia,NCBITaxon_1280,has material basis in,Staphylococcus aureus,DOID_96
+yellow fever,NCBITaxon_11089,has material basis in,Yellow fever virus,DOID_9682
+bulbar polio,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_9786
+bulbar polio,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_9786
+bulbar polio,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_9786
+Omsk hemorrhagic fever,NCBITaxon_12542,has material basis in,Omsk hemorrhagic fever virus,DOID_992
+shellfish allergy,NCBITaxon_6447,is allergic trigger for,Mollusca,DOID_0060495
+shellfish allergy,NCBITaxon_6657,is allergic trigger for,Crustacea,DOID_0060495
+Atlantic salmon allergy,NCBITaxon_8030,is allergic trigger for,Salmo salar,DOID_0060515
+zebrafish allergy,NCBITaxon_7955,is allergic trigger for,Danio rerio,DOID_0060517
+rainbow trout allergy,NCBITaxon_8022,is allergic trigger for,Oncorhynchus mykiss,DOID_0060518
+fish allergy,NCBITaxon_7898,is allergic trigger for,Actinopterygii,DOID_0060513
+Atlantic cod allergy,NCBITaxon_8049,is allergic trigger for,Gadus morhua,DOID_0060514
+mollusc allergy,NCBITaxon_6447,is allergic trigger for,Mollusca,DOID_0060523
+green mud crab allergy,NCBITaxon_85552,is allergic trigger for,Scylla paramamosain,DOID_0060526
+Indian prawn allergy,NCBITaxon_29960,is allergic trigger for,Fenneropenaeus indicus,DOID_0060527
+tiger prawn allergy,NCBITaxon_6687,is allergic trigger for,Penaeus monodon,DOID_0060528
+white shrimp allergy,NCBITaxon_6689,is allergic trigger for,Litopenaeus vannamei,DOID_0060529
+crustacean allergy,NCBITaxon_6657,is allergic trigger for,Crustacea,DOID_0060524
+brown shrimp allergy,NCBITaxon_6690,is allergic trigger for,Farfantepenaeus aztecus,DOID_0060525
+horned turban snail allergy,NCBITaxon_63673,is allergic trigger for,Turbo cornutus,DOID_0060531
+human monocytic ehrlichiosis,NCBITaxon_34613,transmitted by,Ixodes ricinus,DOID_0050026
+human monocytic ehrlichiosis,NCBITaxon_6945,transmitted by,Ixodes scapularis,DOID_0050026
+human monocytic ehrlichiosis,NCBITaxon_29930,transmitted by,Ixodes pacificus,DOID_0050026
+human granulocytic anaplasmosis,NCBITaxon_6943,transmitted by,Amblyomma americanum,DOID_0050025
+African tick-bite fever,NCBITaxon_34610,transmitted by,Amblyomma variegatum,DOID_0050035
+African tick-bite fever,NCBITaxon_34608,transmitted by,Amblyomma hebraeum,DOID_0050035
+Indian tick typhus,NCBITaxon_34632,transmitted by,Rhipicephalus sanguineus,DOID_0050042
+Israeli tick typhus,NCBITaxon_34632,transmitted by,Rhipicephalus sanguineus,DOID_0050043
+Far Eastern spotted fever,NCBITaxon_523089,transmitted by,Haemaphysalis concinna,DOID_0050046
+Flinders Island spotted fever,NCBITaxon_34607,transmitted by,Amblyomma cajennense,DOID_0050047
+Japanese spotted fever,NCBITaxon_34619,transmitted by,Dermacentor,DOID_0050050
+Japanese spotted fever,NCBITaxon_181088,transmitted by,Haemaphysalis flava,DOID_0050050
+Rickettsia parkeri spotted fever,NCBITaxon_34609,transmitted by,Amblyomma maculatum,DOID_0050051
+Rocky Mountain spotted fever,NCBITaxon_34620,transmitted by,Dermacentor andersoni,DOID_0050052
+Rocky Mountain spotted fever,NCBITaxon_34621,transmitted by,Dermacentor variabilis,DOID_0050052
+La Crosse encephalitis,NCBITaxon_7162,transmitted by,Ochlerotatus triseriatus,DOID_0050118
+Kunjin encephalitis,NCBITaxon_162997,transmitted by,Culex annulirostris,DOID_0050174
+West Nile encephalitis,NCBITaxon_7164,transmitted by,Anopheles <genus>,DOID_2365
+West Nile encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_2365
+tick-borne encephalitis,NCBITaxon_6944,transmitted by,Ixodes,DOID_0050175
+Powassan encephalitis,NCBITaxon_6944,transmitted by,Ixodes,DOID_0050179
+Argentine hemorrhagic fever,NCBITaxon_56212,transmitted by,Calomys musculinus,DOID_0050194
+nephropathia epidemica,NCBITaxon_447135,transmitted by,Myodes glareolus,DOID_0050201
+Bolivian hemorrhagic fever,NCBITaxon_56210,transmitted by,Calomys callosus,DOID_0050195
+Venezuelan hemorrhagic fever,NCBITaxon_157541,transmitted by,Zygodontomys brevicauda,DOID_0050196
+Venezuelan hemorrhagic fever,NCBITaxon_134742,transmitted by,Sigmodon alstoni,DOID_0050196
+Whitewater Arroyo hemorrhagic fever,NCBITaxon_42408,transmitted by,Neotoma albigula,DOID_0050199
+Korean hemorrhagic fever,NCBITaxon_10116,transmitted by,Rattus norvegicus,DOID_0050200
+Korean hemorrhagic fever,NCBITaxon_39030,transmitted by,Apodemus agrarius,DOID_0050200
+Alkhurma hemorrhagic fever,NCBITaxon_69826,transmitted by,Ornithodoros savignyi,DOID_0050308
+tularemia,NCBITaxon_27458,transmitted by,Chrysops,DOID_2123
+tularemia,NCBITaxon_34621,transmitted by,Dermacentor variabilis,DOID_2123
+endemic typhus,NCBITaxon_163159,transmitted by,Xenopsylla cheopis,DOID_0050481
+epidemic typhus,NCBITaxon_121224,transmitted by,Pediculus humanus corporis,DOID_0050480
+aneruptive fever,NCBITaxon_6944,transmitted by,Ixodes,DOID_0050484
+O'nyong'nyong fever,NCBITaxon_62324,transmitted by,Anopheles funestus,DOID_0050516
+O'nyong'nyong fever,NCBITaxon_7165,transmitted by,Anopheles gambiae,DOID_0050516
+Ross River fever,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_0050518
+Oropouche fever,NCBITaxon_41820,transmitted by,Culicoides <genus>,DOID_0050521
+Balkan hemorrhagic fever,NCBITaxon_54292,transmitted by,Apodemus flavicollis,DOID_0050522
+Zika fever,NCBITaxon_7158,transmitted by,Aedes <genus>,DOID_0060478
+louping ill,NCBITaxon_34613,transmitted by,Ixodes ricinus,DOID_10250
+plague,NCBITaxon_163159,transmitted by,Xenopsylla cheopis,DOID_3482
+Queensland tick typhus,NCBITaxon_65647,transmitted by,Ixodes holocyclus,DOID_10784
+Murray Valley encephalitis,NCBITaxon_162997,transmitted by,Culex annulirostris,DOID_10842
+Western equine encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_10843
+Japanese encephalitis,NCBITaxon_7178,transmitted by,Culex tritaeniorhynchus,DOID_10844
+St. Louis encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_10845
+Siberian tick typhus,NCBITaxon_49202,transmitted by,Dermacentor marginatus,DOID_10921
+Siberian tick typhus,NCBITaxon_523089,transmitted by,Haemaphysalis concinna,DOID_10921
+trench fever,NCBITaxon_121224,transmitted by,Pediculus humanus corporis,DOID_11101
+Phlebotomus fever,NCBITaxon_29031,transmitted by,Phlebotomus papatasi,DOID_11360
+listeriosis,NCBITaxon_1637,transmitted by,Listeria,DOID_11573
+Lyme disease,NCBITaxon_29930,transmitted by,Ixodes pacificus,DOID_11729
+Lyme disease,NCBITaxon_6945,transmitted by,Ixodes scapularis,DOID_11729
+lymphocytic choriomeningitis,NCBITaxon_10090,transmitted by,Mus musculus,DOID_12155
+Crimean-Congo hemorrhagic fever,NCBITaxon_34625,transmitted by,Hyalomma,DOID_12287
+tick-borne relapsing fever,NCBITaxon_140564,transmitted by,Ornithodoros parkeri,DOID_13036
+louse-borne relapsing fever,NCBITaxon_121225,transmitted by,Pediculus humanus,DOID_13035
+scrub typhus,NCBITaxon_299467,transmitted by,Leptotrombidium deliense,DOID_13371
+boutonneuse fever,NCBITaxon_34632,transmitted by,Rhipicephalus sanguineus,DOID_14095
+hantavirus pulmonary syndrome,NCBITaxon_42415,transmitted by,Sigmodon hispidus,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_56211,transmitted by,Calomys laucha,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_37020,transmitted by,Oryzomys palustris,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_447135,transmitted by,Myodes glareolus,DOID_14472
+hantavirus pulmonary syndrome,NCBITaxon_137207,transmitted by,Oligoryzomys longicaudatus,DOID_14472
+West Nile fever,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_2366
+Mycobacterium avium complex disease,NCBITaxon_2,transmitted by,Bacteria <prokaryote>,DOID_2755
+Colorado tick fever,NCBITaxon_34620,transmitted by,Dermacentor andersoni,DOID_4885
+Venezuelan equine encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_9584
+Lassa fever,NCBITaxon_30639,transmitted by,Mastomys,DOID_9537
+yellow fever,NCBITaxon_7180,transmitted by,Haemagogus <genus>,DOID_9682
+yellow fever,NCBITaxon_53551,transmitted by,Sabethes,DOID_9682
+Omsk hemorrhagic fever,NCBITaxon_6944,transmitted by,Ixodes,DOID_992
+Omsk hemorrhagic fever,NCBITaxon_34619,transmitted by,Dermacentor,DOID_992

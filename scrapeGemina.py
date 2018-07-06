@@ -1,23 +1,17 @@
-
+import constants
 import format
 import extract
 import analyze
-
-
-
-
-
+import ontologyCompare
 
 
 def main():
-	format.reformat()
-	format.appendSuffixes()
-	extract.downloadPMID()
-	analyze.removeDOI()
-	analyze.finishedStatsDOI()
-	analyze.finishedStatsAbstracts()
-	analyze.examinePathogens()
-
+	#format.reformat()
+	#analyze.removeDOI()
+	#analyze.finishedStatsDOI()
+	#analyze.finishedStatsAbstracts()
+	#analyze.examinePathogens()
+	ontologyCompare.pathogenCompareFirst(constants.firstOntology)
 
 if __name__ == "__main__":
 	main()
