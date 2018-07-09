@@ -9,8 +9,7 @@ def reformat():
 		if filename.endswith(".csv"):
 			df = pd.read_table(os.path.join(constants.dir, filename), sep="\t", comment="#",
 							   names=['index', 'pathogen', 'source', 'disease', 'tsource', 'ttype', 'portal',
-									  'infection_atts', 'tatts', 'comments'])
-			df.reset_index()
+									  'infection_atts', 'tatts', 'comments']).reset_index()
 			# add all the abstracts of the paper(or html for now)
 			addAbstract(df, filename)
 			continue
@@ -26,9 +25,10 @@ def appendSuffixes():
 		PMIDpath = os.path.join(os.path.join(constants.newdir, folder), 'PMID.txt')
 		if (os.path.isfile(PMIDpath)):
 			with open(PMIDpath, 'r') as valid:
-				if valid.read().__contains__('&retmode=text&rettype=abstract%0A'):
+				if '&retmode=text&rettype=abstract%0A' in valid.read():
+					print('fail')
 					valid.close()
-					return
+					continue
 			with open(PMIDpath, 'rb+') as filehandle:
 				filehandle.seek(-1, os.SEEK_END)
 				filehandle.truncate()
@@ -46,11 +46,8 @@ def addAbstract(file, fileName):
 		# find the name in the corresponding pathogen column
 
 		# create the name we'll use in the directory
-		dirname = file.iloc[k, 1]
-		dirname = dirname.replace(' ', '_')
-		dirname = dirname.replace(':', ';')
-		dirname = dirname.replace('?', '!')
-		dirname = dirname.replace('/', '-')
+		dirname = str(file.iloc[k, 2])
+		dirname = dirname.replace(' ', '_').replace(':', ';').replace('?', '!').replace('/', '-')
 
 		# create the path we'll put the files in, separated by pathogen
 		path = os.path.join(constants.newdir, dirname)
@@ -170,4 +167,7 @@ def combineNewCSV():
 			else:
 				df = df.append(pd.read_csv(os.path.join(constants.newdir, file), index_col=0).drop('index', axis=1).drop(0).set_index('pathogen'), sort=True)
 	print('successfully joined all Gemina files')
+	df = df.drop('level_0', axis=1)
 	df.to_csv('combined.csv')
+
+

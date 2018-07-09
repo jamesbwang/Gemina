@@ -5,4 +5,4 @@ dir=r"C:\Users\WJang\Desktop\Gemina_Project_Pathogens\Gemina_Project_Pathogens\i
 newdir = os.path.join(dir, 'infections_new')
 firstOntology = 'DOID-NCBITaxon.csv'
 secondOntology = 'DOID-HP.csv'
-
+mFile = 'human_pathogens.csv'

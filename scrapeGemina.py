@@ -3,6 +3,7 @@ import format
 import extract
 import analyze
 import ontologyCompare
+import abstractTagger
 
 
 def main():
@@ -11,7 +12,11 @@ def main():
 	#analyze.finishedStatsDOI()
 	#analyze.finishedStatsAbstracts()
 	#analyze.examinePathogens()
-	ontologyCompare.pathogenCompareFirst(constants.firstOntology)
+	#ontologyCompare.pathogenCompareFirst(constants.firstOntology)
+	#ontologyCompare.mergeOntology()
 
+	abstractTagger.tagAbstracts()
 if __name__ == "__main__":
 	main()
+
+
