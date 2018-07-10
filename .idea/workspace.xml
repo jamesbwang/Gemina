@@ -2,15 +2,13 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/scrapeGemina.py" line="7" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/abstractTagger.py" line="61" />
+    <bookmark url="file://$PROJECT_DIR$/abstractTagger.py" line="72" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2871e313-6eee-4769-a377-82d0bd8b2db8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/abstractTagger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/format.py" beforeDir="false" afterPath="$PROJECT_DIR$/format.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ontologyCompare.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontologyCompare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstractTagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstractTagger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapeGemina.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeGemina.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="format.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
+            <state relative-caret-position="620">
               <caret line="171" selection-start-line="171" selection-end-line="171" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="analyze.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="433" column="10" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -50,7 +48,7 @@
       <file leaf-file-name="ontologyCompare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="17">
               <caret line="4" column="37" selection-end-line="4" selection-end-column="37" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -62,8 +60,8 @@
       <file leaf-file-name="abstractTagger.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/abstractTagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+            <state relative-caret-position="28">
+              <caret line="70" column="31" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="31" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -71,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexes/base.py">
+      <file leaf-file-name="script.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../pubMed_mass/script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51799">
-              <caret line="3109" selection-start-line="3109" selection-end-line="3109" />
+            <state relative-caret-position="357">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -88,8 +86,8 @@
       <file leaf-file-name="scrapeGemina.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -136,6 +134,7 @@
       <find>failure</find>
       <find>dengue</find>
       <find>found</find>
+      <find>mycobacter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,11 +153,11 @@
         <option value="$PROJECT_DIR$/.idea/extract.py" />
         <option value="$PROJECT_DIR$/.idea/format.py" />
         <option value="$PROJECT_DIR$/.idea/analyze.py" />
-        <option value="$PROJECT_DIR$/analyze.py" />
         <option value="$PROJECT_DIR$/constants.py" />
         <option value="$PROJECT_DIR$/format.py" />
         <option value="$PROJECT_DIR$/../pubMed_mass/script.py" />
         <option value="$PROJECT_DIR$/ontologyCompare.py" />
+        <option value="$PROJECT_DIR$/analyze.py" />
         <option value="$PROJECT_DIR$/scrapeGemina.py" />
         <option value="$PROJECT_DIR$/abstractTagger.py" />
       </list>
@@ -171,10 +170,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="387" />
-    <option name="y" value="16" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,6 +180,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,9 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +359,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20671141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -379,14 +377,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.00997151" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35100672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.00997151" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -552,13 +550,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubmed_batch_10000_to_19999.json" />
     <entry file="file://$PROJECT_DIR$/pubmed_batch_0_to_9999.json" />
-    <entry file="file://$PROJECT_DIR$/../pubMed_mass/script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
@@ -580,13 +571,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubmed_batch_0_to_999.xml" />
-    <entry file="file://$PROJECT_DIR$/pmabstracts.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17187">
+          <caret line="2802" column="31" lean-forward="true" selection-start-line="2802" selection-start-column="31" selection-end-line="2802" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pubMed_mass/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="433" column="10" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -595,18 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
+        <state relative-caret-position="620">
           <caret line="171" selection-start-line="171" selection-end-line="171" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-end-line="4" selection-end-column="37" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -615,25 +617,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51799">
-          <caret line="3109" selection-start-line="3109" selection-end-line="3109" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pmabstracts.csv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/abstractTagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        <state relative-caret-position="28">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="31" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

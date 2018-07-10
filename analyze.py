@@ -431,12 +431,12 @@ def finishedStatsAbstracts():
 	finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomething.csv'))
 
 
-def removeDOI():
+def remove(startsWith):
 	# remove all DOI files from the directory, in case there was some error in processing the DOIs
 	for file in os.listdir(constants.newdir):
 		if not file.endswith('.csv'):
 			for innerfile in os.listdir(os.path.join(constants.newdir, file)):
-				if (innerfile.startswith('DOI_')):
+				if (innerfile.startswith(startsWith)):
 					os.remove(os.path.join(constants.newdir, file, innerfile))
 					print('removed ' + file + "'s " + innerfile)
 

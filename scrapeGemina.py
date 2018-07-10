@@ -8,7 +8,7 @@ import abstractTagger
 
 def main():
 	#format.reformat()
-	#analyze.removeDOI()
+	analyze.remove('TESTnewAbstracts')
 	#analyze.finishedStatsDOI()
 	#analyze.finishedStatsAbstracts()
 	#analyze.examinePathogens()
