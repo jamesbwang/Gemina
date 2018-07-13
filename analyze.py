@@ -4,6 +4,7 @@ from pycorenlp import StanfordCoreNLP
 import pandas as pd
 import os
 
+
 def unique_list(l):
 	# used to make a string with no repeating words
 	ulist = []
@@ -11,6 +12,7 @@ def unique_list(l):
 	return ulist
 
 
+#global variables, because functions often modify more than one value
 sympCount = 0
 toxCount = 0
 sympReference = 0
@@ -173,99 +175,101 @@ def finishedStatsDOI():
 	finishedStats.set_index('Pathogen', inplace=True)
 	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReviewDOI.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
+	#The below provides additional analysis that could be done with Excel.
 
-	finishedStats.to_csv(os.path.join(constants.newdir, 'allExistDOI.csv'))
-
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
-
-	finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExistDOI.csv'))
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and col3[i] == -1 and col4[i] == -1:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
-
-	finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyNameDOI.csv'))
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0 or coldisease[i] > 0:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
-
-	finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomethingDOI.csv'))
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'allExistDOI.csv'))
+	#
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExistDOI.csv'))
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and col3[i] == -1 and col4[i] == -1:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyNameDOI.csv'))
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 or col3[i] > 0 - 1 or col4[i] > 0 or coldisease[i] > 0:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomethingDOI.csv'))
 
 
 def finishedStatsAbstracts():
@@ -291,10 +295,7 @@ def finishedStatsAbstracts():
 	col4 = []
 	coldisease = []
 	for file in os.listdir(constants.newdir):
-		filename = file.replace('_', ' ')
-		filename = filename.replace(';', ':')
-		filename = filename.replace('!', '?')
-		filename = filename.replace('-', '/')
+		filename = file.replace('_', ' ').replace(';', ':').replace('!', '?').replace('-', '/')
 		if not file.endswith('.csv'):
 			numPathogens += 1
 			for innerFile in os.listdir(os.path.join(constants.newdir, file)):
@@ -335,100 +336,103 @@ def finishedStatsAbstracts():
 	finishedStats.set_index('Pathogen', inplace=True)
 	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReview.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
+	# The below provides additional analysis that could be done with Excel.
 
-	finishedStats.to_csv(os.path.join(constants.newdir, 'allExist.csv'))
 
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
-
-	finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExist.csv'))
-
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 and coldisease[i] > 0 and col3[i] == -1 and col4[i] == -1:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats.set_index('Pathogen', inplace=True)
-
-	finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyName.csv'))
-
-	finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
-	i = 0
-	col5 = []
-	col6 = []
-	col7 = []
-	col8 = []
-	col9 = []
-	while i < len(col1):
-		if col2[i] > 0 or col3[i] > 0 or col4[i] > 0 or coldisease[i] > 0:
-			col5.append(col1[i])
-			col6.append(col2[i])
-			col7.append(col3[i])
-			col8.append(col4[i])
-			col9.append(coldisease[i])
-		i += 1
-	finishedStats['Pathogen'] = col5
-	finishedStats['Name References'] = col6
-	finishedStats['Symptom References'] = col7
-	finishedStats['Toxin References'] = col8
-	finishedStats['Disease References'] = col9
-	finishedStats = finishedStats.set_index('Pathogen', inplace=True)
-	finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomething.csv'))
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] > 0:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'allExist.csv'))
+	#
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and coldisease[i] > 0 and col3[i] > 0 and col4[i] == -1:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'SymptomsExist.csv'))
+	#
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 and coldisease[i] > 0 and col3[i] == -1 and col4[i] == -1:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats.set_index('Pathogen', inplace=True)
+	#
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'OnlyName.csv'))
+	#
+	# finishedStats = pd.DataFrame(columns=['Pathogen', 'Name References', 'Symptom References', 'Toxin References', 'Disease References'])
+	# i = 0
+	# col5 = []
+	# col6 = []
+	# col7 = []
+	# col8 = []
+	# col9 = []
+	# while i < len(col1):
+	# 	if col2[i] > 0 or col3[i] > 0 or col4[i] > 0 or coldisease[i] > 0:
+	# 		col5.append(col1[i])
+	# 		col6.append(col2[i])
+	# 		col7.append(col3[i])
+	# 		col8.append(col4[i])
+	# 		col9.append(coldisease[i])
+	# 	i += 1
+	# finishedStats['Pathogen'] = col5
+	# finishedStats['Name References'] = col6
+	# finishedStats['Symptom References'] = col7
+	# finishedStats['Toxin References'] = col8
+	# finishedStats['Disease References'] = col9
+	# finishedStats = finishedStats.set_index('Pathogen', inplace=True)
+	# finishedStats.to_csv(os.path.join(constants.newdir, 'AtLeastItsSomething.csv'))
 
 
 def remove(startsWith):
@@ -462,6 +466,6 @@ def examinePathogens():
 				numWithoutDOI += 1
 		hasAbstract = False
 		hasDOI = False
-	print("Pathogen Count (excluding influenza): " + str(pathogenCount))
+	print("Pathogen Count (excluding Influenza): " + str(pathogenCount))
 	print('number without abstracts: ' + str(numWithoutAbstract))
 	print('number without DOI: ' + str(numWithoutDOI))

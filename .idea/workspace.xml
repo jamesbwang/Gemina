@@ -2,13 +2,14 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/scrapeGemina.py" line="7" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/abstractTagger.py" line="72" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2871e313-6eee-4769-a377-82d0bd8b2db8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/abstractTagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstractTagger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/format.py" beforeDir="false" afterPath="$PROJECT_DIR$/format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ontologyCompare.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontologyCompare.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapeGemina.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeGemina.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,26 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="format.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/format.py">
+      <file leaf-file-name="adapters.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/adapters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analyze.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analyze.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="433" column="10" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="8228">
+              <caret line="512" selection-start-line="512" selection-end-line="512" />
             </state>
           </provider>
         </entry>
@@ -48,8 +34,8 @@
       <file leaf-file-name="ontologyCompare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="510">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -60,8 +46,8 @@
       <file leaf-file-name="abstractTagger.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/abstractTagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="70" column="31" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="31" />
+            <state relative-caret-position="62">
+              <caret line="247" column="28" selection-start-line="247" selection-start-column="28" selection-end-line="247" selection-end-column="28" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -69,28 +55,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pubMed_mass/script.py">
+      <file leaf-file-name="analyze.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="238">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pmabstracts.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pmabstracts.csv">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="scrapeGemina.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="272">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="corenlp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pycorenlp/corenlp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -106,12 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>try</find>
-      <find>j</find>
-      <find>pmid</find>
-      <find>scrapeGemina</find>
-      <find>os</find>
-      <find>error</find>
       <find>q</find>
       <find>addAbstractHelper</find>
       <find>err</find>
@@ -132,9 +128,16 @@
       <find>col1</find>
       <find>match</find>
       <find>failure</find>
-      <find>dengue</find>
       <find>found</find>
       <find>mycobacter</find>
+      <find>unique_list</find>
+      <find>abbreviate</find>
+      <find>e</find>
+      <find>dengue</find>
+      <find>print</find>
+      <find>hiv</find>
+      <find>as</find>
+      <find>are</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,8 +157,8 @@
         <option value="$PROJECT_DIR$/.idea/format.py" />
         <option value="$PROJECT_DIR$/.idea/analyze.py" />
         <option value="$PROJECT_DIR$/constants.py" />
-        <option value="$PROJECT_DIR$/format.py" />
         <option value="$PROJECT_DIR$/../pubMed_mass/script.py" />
+        <option value="$PROJECT_DIR$/format.py" />
         <option value="$PROJECT_DIR$/ontologyCompare.py" />
         <option value="$PROJECT_DIR$/analyze.py" />
         <option value="$PROJECT_DIR$/scrapeGemina.py" />
@@ -170,9 +173,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="220" />
+    <option name="y" value="5" />
+    <option name="width" value="1370" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,7 +186,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,10 +202,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GeminaSpiders" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -355,17 +359,17 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3295302" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="1.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.66951567" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="1.0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -406,18 +410,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="1707" selection-start-line="1707" selection-end-line="1707" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newbacteria_infection.iff.csv" />
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/temphtml.txt" />
     <entry file="file://$USER_HOME$/Desktop/Gemina_Project_Pathogens/Gemina_Project_Pathogens/infections/infections_new/Bacillus_anthracis/http" />
@@ -541,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubmed_batch_10000_to_19999.json" />
     <entry file="file://$PROJECT_DIR$/pubmed_batch_0_to_9999.json" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pandas/core/indexing.py">
@@ -578,17 +567,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="159" column="80" selection-start-line="159" selection-start-column="80" selection-end-line="159" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pmabstracts.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8228">
+          <caret line="512" selection-start-line="512" selection-end-line="512" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../pubMed_mass/script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state>
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="510">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pycorenlp/corenlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -597,41 +627,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="433" column="10" selection-start-line="433" selection-start-column="10" selection-end-line="433" selection-end-column="10" />
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmabstracts.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/abstractTagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="70" column="31" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="31" />
+        <state relative-caret-position="62">
+          <caret line="247" column="28" selection-start-line="247" selection-start-column="28" selection-end-line="247" selection-end-column="28" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

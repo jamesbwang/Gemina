@@ -157,6 +157,7 @@ def addAbstractHelper(v, path):
 
 
 def combineNewCSV():
+	#combine all reformatted Gemina CSVs to the same file, preparing for tagging
 	df = pd.DataFrame()
 	for file in os.listdir(constants.newdir):
 		if file.endswith('.csv') and file.startswith('new'):
