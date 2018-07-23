@@ -1,0 +1,376 @@
+,PMID,pathNames,tagged_As
+0,29954003,Alloiococcus otitis A,otitis
+1,29953997,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+2,29953997,Hepatitis B virus HB,B
+3,29953997,Influenza B virus IBV;Hepatitis B virus HB,virus
+4,29953997,Hepatitis B virus HBV,HBV
+5,29953997,Hepatitis B virus HBV,HBV
+6,29953997,Hepatitis B virus HBV,HBV
+7,29953983,Chikungunya virus C,virus
+8,29953983,,virus
+9,29953982,Eubacterium multiforme E,multiforme
+10,29953946,California encephalitis serogroup virus LEIV CESL,serogroup
+11,29953946,Neisseria meningitidis N,meningitidis
+12,29953921,,viruses
+13,29953916,Yellow fever virus YFV;Colorado tick fever virus CTFV;Sandfly fever Naples virus SFNV;Alkhurma hemorrhagic fever virus AHFV;Crimean-Congo hemorrhagic fever virus CCHFV;Omsk hemorrhagic fever virus OHFV;Alkhumra hemorrhagic fever virus AHFV;Rift Valley fever virus RVFV;Sandfly fever Sicilian virus SFS,virus
+14,29953916,,virus
+15,29953916,,virus
+16,29953912,Staphylococcus hominis subsp. hominis S.;Staphylococcus saccharolyticus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus vitulinus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus intermedius S.;Staphylococcus saprophyticus S.;Staphylococcus xylosus S.;Staphylococcus warneri S.;Staphylococcus gallinarum S.;Staphylococcus cohnii subsp. urealyticus S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S.;Staphylococcus epidermidis S.;Staphylococcus delphini S.;Staphylococcus auricularis S.;Staphylococcus hyicus S.;Staphylococcus lugdunensis S.;Staphylococcus capitis subsp. capitis S.;Staphylococcus pasteuri S.;Staphylococcus haemolyticus S.;Staphylococcus hominis subsp. novobiosepticus S.;Staphylococcus sciuri S.;Staphylococcus aureus S.;Staphylococcus schleiferi subsp. schleiferi S.;Staphylococcus equorum S.;Staphylococcus cohnii subsp. cohnii S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus capitis subsp. ureolyticus S.;Staphylococcus simulans S.;Staphylococcus caprae S.;Staphylococcus schleiferi subsp. coagulans S,Staphylococcus
+17,29953912,Staphylococcus aureus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S,aureus
+18,29953889,Culex C.;Culex annulirostris C.;Culex tritaeniorhynchus C.;Culex flavivirus CFV;Culex <genus> C,Culex
+19,29953861,Plasmodium P.;Plasmodium ovale P.;Plasmodium vivax P.;Plasmodium falciparum P,Plasmodium
+20,29953855,Eubacterium multiforme E,multiforme
+21,29953820,Shigella sonnei 53G S,53g
+22,29953819,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+23,29953816,Staphylococcus hominis subsp. hominis S.;Staphylococcus saccharolyticus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus vitulinus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus intermedius S.;Staphylococcus saprophyticus S.;Staphylococcus xylosus S.;Staphylococcus warneri S.;Staphylococcus gallinarum S.;Staphylococcus cohnii subsp. urealyticus S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S.;Staphylococcus epidermidis S.;Staphylococcus delphini S.;Staphylococcus auricularis S.;Staphylococcus hyicus S.;Staphylococcus lugdunensis S.;Staphylococcus capitis subsp. capitis S.;Staphylococcus pasteuri S.;Staphylococcus haemolyticus S.;Staphylococcus hominis subsp. novobiosepticus S.;Staphylococcus sciuri S.;Staphylococcus aureus S.;Staphylococcus schleiferi subsp. schleiferi S.;Staphylococcus equorum S.;Staphylococcus cohnii subsp. cohnii S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus capitis subsp. ureolyticus S.;Staphylococcus simulans S.;Staphylococcus caprae S.;Staphylococcus schleiferi subsp. coagulans S,Staphylococcus
+24,29953816,Staphylococcus aureus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S,aureus
+25,29953816,Bacteria <prokaryote> B.;Bacteria B,bacteria
+26,29953812,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+27,29953812,,viruses
+28,29953812,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+29,29953812,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,virus
+30,29953812,Chikungunya virus C,chikungunya
+31,29953812,,viruses
+32,29953734,,baculovirus
+33,29953731,Colorado tick fever virus CTF,Colorado
+34,29953723,Salmo salar S,salar
+35,29953721,Staphylococcus hominis subsp. hominis S.;Staphylococcus saccharolyticus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus vitulinus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus intermedius S.;Staphylococcus saprophyticus S.;Staphylococcus xylosus S.;Staphylococcus warneri S.;Staphylococcus gallinarum S.;Staphylococcus cohnii subsp. urealyticus S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S.;Staphylococcus epidermidis S.;Staphylococcus delphini S.;Staphylococcus auricularis S.;Staphylococcus hyicus S.;Staphylococcus lugdunensis S.;Staphylococcus capitis subsp. capitis S.;Staphylococcus pasteuri S.;Staphylococcus haemolyticus S.;Staphylococcus hominis subsp. novobiosepticus S.;Staphylococcus sciuri S.;Staphylococcus aureus S.;Staphylococcus schleiferi subsp. schleiferi S.;Staphylococcus equorum S.;Staphylococcus cohnii subsp. cohnii S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus capitis subsp. ureolyticus S.;Staphylococcus simulans S.;Staphylococcus caprae S.;Staphylococcus schleiferi subsp. coagulans S,Staphylococcus
+36,29953721,Staphylococcus aureus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S,aureus
+37,29953721,Bacteria <prokaryote> B.;Bacteria B,bacteria
+38,29953719,Microsphaeropsis olivacea M,olivacea
+39,29953719,Bacteria <prokaryote> B.;Bacteria B,bacteria
+40,29953719,Bacteria <prokaryote> B.;Bacteria B,bacteria
+41,29953719,Bacillus anthracis str. Kruger B B.;Bacillus coagulans B.;Bacillus anthracis str. Western North America USA6153 B.;Bacillus anthracis str. Vollum B.;Bacillus anthracis str. 'Ames Ancestor' B.;Bacillus anthracis str. A0465 B.;Bacillus anthracis str. Sterne B.;Bacillus cereus B.;Bacillus anthracis str. A0389 B.;Bacillus anthracis str. A0174 B.;Bacillus anthracis '34F2 delta gerH' B.;Bacillus anthracis B.;Bacillus anthracis str. Australia 94 B.;Bacillus licheniformis B.;Bacillus pumilus B.;Bacillus anthracis str. A0193 B.;Bacillus anthracis str. Ames B.;Bacillus subtilis B.;Bacillus anthracis str. A0442 B.;Bacillus anthracis '34F2 (NMRC)' B.;Bacillus circulans B.;Bacillus thuringiensis B.;Bacillus anthracis str. A0488 B.;Bacillus anthracis str. A2012 B.;Bacillus anthracis str. CNEVA-9066 B.;Bacillus anthracis str. A1055 B.;Bacillus mycoides B.;Bacillus megaterium B,Bacillus
+42,29953719,Staphylococcus hominis subsp. hominis S.;Staphylococcus saccharolyticus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus vitulinus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus intermedius S.;Staphylococcus saprophyticus S.;Staphylococcus xylosus S.;Staphylococcus warneri S.;Staphylococcus gallinarum S.;Staphylococcus cohnii subsp. urealyticus S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S.;Staphylococcus epidermidis S.;Staphylococcus delphini S.;Staphylococcus auricularis S.;Staphylococcus hyicus S.;Staphylococcus lugdunensis S.;Staphylococcus capitis subsp. capitis S.;Staphylococcus pasteuri S.;Staphylococcus haemolyticus S.;Staphylococcus hominis subsp. novobiosepticus S.;Staphylococcus sciuri S.;Staphylococcus aureus S.;Staphylococcus schleiferi subsp. schleiferi S.;Staphylococcus equorum S.;Staphylococcus cohnii subsp. cohnii S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus capitis subsp. ureolyticus S.;Staphylococcus simulans S.;Staphylococcus caprae S.;Staphylococcus schleiferi subsp. coagulans S,Staphylococcus
+43,29953719,,enterobacteria
+44,29953713,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+45,29953713,Hepatitis C virus HC,C
+46,29953713,Influenza C virus ICV;Hepatitis C virus HC,virus
+47,29953713,Hepatitis C virus HCV,HCV
+48,29953713,Hepatitis C virus HCV,HCV
+49,29953709,Pediococcus parvulus P,parvulus
+50,29953693,Candida glabrata C.;Candida nivariensis C.;Candida albicans C.;Candida africana C.;Candida orthopsilosis C.;Candida zeylanoides C.;Candida pseudoaaseri C.;Candida viswanathii C.;Candida haemulonis C.;Candida parapsilosis C.;Candida subhashii C.;Candida metapsilosis C.;Candida pararugosa C.;Candida magnoliae C.;Candida pseudohaemulonii C.;Candida tropicalis C.;Candida intermedia C.;Scopulariopsis candida S.;Candida dubliniensis C,Candida
+51,29953693,Candida albicans C,albicans
+52,29953693,Candida albicans C,C.
+53,29953693,Candida albicans C,albicans
+54,29953693,Candida albicans C,C.
+55,29953693,Candida albicans C,albicans
+56,29953693,Candida albicans C,C.
+57,29953693,Candida albicans C,albicans
+58,29953684,Corynebacterium xerosis C,xerosis
+59,29953673,Lactobacillus paraplantarum L.;Lactobacillus plantarum L.;Lactobacillus jensenii L.;Lactobacillus rhamnosus L.;Lactobacillus leichmannii L.;Lactobacillus salivarius L.;Lactobacillus vaginalis L.;Lactobacillus paracasei L.;Lactobacillus coleohominis L.;Lactobacillus crispatus L.;Lactobacillus dextrinicus L.;Lactobacillus iners L.;Lactobacillus gasseri L.;Lactobacillus acidophilus L.;Lactobacillus brevis L.;Lactobacillus casei L.;Lactobacillus oris L.;Lactobacillus fermentum L,Lactobacillus
+60,29953673,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia vulneris E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia albertii E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia fergusonii E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E,Escherichia
+61,29953673,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+62,29953636,Clostridium botulinum A2 str. Kyoto C,Kyoto
+63,29953600,,viruses
+64,29953600,Bacteria <prokaryote> B.;Bacteria B,bacteria
+65,29953569,Neisseria mucosa N.;Roseomonas mucosa R,mucosa
+66,29953569,Neisseria mucosa N.;Roseomonas mucosa R,mucosa
+67,29953559,Corynebacterium minutissimum C,minutissimum
+68,29953552,Salmonella choleraesuis subsp. houtenae S.;Salmonella enterica subsp. Enterica S.;Salmonella choleraesuis subsp. choleraesuis S.;Salmonella enterica subsp. indica S.;Salmonella enterica subsp. enterica S.;Salmonella choleraesuis subsp. arizonae S.;Salmonella enterica subsp. salamae S.;Salmonella choleraesuis subsp. indica S.;Salmonella enterica subsp. enterica serovar Paratyphi A S.;Salmonella typhimurium TR7095 S.;Salmonella enterica subsp. arizonae S.;Salmonella enterica subsp. enterica  S.;Salmonella enterica subsp. enterica serovar Typhi S.;Salmonella thompson C1 S.;Salmonella enterica S.;Salmonella enterica IIIb 50:k:z S.;Salmonella enterica subsp. enterica serovar Enteritidis S.;Salmonella choleraesuis subsp. diarizonae S.;Salmonella bongori S.;Salmonella choleraesuis subsp. salamae S.;Salmonella S.;Salmonella enterica subsp. arizonae serovar 62:z4;z23:-- S.;Salmonella enterica subsp. enterica serovar Typhimurium S.;Salmonella typhimurium DT104 S.;Salmonella enterica subsp. diarizonae S.;Salmonella typhimurium SL1344 S.;Salmonella bongori 12149 S.;Salmonella enterica subsp. houtenae S,Salmonella
+69,29953552,Salmonella choleraesuis subsp. houtenae S.;Salmonella enterica subsp. Enterica S.;Salmonella choleraesuis subsp. choleraesuis S.;Salmonella enterica subsp. indica S.;Salmonella enterica subsp. enterica S.;Salmonella choleraesuis subsp. arizonae S.;Salmonella enterica subsp. salamae S.;Salmonella choleraesuis subsp. indica S.;Salmonella enterica subsp. enterica serovar Paratyphi A S.;Salmonella typhimurium TR7095 S.;Salmonella enterica subsp. arizonae S.;Salmonella enterica subsp. enterica  S.;Salmonella enterica subsp. enterica serovar Typhi S.;Salmonella thompson C1 S.;Salmonella enterica S.;Salmonella enterica IIIb 50:k:z S.;Salmonella enterica subsp. enterica serovar Enteritidis S.;Salmonella choleraesuis subsp. diarizonae S.;Salmonella bongori S.;Salmonella choleraesuis subsp. salamae S.;Salmonella S.;Salmonella enterica subsp. arizonae serovar 62:z4;z23:-- S.;Salmonella enterica subsp. enterica serovar Typhimurium S.;Salmonella typhimurium DT104 S.;Salmonella enterica subsp. diarizonae S.;Salmonella typhimurium SL1344 S.;Salmonella bongori 12149 S.;Salmonella enterica subsp. houtenae S,Salmonella
+70,29953552,Salmonella choleraesuis subsp. houtenae S.;Salmonella enterica subsp. Enterica S.;Salmonella choleraesuis subsp. choleraesuis S.;Salmonella enterica subsp. indica S.;Salmonella enterica subsp. enterica S.;Salmonella choleraesuis subsp. arizonae S.;Salmonella enterica subsp. salamae S.;Salmonella choleraesuis subsp. indica S.;Salmonella enterica subsp. enterica serovar Paratyphi A S.;Salmonella typhimurium TR7095 S.;Salmonella enterica subsp. arizonae S.;Salmonella enterica subsp. enterica  S.;Salmonella enterica subsp. enterica serovar Typhi S.;Salmonella thompson C1 S.;Salmonella enterica S.;Salmonella enterica IIIb 50:k:z S.;Salmonella enterica subsp. enterica serovar Enteritidis S.;Salmonella choleraesuis subsp. diarizonae S.;Salmonella bongori S.;Salmonella choleraesuis subsp. salamae S.;Salmonella S.;Salmonella enterica subsp. arizonae serovar 62:z4;z23:-- S.;Salmonella enterica subsp. enterica serovar Typhimurium S.;Salmonella typhimurium DT104 S.;Salmonella enterica subsp. diarizonae S.;Salmonella typhimurium SL1344 S.;Salmonella bongori 12149 S.;Salmonella enterica subsp. houtenae S,Salmonella
+71,29953552,California encephalitis orthobunyavirus CEOV;California encephalitis virus  CEV;California encephalitis serogroup virus LEIV CESL,California
+72,29953552,Salmonella typhimurium DT104 S.;Salmonella typhimurium TR7095 S.;Salmonella typhimurium SL1344 S.;Salmonella enterica subsp. enterica serovar Typhimurium S,Typhimurium
+73,29953552,Salmonella choleraesuis subsp. houtenae S.;Salmonella enterica subsp. Enterica S.;Salmonella choleraesuis subsp. choleraesuis S.;Salmonella enterica subsp. indica S.;Salmonella enterica subsp. enterica S.;Salmonella choleraesuis subsp. arizonae S.;Salmonella enterica subsp. salamae S.;Salmonella choleraesuis subsp. indica S.;Salmonella enterica subsp. enterica serovar Paratyphi A S.;Salmonella typhimurium TR7095 S.;Salmonella enterica subsp. arizonae S.;Salmonella enterica subsp. enterica  S.;Salmonella enterica subsp. enterica serovar Typhi S.;Salmonella thompson C1 S.;Salmonella enterica S.;Salmonella enterica IIIb 50:k:z S.;Salmonella enterica subsp. enterica serovar Enteritidis S.;Salmonella choleraesuis subsp. diarizonae S.;Salmonella bongori S.;Salmonella choleraesuis subsp. salamae S.;Salmonella S.;Salmonella enterica subsp. arizonae serovar 62:z4;z23:-- S.;Salmonella enterica subsp. enterica serovar Typhimurium S.;Salmonella typhimurium DT104 S.;Salmonella enterica subsp. diarizonae S.;Salmonella typhimurium SL1344 S.;Salmonella bongori 12149 S.;Salmonella enterica subsp. houtenae S,Salmonella
+74,29953547,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,human
+75,29953547,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,immunodeficiency
+76,29953547,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,virus
+77,29953547,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+78,29953547,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+79,29953538,,cytomegalovirus
+80,29953538,,virus
+81,29953531,,Proteobacteria
+82,29953531,Pseudomonas putida P.;Pseudomonas mendocina P.;Pseudomonas luteola P.;Pseudomonas monteilii P.;Pseudomonas chlororaphis P.;Pseudomonas aeruginosa P.;Pseudomonas fluorescens P.;Pseudomonas alcaligenes P.;Pseudomonas oryzihabitans P.;Pseudomonas stutzeri P.;Pseudomonas pseudoalcaligenes P.;Pseudomonas mosselii P.;Pseudomonas otitidis P.;Pseudomonas pertucinogena P,Pseudomonas
+83,29953531,Pseudomonas putida P.;Pseudomonas mendocina P.;Pseudomonas luteola P.;Pseudomonas monteilii P.;Pseudomonas chlororaphis P.;Pseudomonas aeruginosa P.;Pseudomonas fluorescens P.;Pseudomonas alcaligenes P.;Pseudomonas oryzihabitans P.;Pseudomonas stutzeri P.;Pseudomonas pseudoalcaligenes P.;Pseudomonas mosselii P.;Pseudomonas otitidis P.;Pseudomonas pertucinogena P,Pseudomonas
+84,29953531,Pseudomonas putida P.;Pseudomonas mendocina P.;Pseudomonas luteola P.;Pseudomonas monteilii P.;Pseudomonas chlororaphis P.;Pseudomonas aeruginosa P.;Pseudomonas fluorescens P.;Pseudomonas alcaligenes P.;Pseudomonas oryzihabitans P.;Pseudomonas stutzeri P.;Pseudomonas pseudoalcaligenes P.;Pseudomonas mosselii P.;Pseudomonas otitidis P.;Pseudomonas pertucinogena P,Pseudomonas
+85,29953531,Fusarium lichenicola F.;Fusarium neocosmosporiellum F.;Fusarium dimerum F.;Fusarium oxysporum F.;Fusarium falciforme F.;Fusarium nygamai F.;Fusarium fujikuroi F.;Fusarium incarnatum F.;Fusarium napiforme F.;Fusarium chlamydosporum F.;Fusarium verticillioides F.;Fusarium subglutinans F,Fusarium
+86,29953531,Cladosporium oxysporum C.;Fusarium oxysporum F,oxysporum
+87,29953523,Chlamydia trachomatis C.;Chlamydia psittaci C.;Chlamydia abortus C.;Chlamydia pneumoniae C,Chlamydia
+88,29953523,Microascus cinereus M,cinereus
+89,29953521,Cutibacterium granulosum C,granulosum
+90,29953521,Acremonium spinosum A,spinosum
+91,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+92,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+93,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+94,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+95,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+96,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+97,29953520,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+98,29953518,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+99,29953518,Hepatitis C virus HC,C
+100,29953503,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia vulneris E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia albertii E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia fergusonii E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E,Escherichia
+101,29953503,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+102,29953494,Leishmania L,Leishmania
+103,29953493,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+104,29953493,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+105,29953491,Mycobacterium lacus M.;Mycobacterium elephantis M.;Mycobacterium aubagnense M.;Mycobacterium conspicuum M.;Mycobacterium heckeshornense M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium flavescens M.;Mycobacterium avium complex M.;Mycobacterium kubicae M.;Mycobacterium lentiflavum M.;Mycobacterium bohemicum M.;Mycobacterium florentinum M.;Mycobacterium genavense M.;Mycobacterium septicum M.;Mycobacterium bovis M.;Mycobacterium fortuitum M.;Mycobacterium marinum M.;Mycobacterium tuberculosis C M.;Mycobacterium hassiacum M.;Mycobacterium peregrinum M.;Mycobacterium gordonae M.;Mycobacterium cookii M.;Mycobacterium intracellulare M.;Mycobacterium goodii M.;Mycobacterium chubuense M.;Mycobacterium tuberculosis 210 M.;Mycobacterium smegmatis M.;Mycobacterium kansasii M.;Mycobacterium triviale M.;Mycobacterium boenickei M.;Mycobacterium phlei M.;Mycobacterium jacuzzii M.;Mycobacterium brumae M.;Mycobacterium chimaera M.;Mycobacterium canariasense M.;Mycobacterium holsaticum M.;Mycobacterium parmense M.;Mycobacterium mucogenicum M.;Mycobacterium alvei M.;Mycobacterium ulcerans M.;Mycobacterium saskatchewanense M.;Mycobacterium abscessus M.;Mycobacterium aurum M.;Mycobacterium confluentis M.;Mycobacterium phocaicum M.;Mycobacterium hodleri M.;Mycobacterium heidelbergense M.;Mycobacterium tuberculosis F11 M.;Mycobacterium branderi M.;Mycobacterium simiae M.;Mycobacterium celatum M.;Mycobacterium gastri M.;Mycobacterium terrae M.;Mycobacterium houstonense M.;Mycobacterium novocastrense M.;Mycobacterium africanum M.;Mycobacterium kumamotonense M.;Mycobacterium leprae M.;Mycobacterium tuberculosis M.;Mycobacterium parascrofulaceum M.;Mycobacterium vaccae M.;Mycobacterium barrassiae M.;Mycobacterium triplex M.;Mycobacterium nonchromogenicum M.;Mycobacterium cosmeticum M.;Mycobacterium tuberculosis H37Rv M.;Mycobacterium asiaticum M.;Mycobacterium avium M.;Mycobacterium brisbanense M.;Mycobacterium microti M.;Mycobacterium wolinskyi M.;Mycobacterium thermoresistibile M.;Mycobacterium conceptionense M.;Mycobacterium mageritense M.;Mycobacterium chelonae M.;Mycobacterium doricum M.;Mycobacterium haemophilum M.;Mycobacterium malmoense M.;Mycobacterium monacense M.;Mycobacterium xenopi M.;Mycobacterium gadium M.;Mycobacterium porcinum M.;Mycobacterium scrofulaceum M.;Mycobacterium szulgai M.;Mycobacterium seoulense M.;Mycobacterium immunogenum M.;Mycobacterium neoaurum M.;Mycobacterium colombiense M.;Mycobacterium arupense M.;Mycobacterium nebraskense M.;Mycobacterium palustre M.;Mycobacterium interjectum M.;Mycobacterium abscessus subsp. massiliense M.;Mycobacterium abscessus subsp. bolletii M.;Mycobacterium tusciae M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium neworleansense M.;Mycobacterium shimoidei M,Mycobacterium
+106,29953491,Mycobacterium tuberculosis M.;Mycobacterium tuberculosis 210 M.;Mycobacterium tuberculosis F11 M.;Mycobacterium tuberculosis C M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium tuberculosis H37Rv M,tuberculosis
+107,29953491,Mycobacterium tuberculosis M.;Mycobacterium tuberculosis 210 M.;Mycobacterium tuberculosis F11 M.;Mycobacterium tuberculosis C M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium tuberculosis H37Rv M,M.
+108,29953491,Mycobacterium tuberculosis M.;Mycobacterium tuberculosis 210 M.;Mycobacterium tuberculosis F11 M.;Mycobacterium tuberculosis C M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium tuberculosis H37Rv M,tuberculosis
+109,29953491,Uganda S virus US,Uganda
+110,29953486,Enterococcus faecium E,E.
+111,29953486,Enterococcus faecium E,faecium
+112,29953486,Bacteria <prokaryote> B.;Bacteria B,bacteria
+113,29953484,Alloiococcus otitis A,Otitis
+114,29953474,,viruses
+115,29953474,,viruses
+116,29953474,Chikungunya virus C,chikungunya
+117,29953474,Chikungunya virus C,virus
+118,29953474,Aedes <genus> A,Aedes
+119,29953474,Aedes <genus> A,Aedes
+120,29953474,,viruses
+121,29953464,Bacteria <prokaryote> B.;Bacteria B,bacteria
+122,29953464,Enterococcus dispar E.;Enterococcus faecalis E.;Enterococcus durans E.;Enterococcus pallens E.;Enterococcus malodoratus E.;Enterococcus gilvus E.;Enterococcus mundtii E.;Enterococcus pseudoavium E.;Enterococcus faecium E.;Enterococcus casseliflavus E.;Enterococcus gallinarum E.;Enterococcus hirae E.;Enterococcus raffinosus E.;Enterococcus cecorum E.;Enterococcus avium E,Enterococcus
+123,29953464,Bacteria <prokaryote> B.;Bacteria B,bacteria
+124,29953464,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O124:H40 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli UTI89 E.;Escherichia coli O55:H7 E.;Escherichia coli O6 E,E.
+125,29953464,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+126,29953464,Pseudomonas aeruginosa P,aeruginosa
+127,29953464,,Enterobacteriaceae
+128,29953461,Shewanella algae S,algae
+129,29953461,Turbo cornutus T,Turbo
+130,29953461,Shewanella algae S,algae
+131,29953460,California encephalitis orthobunyavirus CEOV;California encephalitis virus  CEV;California encephalitis serogroup virus LEIV CESL,California
+132,29953457,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+133,29953453,,viruses
+134,29953453,,viruses
+135,29953453,Human poliovirus 2 HPV;Human poliovirus 1 HPV;Human poliovirus 3 HP,poliovirus
+136,29953453,,viruses
+137,29953451,Chlamydia pneumoniae C.;Klebsiella pneumoniae subsp. pneumoniae K.;Mycoplasma pneumoniae M.;Nocardia pneumoniae N.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Streptococcus pneumoniae S.;Klebsiella pneumoniae subsp. ozaenae K,pneumoniae
+138,29953451,Acinetobacter johnsonii A.;Acinetobacter baumannii A.;Acinetobacter calcoaceticus A.;Acinetobacter schindleri A.;Acinetobacter ursingii A.;Acinetobacter haemolyticus A.;Acinetobacter radioresistens A.;Acinetobacter parvus A.;Acinetobacter lwoffii A.;Acinetobacter junii A,Acinetobacter
+139,29953451,Acinetobacter baumannii A,baumannii
+140,29953451,Candida glabrata C.;Candida nivariensis C.;Candida albicans C.;Candida africana C.;Candida orthopsilosis C.;Candida zeylanoides C.;Candida pseudoaaseri C.;Candida viswanathii C.;Candida haemulonis C.;Candida parapsilosis C.;Candida subhashii C.;Candida metapsilosis C.;Candida pararugosa C.;Candida magnoliae C.;Candida pseudohaemulonii C.;Candida tropicalis C.;Candida intermedia C.;Scopulariopsis candida S.;Candida dubliniensis C,Candida
+141,29953449,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+142,29953449,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+143,29953449,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+144,29953440,Mycobacterium lacus M.;Mycobacterium elephantis M.;Mycobacterium aubagnense M.;Mycobacterium conspicuum M.;Mycobacterium heckeshornense M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium flavescens M.;Mycobacterium avium complex M.;Mycobacterium kubicae M.;Mycobacterium lentiflavum M.;Mycobacterium bohemicum M.;Mycobacterium florentinum M.;Mycobacterium genavense M.;Mycobacterium septicum M.;Mycobacterium bovis M.;Mycobacterium fortuitum M.;Mycobacterium marinum M.;Mycobacterium tuberculosis C M.;Mycobacterium hassiacum M.;Mycobacterium peregrinum M.;Mycobacterium gordonae M.;Mycobacterium cookii M.;Mycobacterium intracellulare M.;Mycobacterium goodii M.;Mycobacterium chubuense M.;Mycobacterium tuberculosis 210 M.;Mycobacterium smegmatis M.;Mycobacterium kansasii M.;Mycobacterium triviale M.;Mycobacterium boenickei M.;Mycobacterium phlei M.;Mycobacterium jacuzzii M.;Mycobacterium brumae M.;Mycobacterium chimaera M.;Mycobacterium canariasense M.;Mycobacterium holsaticum M.;Mycobacterium parmense M.;Mycobacterium mucogenicum M.;Mycobacterium alvei M.;Mycobacterium ulcerans M.;Mycobacterium saskatchewanense M.;Mycobacterium abscessus M.;Mycobacterium aurum M.;Mycobacterium confluentis M.;Mycobacterium phocaicum M.;Mycobacterium hodleri M.;Mycobacterium heidelbergense M.;Mycobacterium tuberculosis F11 M.;Mycobacterium branderi M.;Mycobacterium simiae M.;Mycobacterium celatum M.;Mycobacterium gastri M.;Mycobacterium terrae M.;Mycobacterium houstonense M.;Mycobacterium novocastrense M.;Mycobacterium africanum M.;Mycobacterium kumamotonense M.;Mycobacterium leprae M.;Mycobacterium tuberculosis M.;Mycobacterium parascrofulaceum M.;Mycobacterium vaccae M.;Mycobacterium barrassiae M.;Mycobacterium triplex M.;Mycobacterium nonchromogenicum M.;Mycobacterium cosmeticum M.;Mycobacterium tuberculosis H37Rv M.;Mycobacterium asiaticum M.;Mycobacterium avium M.;Mycobacterium brisbanense M.;Mycobacterium microti M.;Mycobacterium wolinskyi M.;Mycobacterium thermoresistibile M.;Mycobacterium conceptionense M.;Mycobacterium mageritense M.;Mycobacterium chelonae M.;Mycobacterium doricum M.;Mycobacterium haemophilum M.;Mycobacterium malmoense M.;Mycobacterium monacense M.;Mycobacterium xenopi M.;Mycobacterium gadium M.;Mycobacterium porcinum M.;Mycobacterium scrofulaceum M.;Mycobacterium szulgai M.;Mycobacterium seoulense M.;Mycobacterium immunogenum M.;Mycobacterium neoaurum M.;Mycobacterium colombiense M.;Mycobacterium arupense M.;Mycobacterium nebraskense M.;Mycobacterium palustre M.;Mycobacterium interjectum M.;Mycobacterium abscessus subsp. massiliense M.;Mycobacterium abscessus subsp. bolletii M.;Mycobacterium tusciae M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium neworleansense M.;Mycobacterium shimoidei M,Mycobacterium
+145,29953440,Mycobacterium leprae M,leprae
+146,29953440,Mycobacterium leprae M,M.
+147,29953440,Mycobacterium leprae M,leprae
+148,29953440,Mycobacterium leprae M,M.
+149,29953440,Mycobacterium leprae M,leprae
+150,29953440,Mycobacterium leprae M,M.
+151,29953440,Mycobacterium leprae M,leprae
+152,29953440,Mycobacterium leprae M,M.
+153,29953440,Mycobacterium leprae M,leprae
+154,29953440,Mycobacterium leprae M,M.
+155,29953440,Mycobacterium leprae M,leprae
+156,29953440,Mycobacterium leprae M,M.
+157,29953440,Mycobacterium leprae M,leprae
+158,29953440,Mycobacterium leprae M,M.
+159,29953440,Mycobacterium leprae M,leprae
+160,29953438,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,Dengue
+161,29953438,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+162,29953438,Dengue virus 2 DENV;Dengue virus 3 DENV;Dengue virus 4 DENV;Dengue virus 1 DENV;Dengue virus DENV;Dengue virus  DEN,dengue
+163,29953436,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+164,29953429,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,human
+165,29953429,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,immunodeficiency
+166,29953429,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,virus
+167,29953429,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+168,29953429,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+169,29953428,Clostridium botulinum A C.;Clostridium botulinum  C.;Clostridium perfringens C.;Clostridium malenominatum C.;Clostridium botulinum C C.;Clostridium botulinum B1 C.;Clostridium botulinum E C.;Clostridium leptum C.;Clostridium carnis C.;Clostridium sphenoides C.;Clostridium cadaveris C.;Clostridium botulinum B C.;Clostridium tetani C.;Clostridium botulinum E1 C.;Clostridium butyricum C.;Clostridium bolteae C.;Clostridium novyi C.;Clostridium perfringens D C.;Clostridium moniliforme C.;Clostridium paraputrificum C.;Clostridium botulinum Ba4 C.;Clostridium perfringens D  C.;Clostridium botulinum D C.;Clostridium perfringens ATCC 13124 C.;Clostridium perfringens E C.;Clostridium beijerinckii C.;Clostridium fallax C.;Clostridium perfringens B C.;Clostridium perfringens str. 13 C.;Clostridium botulinum A2 str. Kyoto C.;Clostridium perfringens A C.;Clostridium baratii C.;Clostridium tertium C.;Clostridium haemolyticum C.;Clostridium cochlearium C.;Clostridium celatum C.;Clostridium botulinum F C.;Clostridium septicum C.;Clostridium perfringens C C.;Clostridium sardiniense C.;Clostridium argentinense C.;Clostridium clostridioforme C.;Clostridium perfringens SM101 C.;Clostridium innocuum C.;Clostridium putrefaciens C.;Clostridium sporogenes C.;Clostridium indolis C.;Clostridium botulinum A3 C.;Clostridium cocleatum C.;Clostridium botulinum Bf  C.;Clostridium piliforme C.;Clostridium symbiosum C.;Clostridium botulinum C.;Clostridium subterminale C,Clostridium
+170,29953428,Clostridium perfringens D  C.;Clostridium perfringens C.;Clostridium perfringens C C.;Clostridium perfringens ATCC 13124 C.;Clostridium perfringens E C.;Clostridium perfringens B C.;Clostridium perfringens SM101 C.;Clostridium perfringens str. 13 C.;Clostridium perfringens A C.;Clostridium perfringens D C,perfringens
+171,29953428,Klebsiella variicola K.;Klebsiella pneumoniae subsp. pneumoniae K.;Klebsiella oxytoca K.;Klebsiella granulomatis K.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Klebsiella pneumoniae subsp. ozaenae K.;Klebsiella aerogenes K,Klebsiella
+172,29953428,Chlamydia pneumoniae C.;Klebsiella pneumoniae subsp. pneumoniae K.;Mycoplasma pneumoniae M.;Nocardia pneumoniae N.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Streptococcus pneumoniae S.;Klebsiella pneumoniae subsp. ozaenae K,pneumoniae
+173,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,human
+174,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,immunodeficiency
+175,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,virus
+176,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+177,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+178,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+179,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+180,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+181,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+182,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+183,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+184,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+185,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+186,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+187,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+188,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+189,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+190,29953427,Human immunodeficiency virus 2 HIV;Human immunodeficiency virus 1 HI,HIV
+191,29953425,Norovirus N,norovirus
+192,29953425,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia vulneris E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia albertii E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia fergusonii E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E,Escherichia
+193,29953425,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+194,29953425,Shigella flexneri 5 str. 8401 S.;Shigella dysenteriae Sd197 S.;Shigella boydii S.;Shigella flexneri 2a str. 301 S.;Shigella flexneri 5 S.;Shigella sonnei 53G S.;Shigella boydii CDC 3083-94 S.;Shigella flexneri  S.;Shigella dysenteriae S.;Shigella dysenteriae 1012 S.;Shigella dysenteriae M131649 S.;Shigella boydii Sb227 S.;Shigella sonnei S.;Shigella flexneri 2a str. 2457T S.;Shigella flexneri 2a S.;Shigella S.;Shigella flexneri S.;Shigella sonnei Ss046 S,Shigella
+195,29953425,Norovirus N,norovirus
+196,29953425,Shigella flexneri 5 str. 8401 S.;Shigella dysenteriae Sd197 S.;Shigella boydii S.;Shigella flexneri 2a str. 301 S.;Shigella flexneri 5 S.;Shigella sonnei 53G S.;Shigella boydii CDC 3083-94 S.;Shigella flexneri  S.;Shigella dysenteriae S.;Shigella dysenteriae 1012 S.;Shigella dysenteriae M131649 S.;Shigella boydii Sb227 S.;Shigella sonnei S.;Shigella flexneri 2a str. 2457T S.;Shigella flexneri 2a S.;Shigella S.;Shigella flexneri S.;Shigella sonnei Ss046 S,Shigella
+197,29953425,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O124:H40 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli UTI89 E.;Escherichia coli O55:H7 E.;Escherichia coli O6 E,E.
+198,29953425,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+199,29953423,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+200,29953423,Hepatitis C virus HC,C
+201,29953423,Hepatitis C virus HCV,HCV
+202,29953423,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+203,29953423,Hepatitis C virus HC,C
+204,29953423,Hepatitis C virus HCV,HCV
+205,29953423,Hepatitis C virus HCV,HCV
+206,29953423,Hepatitis C virus HCV,HCV
+207,29953423,Hepatitis C virus HCV,HCV
+208,29953423,Hepatitis C virus HCV,HCV
+209,29953423,Hepatitis C virus HCV,HCV
+210,29953423,Hepatitis C virus HCV,HCV
+211,29953423,Hepatitis C virus HCV,HCV
+212,29953423,Hepatitis C virus HCV,HCV
+213,29953423,Hepatitis C virus HCV,HCV
+214,29953423,Hepatitis C virus HCV,HCV
+215,29953421,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+216,29953421,Hepatitis E virus HE,E
+217,29953421,Hepatitis E virus HE,virus
+218,29953421,Hepatitis E virus HEV,HEV
+219,29953421,Hepatitis E virus HEV,HEV
+220,29953421,Hepatitis E virus HEV,HEV
+221,29953421,Hepatitis E virus HEV,HEV
+222,29953421,Hepatitis E virus HEV,HEV
+223,29953421,Hepatitis E virus HEV,HEV
+224,29953421,Hepatitis E virus HEV,HEV
+225,29953421,Hepatitis E virus HEV,HEV
+226,29953421,Hepatitis E virus HEV,HEV
+227,29953417,Bacteria <prokaryote> B.;Bacteria B,bacteria
+228,29953417,Fungi F,fungi
+229,29953417,,viruses
+230,29953399,Paracoccidioides brasiliensis P.;Sporothrix brasiliensis S.;Nocardia brasiliensis N.;Aspergillus brasiliensis A,brasiliensis
+231,29953399,Aspergillus brasiliensis A,A.
+232,29953399,Paracoccidioides brasiliensis P.;Sporothrix brasiliensis S.;Nocardia brasiliensis N.;Aspergillus brasiliensis A,brasiliensis
+233,29953399,Aspergillus brasiliensis A,A.
+234,29953399,Paracoccidioides brasiliensis P.;Sporothrix brasiliensis S.;Nocardia brasiliensis N.;Aspergillus brasiliensis A,brasiliensis
+235,29953396,Cordyceps staphylinidicola C,Cordyceps
+236,29953396,Streptococcus sinensis S.;Eggerthella sinensis E,sinensis
+237,29953396,Streptococcus sinensis S.;Eggerthella sinensis E,sinensis
+238,29953396,Streptococcus sinensis S.;Eggerthella sinensis E,sinensis
+239,29953395,Coprinopsis cinerea C,Coprinopsis
+240,29953394,Oncorhynchus mykiss O,Oncorhynchus
+241,29953362,Bacteria <prokaryote> B.;Bacteria B,bacteria
+242,29953362,Bacteria <prokaryote> B.;Bacteria B,bacteria
+243,29953362,Bacteria <prokaryote> B.;Bacteria B,bacteria
+244,29953361,Streptococcus sinensis S.;Eggerthella sinensis E,sinensis
+245,29953361,Streptococcus sinensis S.;Eggerthella sinensis E,sinensis
+246,29953353,Candida tropicalis C,tropicalis
+247,29953353,Saccharomyces cerevisiae S,Saccharomyces
+248,29953353,Saccharomyces cerevisiae S,cerevisiae
+249,29953353,Candida tropicalis C,C.
+250,29953353,Candida tropicalis C,tropicalis
+251,29953353,Saccharomyces cerevisiae S,S.
+252,29953353,Saccharomyces cerevisiae S,cerevisiae
+253,29953353,Saccharomyces cerevisiae S,S.
+254,29953353,Saccharomyces cerevisiae S,cerevisiae
+255,29953334,Pantoea ananatis P.;Pantoea dispersa P.;Pantoea agglomerans P,Pantoea
+256,29953334,Pantoea ananatis P,ananatis
+257,29953334,Rasbo bacterium R,bacterium
+258,29953334,Pantoea ananatis P,P.
+259,29953334,Pantoea ananatis P,ananatis
+260,29953334,Bacteria <prokaryote> B.;Bacteria B,bacteria
+261,29953317,Rotavirus C RCV;Rotavirus I RIV;Rotavirus H RHV;Rotavirus B RBV;Rotavirus A RA,rotavirus
+262,29953317,Rotavirus C RCV;Rotavirus I RIV;Rotavirus H RHV;Rotavirus B RBV;Rotavirus A RA,rotavirus
+263,29953317,Rotavirus C RCV;Rotavirus I RIV;Rotavirus H RHV;Rotavirus B RBV;Rotavirus A RA,rotavirus
+264,29953317,Rotavirus C RCV;Rotavirus I RIV;Rotavirus H RHV;Rotavirus B RBV;Rotavirus A RA,rotavirus
+265,29953315,Talaromyces marneffei T.;Talaromyces purpureogenus T.;Talaromyces piceae T.;Talaromyces verruculosus T.;Talaromyces rugulosus T,Talaromyces
+266,29953315,Talaromyces marneffei T,marneffei
+267,29953314,Toxoplasma gondii T,Toxoplasma
+268,29953314,Toxoplasma gondii T,gondii
+269,29953314,Toxoplasma gondii T,T.
+270,29953314,Toxoplasma gondii T,gondii
+271,29953314,Toxoplasma gondii T,T.
+272,29953314,Toxoplasma gondii T,gondii
+273,29953314,Toxoplasma gondii T,T.
+274,29953314,Toxoplasma gondii T,gondii
+275,29953314,Toxoplasma gondii T,T.
+276,29953314,Toxoplasma gondii T,gondii
+277,29953314,Toxoplasma gondii T,T.
+278,29953314,Toxoplasma gondii T,gondii
+279,29953314,Toxoplasma gondii T,T.
+280,29953314,Toxoplasma gondii T,gondii
+281,29953313,Mycobacterium lacus M.;Mycobacterium elephantis M.;Mycobacterium aubagnense M.;Mycobacterium conspicuum M.;Mycobacterium heckeshornense M.;Mycobacterium tuberculosis CDC1551 M.;Mycobacterium flavescens M.;Mycobacterium avium complex M.;Mycobacterium kubicae M.;Mycobacterium lentiflavum M.;Mycobacterium bohemicum M.;Mycobacterium florentinum M.;Mycobacterium genavense M.;Mycobacterium septicum M.;Mycobacterium bovis M.;Mycobacterium fortuitum M.;Mycobacterium marinum M.;Mycobacterium tuberculosis C M.;Mycobacterium hassiacum M.;Mycobacterium peregrinum M.;Mycobacterium gordonae M.;Mycobacterium cookii M.;Mycobacterium intracellulare M.;Mycobacterium goodii M.;Mycobacterium chubuense M.;Mycobacterium tuberculosis 210 M.;Mycobacterium smegmatis M.;Mycobacterium kansasii M.;Mycobacterium triviale M.;Mycobacterium boenickei M.;Mycobacterium phlei M.;Mycobacterium jacuzzii M.;Mycobacterium brumae M.;Mycobacterium chimaera M.;Mycobacterium canariasense M.;Mycobacterium holsaticum M.;Mycobacterium parmense M.;Mycobacterium mucogenicum M.;Mycobacterium alvei M.;Mycobacterium ulcerans M.;Mycobacterium saskatchewanense M.;Mycobacterium abscessus M.;Mycobacterium aurum M.;Mycobacterium confluentis M.;Mycobacterium phocaicum M.;Mycobacterium hodleri M.;Mycobacterium heidelbergense M.;Mycobacterium tuberculosis F11 M.;Mycobacterium branderi M.;Mycobacterium simiae M.;Mycobacterium celatum M.;Mycobacterium gastri M.;Mycobacterium terrae M.;Mycobacterium houstonense M.;Mycobacterium novocastrense M.;Mycobacterium africanum M.;Mycobacterium kumamotonense M.;Mycobacterium leprae M.;Mycobacterium tuberculosis M.;Mycobacterium parascrofulaceum M.;Mycobacterium vaccae M.;Mycobacterium barrassiae M.;Mycobacterium triplex M.;Mycobacterium nonchromogenicum M.;Mycobacterium cosmeticum M.;Mycobacterium tuberculosis H37Rv M.;Mycobacterium asiaticum M.;Mycobacterium avium M.;Mycobacterium brisbanense M.;Mycobacterium microti M.;Mycobacterium wolinskyi M.;Mycobacterium thermoresistibile M.;Mycobacterium conceptionense M.;Mycobacterium mageritense M.;Mycobacterium chelonae M.;Mycobacterium doricum M.;Mycobacterium haemophilum M.;Mycobacterium malmoense M.;Mycobacterium monacense M.;Mycobacterium xenopi M.;Mycobacterium gadium M.;Mycobacterium porcinum M.;Mycobacterium scrofulaceum M.;Mycobacterium szulgai M.;Mycobacterium seoulense M.;Mycobacterium immunogenum M.;Mycobacterium neoaurum M.;Mycobacterium colombiense M.;Mycobacterium arupense M.;Mycobacterium nebraskense M.;Mycobacterium palustre M.;Mycobacterium interjectum M.;Mycobacterium abscessus subsp. massiliense M.;Mycobacterium abscessus subsp. bolletii M.;Mycobacterium tusciae M.;Mycobacterium tuberculosis str. Haarlem M.;Mycobacterium neworleansense M.;Mycobacterium shimoidei M,Mycobacterium
+282,29953313,Mycobacterium bovis M.;Candidatus Helicobacter bovis C.;Corynebacterium bovis C,bovis
+283,29953313,Brucella melitensis biovar Abortus 2308 B.;Brucella abortus S19 B.;Brucella abortus bv. 1 str. 9-941 B.;Brucella abortus bv. 1 B.;Brucella abortus bv. 2 str. 86/8/59 B.;Brucella abortus B.;Brucella abortus bv. 4 str. 292 B.;Chlamydia abortus C,abortus
+284,29953313,Mycobacterium bovis M,M.
+285,29953313,Mycobacterium bovis M.;Candidatus Helicobacter bovis C.;Corynebacterium bovis C,bovis
+286,29953313,,virus
+287,29953313,SARS-related coronavirus SEVERE ACUTE RESPIRATORY SYNDROME;Human coronavirus 229E HCV;Human coronavirus HKU1 HCV;Middle East respiratory syndrome-related coronavirus MERS;Human coronavirus NL63 HCV;SARS coronavirus SEVERE ACUTE RESPIRATORY SYNDROM,coronavirus
+288,29953313,Leptospira biflexa L.;Leptospira noguchii L.;Leptospira broomii L.;Leptospira interrogans L.;Leptospira kirschneri L.;Leptospira weilii L.;Leptospira L.;Leptospira inadai L.;Leptospira santarosai L.;Leptospira borgpetersenii L,Leptospira
+289,29953313,Leptospira interrogans L,interrogans
+290,29953313,Mycobacterium bovis M,M.
+291,29953313,Mycobacterium bovis M.;Candidatus Helicobacter bovis C.;Corynebacterium bovis C,bovis
+292,29953312,,virus
+293,29953312,,deltacoronavirus
+294,29953312,,virus
+295,29953312,,viruses
+296,29953311,,Poxvirus
+297,29953311,,avipoxvirus
+298,29953311,,virus
+299,29953311,,virus
+300,29953311,,virus
+301,29953306,,cytomegalovirus
+302,29953303,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+303,29953303,Hepatitis B virus HB,B
+304,29953303,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+305,29953303,Hepatitis B virus HB,B
+306,29953303,Influenza B virus IBV;Hepatitis B virus HB,virus
+307,29953303,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,hepatitis
+308,29953303,Hepatitis B virus HB,B
+309,29953225,,virus
+310,29953201,Apophysomyces elegans A.;Granulicatella elegans G.;Actinomucor elegans A.;Nocardia elegans N,elegans
+311,29953169,Hepatitis A virus HAV;Hepatitis C virus HCV;Hepatitis B virus HBV;Hepatitis delta virus HDV;Hepatitis E virus HE,Hepatitis
+312,29953169,Hepatitis C virus HC,C
+313,29953169,Influenza C virus ICV;Hepatitis C virus HC,virus
+314,29953169,Hepatitis C virus HCV,HCV
+315,29953169,Hepatitis C virus HCV,HCV
+316,29953169,Hepatitis C virus HCV,HCV
+317,29953169,Hepatitis C virus HCV,HCV
+318,29953169,Hepatitis C virus HCV,HCV
+319,29953169,Hepatitis C virus HCV,HCV
+320,29953102,Campylobacter rectus C,rectus
+321,29953058,Fungi F,fungi
+322,29953058,Candida glabrata C.;Candida nivariensis C.;Candida albicans C.;Candida africana C.;Candida orthopsilosis C.;Candida zeylanoides C.;Candida pseudoaaseri C.;Candida viswanathii C.;Candida haemulonis C.;Candida parapsilosis C.;Candida subhashii C.;Candida metapsilosis C.;Candida pararugosa C.;Candida magnoliae C.;Candida pseudohaemulonii C.;Candida tropicalis C.;Candida intermedia C.;Scopulariopsis candida S.;Candida dubliniensis C,Candida
+323,29953055,Klebsiella variicola K.;Klebsiella pneumoniae subsp. pneumoniae K.;Klebsiella oxytoca K.;Klebsiella granulomatis K.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Klebsiella pneumoniae subsp. ozaenae K.;Klebsiella aerogenes K,Klebsiella
+324,29953055,Klebsiella oxytoca K,oxytoca
+325,29953055,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia vulneris E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia albertii E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia fergusonii E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E,Escherichia
+326,29953055,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+327,29953055,Enterobacter hormaechei E.;Enterobacter ludwigii E.;Enterobacter asburiae E.;Enterobacter cloacae E.;Enterobacter kobei E.;Enterobacter cancerogenus E,Enterobacter
+328,29953055,Enterobacter cloacae E,cloacae
+329,29953055,Moraxella catarrhalis M.;Moraxella lacunata M.;Moraxella nonliquefaciens M.;Moraxella atlantae M.;Moraxella osloensis M,Moraxella
+330,29953055,Klebsiella variicola K.;Klebsiella pneumoniae subsp. pneumoniae K.;Klebsiella oxytoca K.;Klebsiella granulomatis K.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Klebsiella pneumoniae subsp. ozaenae K.;Klebsiella aerogenes K,Klebsiella
+331,29953055,Klebsiella oxytoca K,oxytoca
+332,29953055,Enterobacter hormaechei E.;Enterobacter ludwigii E.;Enterobacter asburiae E.;Enterobacter cloacae E.;Enterobacter kobei E.;Enterobacter cancerogenus E,Enterobacter
+333,29953055,Enterobacter cloacae E,cloacae
+334,29953055,Moraxella catarrhalis M.;Moraxella lacunata M.;Moraxella nonliquefaciens M.;Moraxella atlantae M.;Moraxella osloensis M,Moraxella
+335,29953053,Fungi F,fungi
+336,29953053,Candida glabrata C.;Candida nivariensis C.;Candida albicans C.;Candida africana C.;Candida orthopsilosis C.;Candida zeylanoides C.;Candida pseudoaaseri C.;Candida viswanathii C.;Candida haemulonis C.;Candida parapsilosis C.;Candida subhashii C.;Candida metapsilosis C.;Candida pararugosa C.;Candida magnoliae C.;Candida pseudohaemulonii C.;Candida tropicalis C.;Candida intermedia C.;Scopulariopsis candida S.;Candida dubliniensis C,Candida
+337,29953053,Fungi F,fungi
+338,29953053,Aspergillus fumisynnematus A.;Aspergillus neoflavipes A.;Aspergillus fumigatiaffinis A.;Aspergillus niger A.;Aspergillus chevalieri A.;Aspergillus neoniveus A.;Aspergillus ochraceopetaliformis A.;Aspergillus lentulus A.;Aspergillus rugulosus A.;Aspergillus restrictus A.;Aspergillus clavatus A.;Aspergillus spinosus A.;Aspergillus alabamensis A.;Aspergillus granulosus A.;Aspergillus ochraceus A.;Aspergillus quadrilineatus A.;Aspergillus tamarii A.;Aspergillus aculeatus A.;Aspergillus versicolor A.;Aspergillus viridinutans A.;Aspergillus alliaceus A.;Aspergillus chlamydosporus A.;Aspergillus clavatonanicus A.;Aspergillus pseudoglaucus A.;Aspergillus amstelodami A.;Aspergillus terreus A.;Aspergillus fischeri A.;Aspergillus candidus A.;Aspergillus brasiliensis A.;Aspergillus oryzae A.;Aspergillus persii A.;Aspergillus ustus A.;Aspergillus glaucus A.;Aspergillus deflectus A.;Aspergillus sydowii A.;Aspergillus flavus A.;Aspergillus japonicus A.;Aspergillus nidulans A.;Aspergillus conicus A.;Aspergillus nomius A.;Aspergillus tritici A.;Aspergillus carneus A.;Aspergillus janus A.;Aspergillus udagawae A.;Aspergillus acidus A.;Aspergillus fumigatus A.;Aspergillus thermomutatus A.;Aspergillus insolitus A.;Aspergillus sclerotiorum A.;Aspergillus tubingensis A.;Aspergillus caesiellus A.;Aspergillus unguis A.;Aspergillus calidoustus A.;Aspergillus avenaceus A,Aspergillus
+339,29953048,Alloiococcus otitis A,otitis
+340,29953048,Alloiococcus otitis A,otitis
+341,29953037,Bacteria <prokaryote> B.;Bacteria B,bacteria
+342,29953020,Bacteria <prokaryote> B.;Bacteria B,bacteria
+343,29953020,Staphylococcus hominis subsp. hominis S.;Staphylococcus saccharolyticus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus vitulinus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus intermedius S.;Staphylococcus saprophyticus S.;Staphylococcus xylosus S.;Staphylococcus warneri S.;Staphylococcus gallinarum S.;Staphylococcus cohnii subsp. urealyticus S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S.;Staphylococcus epidermidis S.;Staphylococcus delphini S.;Staphylococcus auricularis S.;Staphylococcus hyicus S.;Staphylococcus lugdunensis S.;Staphylococcus capitis subsp. capitis S.;Staphylococcus pasteuri S.;Staphylococcus haemolyticus S.;Staphylococcus hominis subsp. novobiosepticus S.;Staphylococcus sciuri S.;Staphylococcus aureus S.;Staphylococcus schleiferi subsp. schleiferi S.;Staphylococcus equorum S.;Staphylococcus cohnii subsp. cohnii S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus capitis subsp. ureolyticus S.;Staphylococcus simulans S.;Staphylococcus caprae S.;Staphylococcus schleiferi subsp. coagulans S,Staphylococcus
+344,29953020,Staphylococcus aureus S.;Staphylococcus aureus subsp. aureus S.;Staphylococcus aureus subsp. Aureus S.;Staphylococcus aureus subsp. anaerobius S.;Staphylococcus aureus subsp. aureus COL S.;Staphylococcus aureus RF122 S,aureus
+345,29953020,Pseudomonas putida P.;Pseudomonas mendocina P.;Pseudomonas luteola P.;Pseudomonas monteilii P.;Pseudomonas chlororaphis P.;Pseudomonas aeruginosa P.;Pseudomonas fluorescens P.;Pseudomonas alcaligenes P.;Pseudomonas oryzihabitans P.;Pseudomonas stutzeri P.;Pseudomonas pseudoalcaligenes P.;Pseudomonas mosselii P.;Pseudomonas otitidis P.;Pseudomonas pertucinogena P,Pseudomonas
+346,29953020,Pseudomonas aeruginosa P,aeruginosa
+347,29953020,Haemophilus influenzae H,influenzae
+348,29953020,,bacteria.The
+349,29953020,Bacteria <prokaryote> B.;Bacteria B,bacteria
+350,29952986,Bacteria <prokaryote> B.;Bacteria B,bacteria
+351,29952986,Bacteria <prokaryote> B.;Bacteria B,bacteria
+352,29952986,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia vulneris E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia albertii E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia fergusonii E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E,Escherichia
+353,29952986,Escherichia coli O55:H6 E.;Escherichia coli O103:HNM E.;Escherichia coli O63:H6 E.;Escherichia coli ETEC H10407 E.;Escherichia coli E2348/69 E.;Escherichia coli 101-1 E.;Escherichia coli E22 E.;Escherichia coli O128:H2 E.;Escherichia coli O15:NM E.;Escherichia coli OUT:H45 E.;Escherichia coli O103:H2 E.;Escherichia coli O55:H51 E.;Escherichia coli E110019 E.;Escherichia coli E.;Escherichia coli 53638 E.;Escherichia coli E24377A E.;Escherichia coli UTI89 E.;Escherichia coli O157:H7 E.;Escherichia coli O127:H6 E.;Escherichia coli 042 E.;Escherichia coli O111:H2 E.;Escherichia coli O153:H21 E.;Escherichia coli O157:H- E.;Escherichia coli O111:NM E.;Escherichia coli EAEC 042 E.;Escherichia coli O26:H11 E.;Escherichia coli  E.;Escherichia coli O157:H7 EDL933 E.;Escherichia coli O111:H- E.;Escherichia coli O26:H- E.;Escherichia coli CFT073 E.;Escherichia coli B171 E.;Escherichia coli O157:H45 E.;Escherichia coli O157:H7  E.;Escherichia coli B7A E.;Escherichia coli O119:H6 E.;Escherichia coli F11 E.;Escherichia coli O55:H7 E.;Escherichia coli O124:H40 E.;Escherichia coli O6 E.;Campylobacter coli C,coli
+354,29952986,Klebsiella variicola K.;Klebsiella pneumoniae subsp. pneumoniae K.;Klebsiella oxytoca K.;Klebsiella granulomatis K.;Klebsiella pneumoniae subsp. rhinoscleromatis K.;Klebsiella pneumoniae subsp. ozaenae K.;Klebsiella aerogenes K,Klebsiella
+355,29952986,Bacteria <prokaryote> B.;Bacteria B,bacteria
+356,29952986,Enterococcus dispar E.;Enterococcus faecalis E.;Enterococcus durans E.;Enterococcus pallens E.;Enterococcus malodoratus E.;Enterococcus gilvus E.;Enterococcus mundtii E.;Enterococcus pseudoavium E.;Enterococcus faecium E.;Enterococcus casseliflavus E.;Enterococcus gallinarum E.;Enterococcus hirae E.;Enterococcus raffinosus E.;Enterococcus cecorum E.;Enterococcus avium E,Enterococcus
+357,29952986,Bacteria <prokaryote> B.;Bacteria B,bacteria
+358,29952986,Bacteria <prokaryote> B.;Bacteria B,bacteria
+359,29952985,Toxoplasma gondii T,Toxoplasma
+360,29952985,Toxoplasma gondii T,gondii
+361,29952985,Toxoplasma gondii T,T.
+362,29952985,Toxoplasma gondii T,gondii
+363,29952983,Streptococcus suis S.;Streptococcus equi subsp. zooepidemicus S.;Streptococcus pasteurianus S.;Streptococcus dysgalactiae subsp. equisimilis S.;Streptococcus salivarius S.;Streptococcus intermedius S.;Streptococcus lutetiensis S.;Streptococcus pneumoniae S.;Streptococcus iniae S.;Streptococcus gallolyticus subsp. gallolyticus S.;Streptococcus infantarius subsp. infantarius S.;Streptococcus acidominimus S.;Streptococcus agalactiae S.;Streptococcus criceti S.;Streptococcus cristatus S.;Streptococcus dysgalactiae subsp. dysgalactiae S.;Streptococcus constellatus subsp. constellatus S.;Streptococcus sobrinus S.;Streptococcus porcinus S.;Streptococcus oralis S.;Streptococcus constellatus subsp. pharyngis S.;Streptococcus sinensis S.;Streptococcus parasanguinis S.;Streptococcus equi subsp. equi S.;Streptococcus pseudoporcinus S.;Streptococcus vestibularis S.;Streptococcus massiliensis S.;Streptococcus mitis S.;Streptococcus canis S.;Streptococcus mutans S.;Streptococcus pseudopneumoniae S.;Streptococcus sanguinis S.;Streptococcus gordonii S.;Streptococcus urinalis S.;Streptococcus anginosus S.;Streptococcus pyogenes S.;Streptococcus equinus S.;Streptococcus ratti S,Streptococcus
+364,29952983,Streptococcus constellatus subsp. pharyngis S.;Streptococcus constellatus subsp. constellatus S,constellatus
+365,29952975,Burkholderia pseudomallei 1710b B.;Burkholderia pyrrocinia B.;Burkholderia mallei JHU B.;Burkholderia mallei SAVP1 B.;Burkholderia pseudomallei 1710a B.;Burkholderia cepacia B.;Burkholderia mallei FMH B.;Burkholderia mallei B.;Burkholderia stabilis B.;Burkholderia mallei ATCC 23344 B.;Burkholderia cenocepacia B.;Burkholderia pseudomallei K96243 B.;Burkholderia ambifaria B.;Burkholderia mallei ATCC 10399 B.;Burkholderia gladioli B.;Burkholderia pseudomallei 668 B.;Burkholderia anthina B.;Burkholderia pseudomallei 1106b B.;Burkholderia dolosa B.;Burkholderia pseudomallei 1655 B.;Burkholderia vietnamiensis B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 406e B.;Burkholderia mallei GB8 horse 4 B.;Burkholderia pseudomallei 1106a B.;Burkholderia multivorans B,Burkholderia
+366,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,pseudomallei
+367,29952975,Bacteria <prokaryote> B.;Bacteria B,Bacteria
+368,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,B.
+369,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,pseudomallei
+370,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,B.
+371,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,pseudomallei
+372,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,B.
+373,29952975,Burkholderia pseudomallei 1710a B.;Burkholderia pseudomallei 1655 B.;Burkholderia pseudomallei B.;Burkholderia pseudomallei 406e B.;Burkholderia pseudomallei 1710b B.;Burkholderia pseudomallei 1106a B.;Burkholderia pseudomallei 668 B.;Burkholderia pseudomallei K96243 B.;Burkholderia pseudomallei 1106b B,pseudomallei
+374,29952967,,Proteobacteria
