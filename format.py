@@ -148,7 +148,7 @@ def addAbstractHelper(v, path):
 				file = open(newpath, 'a')
 			else:
 				file = open(newpath, "w+")
-			file.write(j + " ")
+			file.write(j + ", ")
 			file.close()
 			continue
 		else:
@@ -170,5 +170,25 @@ def combineNewCSV():
 	print('successfully joined all Gemina files')
 	df = df.drop('level_0', axis=1)
 	df.to_csv('combined.csv')
+
+def createUniqueCSV():
+	df = pd.read_csv('full_ontology.csv').sort_values(by=['pathogen'])
+	newdf = pd.DataFrame(columns=['pathogen','comments','disease','infection_atts','links,portal','source','tatts','tsource','ttype', 'symptoms'])
+	for index, row in df.iterrows():
+		if newdf.shape[0] - 1 < 0 or row['pathogen'] != newdf.loc[newdf.shape[0] - 1,'pathogen']:
+			newdf.loc[newdf.shape[0]] = row.append(pd.Series(''))
+		else:
+			for word in str(newdf.loc[newdf.shape[0]-1]['disease']).replace(';',',').split(','):
+				if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0]-1]['disease']).replace(' ', '').replace(';', ',').split(','):
+					newdf.loc[newdf.shape[0] - 1]['disease'] = str(newdf.loc[newdf.shape[0] - 1]['disease']) + (';' + word)
+		if os.path.isfile(os.path.join(row['links'], 'symptoms.txt')):
+			with open(os.path.join(row['links'], 'symptoms.txt'), 'r', encoding='utf-8') as f:
+				for word in f.read().split(','):
+					if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0]-1]['symptoms']).replace(' ', '').split(',') and word != 'nan':
+						newdf.loc[newdf.shape[0]-1]['symptoms'] = str(newdf.loc[newdf.shape[0]-1]['symptoms']) + ' ' + word + ','
+	newdf.to_csv('unique_full_ontology_plus_symptoms.csv')
+
+
+
 
 

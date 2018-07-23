@@ -82,9 +82,9 @@ parasitic protozoa infectious disease,NCBITaxon_5820,has material basis in,Plasm
 penicilliosis,NCBITaxon_37727,has material basis in,Talaromyces marneffei,DOID_0050288
 opportunistic mycosis,NCBITaxon_4751,has material basis in,Fungi,DOID_2473
 Alkhurma hemorrhagic fever,NCBITaxon_172148,has material basis in,Alkhumra hemorrhagic fever virus,DOID_0050308
-trichosporonosis,NCBITaxon_5552,has material basis in,Trichosporon <Trichosporonales>,DOID_0050290
+trichosporonosis,NCBITaxon_5552,has material basis in,Trichosporon,DOID_0050290
 Kyasanur forest disease,NCBITaxon_33743,has material basis in,Kyasanur forest disease virus,DOID_11320
-bacterial infectious disease,NCBITaxon_2,has material basis in,Bacteria <prokaryote>,DOID_104
+bacterial infectious disease,NCBITaxon_2,has material basis in,Bacteria,DOID_104
 foodborne botulism,NCBITaxon_36830,has material basis in,Clostridium botulinum E,DOID_0050352
 foodborne botulism,NCBITaxon_36826,has material basis in,Clostridium botulinum A,DOID_0050352
 foodborne botulism,NCBITaxon_36831,has material basis in,Clostridium botulinum F,DOID_0050352
@@ -102,7 +102,7 @@ endemic typhus,NCBITaxon_42862,has material basis in,Rickettsia felis,DOID_00504
 endemic typhus,NCBITaxon_785,has material basis in,Rickettsia typhi,DOID_0050481
 epidemic typhus,NCBITaxon_782,has material basis in,Rickettsia prowazekii,DOID_0050480
 typhus,NCBITaxon_780,has material basis in,Rickettsia,DOID_11256
-typhus,NCBITaxon_2,has material basis in,Bacteria <prokaryote>,DOID_11256
+typhus,NCBITaxon_2,has material basis in,Bacteria,DOID_11256
 spinal polio,NCBITaxon_12080,has material basis in,Human poliovirus 1,DOID_0050513
 spinal polio,NCBITaxon_12083,has material basis in,Human poliovirus 2,DOID_0050513
 spinal polio,NCBITaxon_12086,has material basis in,Human poliovirus 3,DOID_0050513
@@ -357,9 +357,9 @@ louping ill,NCBITaxon_34613,transmitted by,Ixodes ricinus,DOID_10250
 plague,NCBITaxon_163159,transmitted by,Xenopsylla cheopis,DOID_3482
 Queensland tick typhus,NCBITaxon_65647,transmitted by,Ixodes holocyclus,DOID_10784
 Murray Valley encephalitis,NCBITaxon_162997,transmitted by,Culex annulirostris,DOID_10842
-Western equine encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_10843
+Western equine encephalitis,NCBITaxon_7174,transmitted by,Culex,DOID_10843
 Japanese encephalitis,NCBITaxon_7178,transmitted by,Culex tritaeniorhynchus,DOID_10844
-St. Louis encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_10845
+St. Louis encephalitis,NCBITaxon_7174,transmitted by,Culex,DOID_10845
 Siberian tick typhus,NCBITaxon_49202,transmitted by,Dermacentor marginatus,DOID_10921
 Siberian tick typhus,NCBITaxon_523089,transmitted by,Haemaphysalis concinna,DOID_10921
 trench fever,NCBITaxon_121224,transmitted by,Pediculus humanus corporis,DOID_11101
@@ -378,12 +378,12 @@ hantavirus pulmonary syndrome,NCBITaxon_56211,transmitted by,Calomys laucha,DOID
 hantavirus pulmonary syndrome,NCBITaxon_37020,transmitted by,Oryzomys palustris,DOID_14472
 hantavirus pulmonary syndrome,NCBITaxon_447135,transmitted by,Myodes glareolus,DOID_14472
 hantavirus pulmonary syndrome,NCBITaxon_137207,transmitted by,Oligoryzomys longicaudatus,DOID_14472
-West Nile fever,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_2366
-Mycobacterium avium complex disease,NCBITaxon_2,transmitted by,Bacteria <prokaryote>,DOID_2755
+West Nile fever,NCBITaxon_7174,transmitted by,Culex,DOID_2366
+Mycobacterium avium complex disease,NCBITaxon_2,transmitted by,Bacteria,DOID_2755
 Colorado tick fever,NCBITaxon_34620,transmitted by,Dermacentor andersoni,DOID_4885
-Venezuelan equine encephalitis,NCBITaxon_7174,transmitted by,Culex <genus>,DOID_9584
+Venezuelan equine encephalitis,NCBITaxon_7174,transmitted by,Culex,DOID_9584
 Lassa fever,NCBITaxon_30639,transmitted by,Mastomys,DOID_9537
-yellow fever,NCBITaxon_7180,transmitted by,Haemagogus <genus>,DOID_9682
+yellow fever,NCBITaxon_7180,transmitted by,Haemagogus,DOID_9682
 yellow fever,NCBITaxon_53551,transmitted by,Sabethes,DOID_9682
 Omsk hemorrhagic fever,NCBITaxon_6944,transmitted by,Ixodes,DOID_992
 Omsk hemorrhagic fever,NCBITaxon_34619,transmitted by,Dermacentor,DOID_992

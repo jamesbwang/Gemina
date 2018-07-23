@@ -8,13 +8,19 @@ import abstractTagger
 
 def main():
 	#format.reformat()
-	#analyze.remove('TEST')
+	#analyze.remove('symptoms')
+
 	#analyze.finishedStatsDOI()
 	#analyze.finishedStatsAbstracts()
 	#analyze.examinePathogens()
-	#ontologyCompare.humanPathogenMerge(constants.mFile)
 	#ontologyCompare.mergeOntology()
+	#ontologyCompare.humanPathogenMerge(constants.mFile)
+	#abstractTagger.tagAbstractsOld()
+	#abstractTagger.tagAbstractsMid()
+	#abstractTagger.markFPs('taggedSymptoms.csv')
 	abstractTagger.tagAbstracts()
+	#abstractTagger.tagAbstractsPlaces()
+	#format.createUniqueCSV()
 
 if __name__ == "__main__":
 	main()
