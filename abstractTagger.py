@@ -3,6 +3,7 @@ import pandas as pd
 from pycorenlp import StanfordCoreNLP
 import os
 from shutil import copyfile
+import constants
 
 nlp = StanfordCoreNLP('http://localhost:9000')
 abbrevKey = {}
@@ -20,8 +21,7 @@ possibleNameDescriptions = {'cell', 'forest', 'creek', 'river', 'sewage', 'middl
 							'hendra' 'rotterdam',
 							'mem', 'tai', 'pac', 'mor', 'indian', 'tick-borne', 'avium', 'influenza',
 							'equine', 'vaccinia', 'encephalitis', 'mumps', 'cowpox', 'immunodeficiency', 'whitewater',
-							'rift', 'kunjin', 'ill', 'disease'}
-possibleNameDescriptionsAdj, possibleDiseaseDescriptionsAdj, possibleSymptomDescriptionsAdj = set(), set(), set()
+							'rift', 'kunjin', 'ill', 'disease', 'fever'}
 possibleDiseaseDescriptions = {'appendix', 'bell', 'bite', 'bone', 'breast', 'catheter', 'cord', 'cramp',
 							   'crohn', 'crustacean', 'deer', 'ear', 'finger', 'fish', 'flinders', 'food',
 							   'foot', 'gas', 'hand', 'inclusion', 'infant', 'line', 'liver',
@@ -36,7 +36,7 @@ possibleDiseaseDescriptions = {'appendix', 'bell', 'bite', 'bone', 'breast', 'ca
 							   'mouth', 'neck', 'potential', 'primary', 'prosthetic', 'pulmonary', 'respiratory',
 							   'sclerosing', 'skin', 'spinal', 'surgical', 't-cell', 't-cells', 'tick', 'ticks',
 							   'tiger', 'tigers', 'tract', 'tracts', 'urinary', 'viral', 'virus', 'viruses', 'western',
-							   'white', 'excess', 'facial', 'feeding', 'shellfish', 'chest', 'crabs'}
+							   'white', 'excess', 'facial', 'feeding', 'shellfish', 'chest', 'crabs', 'immunodeficiency', 'subacute'}
 
 possibleSymptomDescriptions = {'ankle', 'arm', 'back', 'blood', 'body', 'brain', 'color', 'chest', 'cornea',
 							   'corneal', 'disturbance', 'ears', 'face', 'gag', 'gland',
@@ -51,8 +51,7 @@ possibleSymptomDescriptions = {'ankle', 'arm', 'back', 'blood', 'body', 'brain',
 
 nameTagIndicators = {'virus', 'complex', 'media', 'agent', 'types', 'variant', 'strain', 'viruses', 'a', 'b', 'c', 'd',
 					 'e', 'f', 'cava', 'brevis', 'cdc', 'atcc', 'medium', 'larvae', 'subtype', 'sp.', 'fetus',
-					 'thompson', 'janus',
-					 'tuberculosis', 'syndrome', 'fever'}
+					 'thompson', 'janus', 'otitis', 'tuberculosis', 'syndrome'}
 disTagIndicators = {'allergy', 'deficiency', 'disease', 'infection', 'fever', 'media', 'allergies', 'deficiencies',
 					'diseases', 'infections', 'fevers', 'collection', 'collections', 'complex', 'complexes', 'western',
 					'agent', 'agents', 'significances', 'specimens', 'specimen'}
@@ -71,7 +70,7 @@ sympTagIndicators = {'abnormality', 'ache', 'behavior', 'birth', 'consolidation'
 
 removeFromDisease = ['syndrome', 'shock', 'abscess', 'lesion', 'cough', 'hemorrhage', 'hemorrhages', 'coughs', 'role',
 					 'significance', 'syndromes', 'abscesses', 'lesions', 'patients', 'men', 'patient', 'man',
-					 'pathogen', 'pathogens', 'roles', 'potential']
+					 'pathogen', 'pathogens', 'roles', 'potential', '']
 removeFromSymptom = ['eyes', 'fluid', 'membrane', 'nodes', 'onset', ',', 'fluids', 'rate', 'rates', 'the', 'weights']
 
 
@@ -92,14 +91,14 @@ def extractAbstractsFromXML(file, d):
 		if v == '':
 			continue
 		d[key] = v
-	pd.DataFrame.from_dict(d, orient='index', columns=['abstract_text']).to_csv('pmabstracts.csv')
+	pd.DataFrame.from_dict(d, orient='index', columns=['abstract_text']).to_csv(constants.ABSTRACT_DATA)
 	return d
 
 
 # create row to hold relevant PMIDs
 def createDF():
 	global abbrevKey
-	gemdf = pd.read_csv('unique_full_ontology_plus_symptoms.csv').sort_values(by='pathogen').reset_index(drop=True)
+	gemdf = pd.read_csv(constants.UNIQUE_ONTOLOGY).sort_values(by='pathogen').reset_index(drop=True)
 	# annotate all names, add genus abbreviations
 	for index, row in gemdf.iterrows():
 		if row['pathogen'].lower().startswith('sars'):
@@ -141,24 +140,6 @@ def createDF():
 					abbrevKey[abb] = set()
 				abbrevKey[abb].add(row['pathogen'])
 	return gemdf
-
-
-# def tagThisAbstract(d):
-# 	output = nlp.annotate(d, properties={
-# 		'annotators': 'pos',
-# 		'outputFormat': 'json'
-# 	})
-# 	print(d)
-# 	# Throw out everything but nouns
-# 	a = set()
-# 	for sentence in output["sentences"]:
-# 		for t in sentence["tokens"]:
-# 			if t["pos"].find("NN") != -1 or t["pos"].find("FW") != -1:
-# 				# if t['word'] in ['virus', 'viruses', 'disease', 'diseases']
-# 				if (t['pos'] == 'NNS' or t['pos'] == 'NNPS' or t['pos'] == 'NN'):
-# 					a.update([t['word'].lower(), t['word'].lower().split('-')])
-# 	return a
-
 
 def abbreviate(arr):
 	global abbrevKey
@@ -210,114 +191,6 @@ def finalProcess(li):
 	print('Tagged with pathName, diseaseName, and symptomName: ' + str(li[5]))
 
 
-# def annotateIfNameAndDiseaseExist(d, key, forReference, gemdf, a):
-# 	# b: dead names c: dead diseases e: relevant name term g: relevant disease term h: all symptom terms
-# 	b = set()
-# 	c = set()
-# 	nameSet = set()
-# 	disSet = set()
-# 	sympSet = set()
-# 	# iterate through names to place abstract
-# 	for index, row in gemdf.iterrows():
-# 		# small optimization
-# 		if row['pathogen'] in b or row[
-# 			'disease'] in c:  # or 'no ' in row['disease'] or row['disease'] == 'nan' or row['disease'] == '':
-# 			continue
-# 		# set bool values
-# 		containsDisease = False
-# 		containsName = False
-# 		abbrevGenus = False
-# 		testabbrev = ''
-# 		# iterate through set of unique nouns in abstract
-# 		for word in a:
-# 			# small optimization
-# 			if len(word) < 2:
-# 				continue
-# 			if abbrevGenus and word[0].islower():
-# 				abbrevGenus = False
-# 				nameSet.update(testabbrev)
-# 			if word.lower().replace(' ', '') in set(str(row['pathogen']).lower().split(' ')):
-# 				if len(word) == 2:
-# 					abbrevGenus = True
-# 					testabbrev = word
-# 					continue
-# 				if abbrevGenus:
-# 					abbrevGenus = False
-# 					nameSet.update(testabbrev)
-# 				containsName = True
-# 				z = [word.lower()]
-# 				if len(word) > 5:
-# 					z = [word.lower(), word.lower()[:-2] + 'i', word.lower() + 's', word.lower() + 'es',
-# 						 word.lower() + 'e', word.lower()[:-1], word.lower()[:-2]]
-# 				# print(word)
-# 				nameSet.update(z)
-# 				if '.' in nameSet:
-# 					nameSet.remove('.')
-# 			elif word.lower() in set(
-# 					str(row['disease']).lower().split(' ')) and word != 'no' and word.lower() not in nameSet:
-# 				abbrevGenus = False
-# 				testabbrev = ''
-# 				# append disease and related plurals to relevant disease term list
-# 				containsDisease = True
-# 				# print(word)
-# 				z = [word.lower(), word.lower()[:-2] + 'i', word.lower() + 's', word.lower() + 'es', word.lower() + 'e',
-# 					 word.lower()[:-1], word.lower()[:-2]]
-# 				disSet.update(z)
-# 			abbrevGenus = False
-# 			testabbrev = ''
-#
-# 		if containsDisease and containsName:
-# 			# append relevant PMID to final DF
-# 			row['pubmed_abstracts'] += (str(key) + ';')
-# 			forReference.add(key)
-# 			# annotate all symptom POS, keep all nouns and alter for plurals
-# 			if os.path.isfile(os.path.join(row['links'], 'symptoms.txt')):
-# 				with open(os.path.join(row['links'], 'symptoms.txt'), 'r', encoding='utf-8') as f:
-# 					outputSymptoms = nlp.annotate(f.read(), properties={
-# 						'annotators': 'pos',
-# 						'outputFormat': 'json'
-# 					})
-# 				for sentence in outputSymptoms["sentences"]:
-# 					for t in sentence["tokens"]:
-# 						if t["pos"].find("NN") != -1 or t["pos"].find("FW") != -1:
-# 							if (t['pos'] == 'NNS' or t['pos'] == 'NNPS') and len(t['word']) > 5:
-# 								sympSet.update([t['word'][:-1], t['word'][:-2]])
-# 							elif t['pos'] == 'NN':
-# 								sympSet.update(
-# 									[t['word'] + 's', t['word'] + 'es', t['word'] + 'e', t['word'][:-2] + 'i'])
-# 							sympSet.add(t["word"].lower())
-# 			# to avoid repetition/inconsistent tagging, first collect all symptoms relevant
-# 			# at this point, we're free to start the tagging process
-# 			print('found PMID ' + key + ' matching ' + row['pathogen'])
-# 			print(nameSet)
-# 			if os.path.exists(os.path.join(row['links'], 'TEST' + key + 'abstract.txt')):
-# 				with open(os.path.join(row['links'], 'TEST' + key + 'abstract.txt'), 'r', encoding='utf-8') as f:
-# 					text = f.read()
-# 			else:
-# 				text = d[key]
-# 			with open(os.path.join(row['links'], 'TEST' + key + 'abstract.txt'), 'w', encoding='utf-8') as f:
-# 				for word in text.split():
-# 					test = word.replace('.', '').replace(';', '').replace(':', '').replace(',', '').replace(')',
-# 																											'').replace(
-# 						'(', '').replace(' ', '').replace('[', '').replace(']', '').replace('<', '').replace('>',
-# 																											 '').lower()
-# 					# bug caused by the NLP: '(' characters treated as separate words
-# 					if test in nameSet:
-# 						f.write(word + '<pathogen>' + ' ')
-# 					elif test in disSet:
-# 						f.write(word + '<disease>' + ' ')
-# 					elif test in sympSet:
-# 						f.write(word + '<symptom>' + ' ')
-# 					else:
-# 						f.write(word + ' ')
-# 				f.write('\n')
-# 		nameSet.clear()
-# 		disSet.clear()
-# 		sympSet.clear()
-# 		if not containsName:
-# 			b.add(row['pathogen'])
-# 		if not containsDisease:
-# 			c.add(row['disease'])
 
 
 def createSets(gemdf):
@@ -354,7 +227,7 @@ def createSets(gemdf):
 								[t['word'].lower() + 's', t['word'].lower() + 'es', t['word'].lower() + 'e',
 								 t['word'][:-2].lower() + 'i', t["word"].lower()])
 						else:
-							disKeyList.append(t['word'.lower()])
+							disKeyList.append(t['word'].lower())
 			for i in disKeyList:
 				if str(i) not in disDict:
 					disDict[str(i)] = set()
@@ -383,7 +256,7 @@ def createSets(gemdf):
 					sympDict[str(i)] = set()
 				sympDict[str(i)].add(str(row['pathogen']))
 
-	if len(disDict) == 0:
+	if len(disDict) == 0 or 'brucellosis' not in disDict:
 		raise Exception('invalid dis length')
 	if len(sympDict) == 0:
 		raise Exception('invalid symp length')
@@ -442,12 +315,12 @@ def createNameChain(d, key, arr=set(), conditional=''):
 
 # reminder to self, all i did last night was put in the change for the adjective names...and the POS not tagging
 def JumpLandTagger(d, li):
-	global possibleNameDescriptions, possibleNameDescriptionsAdj, possibleDiseaseDescriptions, possibleSymptomDescriptionsAdj, possibleDiseaseDescriptionsAdj, possibleSymptomDescriptions
+	global possibleNameDescriptions, possibleDiseaseDescriptions, possibleSymptomDescriptions
 	namedf, disdf, sympdf = pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(
 		columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As'])
-	nameDict, disDict, sympDict, gemdf, numTag, numAll, numDisSymp, numPathSymp = li[0], li[1], li[2], li[3], 0, 0, 0 ,0
+	nameDict, disDict, sympDict, gemdf, numTag, numAll, numDisSymp, numPathSymp = li[0], li[1], li[2], li[3], 0, 0, 0, 0
 	for key in d:
-		possibleDiseaseDescriptionsAdj, possibleNameDescriptionsAdj, possibleDiseaseDescriptionsAdj = set(), set(), set()
+		possibleDiseaseDescriptionsAdj, possibleNameDescriptionsAdj, possibleSymptomDescriptionsAdj = set(), set(), set()
 		with open(os.path.join('taggedbatch', key + '.txt'), 'w', encoding='utf-8') as f:
 			output = nlp.annotate(d[key], properties={
 				'annotators': 'pos,ner',
@@ -460,11 +333,11 @@ def JumpLandTagger(d, li):
 					word = t['word']
 					if (t['ner'] == 'LOCATION' or t['ner'] == 'COUNTRY' or t['ner'] == 'STATE_OR_PROVINCE' or t[
 						'ner'] == 'CITY'):
-						if word in nameDict:
+						if word.lower() in nameDict:
 							possibleNameDescriptions.add(word.lower())
-						if word in disDict:
+						if word.lower() in disDict:
 							possibleDiseaseDescriptions.add(word.lower())
-						if word in sympDict:
+						if word.lower() in sympDict:
 							possibleSymptomDescriptions.add(word.lower())
 						# if word in sympDict:
 						# 	possibleSymptomDescriptions.add(word.lower())
@@ -472,11 +345,11 @@ def JumpLandTagger(d, li):
 						prevWord = word
 						continue
 					elif t['pos'] == 'JJ':
-						if word in nameDict:
+						if word.lower() in nameDict:
 							possibleNameDescriptionsAdj.add(word.lower())
-						if word in disDict:
+						if word.lower() in disDict:
 							possibleDiseaseDescriptionsAdj.add(word.lower())
-						if word in sympDict:
+						if word.lower() in sympDict:
 							possibleSymptomDescriptionsAdj.add(word.lower())
 						f.write(' ' + word)
 						prevWord = word
@@ -484,6 +357,13 @@ def JumpLandTagger(d, li):
 					elif t['pos'] == '.' or t['pos'] == ':':
 						f.write(word)
 						continue
+					elif t['pos'] == '-LRB-':
+						f.write(' (')
+						continue
+					elif t['pos'] == '-RRB-':
+						f.write(')')
+						continue
+
 					if t["pos"].find("NN") == -1 and t["pos"].find("FW") == -1:
 						f.write(' ')
 						if t['pos'] != 'POS':
@@ -516,6 +396,7 @@ def JumpLandTagger(d, li):
 													   prevWord]
 					else:
 						f.write(' ')
+
 					if word.lower() in nameDict and not pathTagged and not disTagged and not sympTagged:
 						if len(word) == 2 and word[1] == '.':
 							possibleNameDescriptions.add(word.lower())
@@ -591,13 +472,15 @@ def JumpLandTagger(d, li):
 														   word]
 							hasSymp, sympTagged = True, True
 
-					if ('virus' in word or 'bacteria' in word) and (
+					if ('virus' in word.lower() or 'bacteria' in word.lower()) and (
 							not pathTagged and not disTagged and not sympTagged):
 						f.write(word + '<pathogen>')
 						namedf.loc[namedf.shape[0]] = [str(key), '', word]
-					elif word in ['disease', 'diseases', 'infection', 'infections']:
+						hasPath, pathTagged = True, True
+					elif word.lower() in ['disease', 'diseases', 'infection', 'infections']:
 						f.write(word + '<disease>')
 						disdf.loc[disdf.shape[0]] = [str(key), '', word]
+						hasDis, disTagged = True, True
 					elif not pathTagged and not disTagged and not sympTagged:
 						f.write(word)
 					prevWord = word
@@ -613,6 +496,8 @@ def JumpLandTagger(d, li):
 		elif hasDis and hasSymp and not hasPath:
 			copyfile(os.path.join('taggedbatch', str(key) + '.txt'), os.path.join('dissympbatch',  str(key) + '.txt'))
 			numDisSymp += 1
+		if hasSymp:
+			copyfile(os.path.join('taggedbatch', str(key) + '.txt'), os.path.join('NLTKTestBatch',  str(key) + '.txt'))
 		print('now tagging ' + str(key) + '.txt.')
 	return [namedf, disdf, sympdf, gemdf, numTag, numAll]
 
@@ -805,10 +690,9 @@ def getIntersections(li):
 def tagAbstracts():
 	# create dict of PMID/abstract pairs
 	d = {}
-	# for file in os.listdir('batch'):
-	# 	if not file.startswith('test'):
-	# 		extractAbstractsFromXML(os.path.join('batch', file), d)
-	extractAbstractsFromXML(os.path.join('batch', 'pubmed_batch_0_to_999.xml'), d)
+	for file in os.listdir('batch'):
+		if not file.startswith('test'):
+			extractAbstractsFromXML(os.path.join('batch', file), d)
 	gemdf = createDF()
 	li = createSets(gemdf)
 	# getIntersections(li)

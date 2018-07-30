@@ -4,7 +4,7 @@ import extract
 import analyze
 import ontologyCompare
 import abstractTagger
-
+import nltkTagger
 
 def main():
 	#format.reformat()
@@ -21,6 +21,7 @@ def main():
 	abstractTagger.tagAbstracts()
 	#abstractTagger.tagAbstractsPlaces()
 	#format.createUniqueCSV()
+	nltkTagger.tagNLTKBatch(constants.NLTKDIR)
 
 if __name__ == "__main__":
 	main()
