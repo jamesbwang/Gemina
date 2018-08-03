@@ -5,11 +5,10 @@ import analyze
 import ontologyCompare
 import abstractTagger
 import nltkTagger
+import reformatForNER
 
 def main():
 	#format.reformat()
-	#analyze.remove('symptoms')
-
 	#analyze.finishedStatsDOI()
 	#analyze.finishedStatsAbstracts()
 	#analyze.examinePathogens()
@@ -19,9 +18,10 @@ def main():
 	#abstractTagger.tagAbstractsMid()
 	#abstractTagger.markFPs('taggedSymptoms.csv')
 	abstractTagger.tagAbstracts()
-	#abstractTagger.tagAbstractsPlaces()
 	#format.createUniqueCSV()
-	nltkTagger.tagNLTKBatch(constants.NLTKDIR)
+	#nltkTagger.tagNLTKBatch(constants.NLTKDIR)
+	abstractTagger.removeAmbiguity('taggedbatch')
+	reformatForNER.createClassifierCSV('allbatch')
 
 if __name__ == "__main__":
 	main()
