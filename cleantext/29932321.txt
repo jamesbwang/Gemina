@@ -1,0 +1,1 @@
+  Lithium-sulfur ( Li-S) batteries are attractive as sulfur offers an order of magnitude higher charge-storage capacity than the currently used insertion-compound cathodes. However , their practical viability is hampered by low electrochemical stability and efficiency , which results from severe polysulfide ( LiPS) shuttling during cycling. We present here thin-layered MoS

@@ -1,0 +1,1 @@
+  A population of kisspeptin-GABA coexpressing neurons located in the rostral periventricular area of the third ventricle ( RP3V) is believed to activate gonadotropin-releasing hormone ( GnRH) neurons to generate the luteinizing hormone ( LH) surge triggering ovulation. Selective optogenetic activation of RP3V kisspeptin ( RP3V

@@ -1,0 +1,1 @@
+  Ion channels are well placed to transduce environmental cues into signals used by cells to generate a wide range of responses , but little is known about their role in the regulation of RNA metabolism. Here we show that the TRPV4 cation channel binds the DEAD-box RNA helicase DDX3X and regulates its function. TRPV4-mediated Ca

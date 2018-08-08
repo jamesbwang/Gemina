@@ -1,0 +1,1 @@
+  Cell differentiation is directed by signals driving progenitors into specialized cell types. This process can involve collective decision-making , when differentiating cells determine their lineage choice by interacting with each other. We used live-cell imaging in microwell arrays to study collective processes affecting differentiation of naïve CD4

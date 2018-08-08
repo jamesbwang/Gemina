@@ -1,0 +1,1 @@
+  Here we sought a biologically meaningful , climate variable that captures water-energy availability and is suitable for high resolution ( 250 m × 250 m) modelling of the fraction of photosynthetically active radiation intercepted by the sunlit canopy ( F

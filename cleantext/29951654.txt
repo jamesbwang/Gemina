@@ -1,0 +1,1 @@
+  Herein , a new platform was established for ultra-sensitive bacterial concentration detection. The sensing system had a linear relationship with the logarithm of bacterial concentration from 1 × 101 to 1 × 105 CFU mL-1 within 5 min. Moreover , the platform showed excellent consistency compared with the traditional standard method against practical samples.

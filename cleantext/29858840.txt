@@ -1,0 +1,1 @@
+  In the original publication , the Estimate column with values under Multivariate meta-regression ( LOCF) in Table 1 was missed. The corrected table is shown below.

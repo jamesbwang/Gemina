@@ -1,0 +1,1 @@
+ Gene duplication and deletion are pivotal processes shaping the structural and functional repertoire of genomes , with implications for disease , adaptation , and evolution. We employed a mutation accumulation ( MA) framework partnered with high-throughput genomics to assess the molecular and transcriptional characteristics of newly arisen gene copy-number variants ( CNVs) in

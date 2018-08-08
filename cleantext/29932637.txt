@@ -1,0 +1,1 @@
+  Loading electrocatalysts at the semiconductor-electrolyte interface is one of the promising strategies to develop photoelectrochemical water splitting cells. However , the assembly of compatible and synergistic heterojunction between the semiconductor and the selected catalyst remains challenging. Here , we report a hierarchical p-type silicon ( p-Si)/ ReS

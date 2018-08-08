@@ -1,0 +1,1 @@
+  Two-dimensional ( 2D) van der Waals heterostructures ( vdWHs) have shown multiple functionalities with great potential in electronics and photovoltaics. Here , we show their potential for solid-state thermionic energy conversion and demonstrate a designing strategy towards high-performance devices. We propose two promising thermionic devices , namely , the p-type Pt-G-WSe

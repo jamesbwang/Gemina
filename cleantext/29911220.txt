@@ -1,0 +1,1 @@
+  Herein , we have developed a distinctive electrochemical sensing platform for miRNA assay. Target miRNA initiates two cycles of polymerization , nicking , and displacement reactions , which lead to the variation of the distance between redox molecules and the electrode surface. In addition , a reductant is employed for further electrochemical amplification.

@@ -1,0 +1,1 @@
+ Histone deacetylase 2 ( HDAC2) is an emerging target of Alzheimer 's disease. Four featured pharmacophore model ( ADRR) with one H-bond acceptor ( A) , one H-bond donor ( D) , and two aromatic rings ( R) was generated using experimentally reported compounds , ( ( E-5 ( 3-benzenesulfonamido) phenyl)- N-hydroxypent-2-en-4-ynamide)) and ( N '- hydroxy-N-phenyloctanediamide) with IC

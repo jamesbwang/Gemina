@@ -1,0 +1,1 @@
+ Munc18-1 , a neuron-specific member of the Sec1/Munc18 family , is involved in neurotransmitter release by binding tightly to syntaxin. Munc18-1 is phosphorylated by PKC on Ser-306 and Ser-313

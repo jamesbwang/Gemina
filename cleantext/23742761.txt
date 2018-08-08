@@ -1,0 +1,1 @@
+  Learning and memory depend on neuronal plasticity originating at the synapse and requiring nuclear gene expression to persist. However , how synapse-to-nucleus communication supports long-term plasticity and behavior has remained elusive. Among cytonuclear signaling proteins , γCaMKII stands out in its ability to rapidly shuttle Ca

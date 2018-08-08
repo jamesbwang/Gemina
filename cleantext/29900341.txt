@@ -1,0 +1,1 @@
+  A common problem in compiling and updating Social Accounting Matrices ( SAM) or Input-Output tables is that of incomplete information. In the case of the submatrix ` Property Income of the Account Allocation of Primary Income ' , the information published by the National Bureau of Statistics of Spain ( INE) is limited because it is not possible to build the set of

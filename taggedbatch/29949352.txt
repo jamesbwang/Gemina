@@ -1,0 +1,1 @@
+ Systematic first-principles molecular dynamics ( FPMD) simulations were carried out to study the structures , free energies , and acidity constants of UO

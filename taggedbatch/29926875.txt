@@ -1,0 +1,1 @@
+ To develop a photoactivatable bioluminescence imaging technique , a set of high and efficient photoactivatable substrates for Renilla luciferase has been well designed and synthesized. Surprisingly , all of them could release the free luciferin that presented robust bioluminescent signals ex vivo and in living animals after UV irradiation at 365 nm.

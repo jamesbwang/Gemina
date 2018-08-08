@@ -1,0 +1,1 @@
+  One of the challenges of performing live-cell imaging in plants is establishing a system for securing the sample during imaging that allows for the rapid addition of treatments. Here we report how a commercially available device called a HybriWell

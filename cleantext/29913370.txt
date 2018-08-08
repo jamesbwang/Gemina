@@ -1,0 +1,1 @@
+  In this paper , a new method is proposed to systematically calculate at the same time canister loading curves and radiation sources , based on the inventory information from an in-core fuel management system. As a demonstration , the isotopic contents of the assemblies come from a Swiss PWR , considering more than 6000 cases from 34 reactor cycles. The CS

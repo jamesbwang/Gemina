@@ -1,0 +1,1 @@
+  Bifurcations are particularly prone to errors in visual estimation of diameter stenosis. Dedicated bifurcation QCA software confirmed only 26-27 % of side branch lesions<symptom> visually estimated to have > 50 % DS. Validation against physiologic measures is necessary to determine whether bifurcation QCA software has value.

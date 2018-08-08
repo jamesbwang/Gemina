@@ -1,0 +1,1 @@
+  CRISPR-Cas13a is an efficient RNA targeting and editing tool characterized recently in prokaryotes. This system can be recruited to engineer resistance against plant RNA viruses and regulate gene expression. We discuss some important achievements in using the CRISPR-Cas13a system to confer resistance against plant RNA viruses.

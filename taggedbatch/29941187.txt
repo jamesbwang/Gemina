@@ -1,0 +1,1 @@
+ Nucleoporin subunits that generate the nuclear pore complex ( NPC) are highly conserved in evolution. High-resolution structures of the NPC are available , but the actual NPC composition in yeast has only been quantified recently. Two studies reveal major differences between species , suggesting high flexibility in NPC structures during evolution.

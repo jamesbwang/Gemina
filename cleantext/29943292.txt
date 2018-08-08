@@ -1,0 +1,1 @@
+  We have developed an automated robot that facilitates non-invasive isolation of a single cell with the most favorable properties from arrays containing > 10

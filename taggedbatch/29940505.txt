@@ -1,0 +1,1 @@
+ Density functional theory ( DFT) and time dependent density functional theory ( TDDFT) at PBE0/6 -311 G * level are performed to examine the stability , electronic and optical properties of boron fullerenes ( B

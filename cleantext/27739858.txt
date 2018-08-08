@@ -1,0 +1,1 @@
+  This corrects the article DOI: 10.1103/ PhysRevE .94.032606.

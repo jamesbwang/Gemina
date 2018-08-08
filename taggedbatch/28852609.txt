@@ -1,0 +1,1 @@
+ Higher memory density and faster computational performance of resistive switching cells require reliable array-accessible architecture. However , selecting a designated cell within a crossbar array without interference from sneak path currents through neighboring cells is a general problem. Here , a highly doped n

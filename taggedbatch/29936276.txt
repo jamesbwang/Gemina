@@ -1,0 +1,1 @@
+ In boron neutron capture therapy , it is important to evaluate the dose administered to a patient 's body outside the tumour area. The exposure dose is evaluated by calculation; however , the calculated value must be validated using a measured value. The dose evaluations based on the measured neutron spectrum are investigated. Multi-foil activation , combined with a LiCaAlF

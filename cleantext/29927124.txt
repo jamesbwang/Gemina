@@ -1,0 +1,1 @@
+  NMR spectroscopy is a versatile tool for determining the structure and dynamics of nucleic acids under solution conditions. In this unit , we provide an overview and detail of the experiments and methods used in our laboratory to determine the structure of oligonucleotides at natural abundance , thus limiting our approach to

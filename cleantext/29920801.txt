@@ -1,0 +1,1 @@
+  Silicon ( Si) requires a protection layer to maintain stable and long-time photoanodic reaction. However , poor charge separation and transfer are key constraint factors in protection layer/Si photoanodes that reduce their water-splitting efficiency. Here , a simultaneous enhancement of charge separation and transfer in Nb-doped NiO

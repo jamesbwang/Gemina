@@ -1,0 +1,1 @@
+  How is odor information organized in the brain? In this issue of Neuron , Jeanne et al. ( 2018) pair optogenetics with electrophysiology to map functional connections between two olfactory brain regions. They suggest that lateral horn neurons encode `` odor scenes '' to represent biologically relevant odor environments.

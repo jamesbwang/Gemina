@@ -1,0 +1,1 @@
+  Perovskite solar cells ( PSCs) demonstrate excellent power conversion efficiencies ( PCEs) but face severe stability challenges. One key degradation mechanism is exposure to ultraviolet ( UV) light. However , the impact of different UV bands is not yet well established. Here , we systematically study the stability of PSCs on the basis of a methylammonium lead iodide ( CH

@@ -1,0 +1,1 @@
+  G8 is a bench top integrated PET/CT scanner dedicated to high sensitivity and high resolution imaging of mice. This work characterizes its National Electrical Manufacturers Association ( NEMA) NU4-2008 performance where applicable and also provides an assessment of the basic imaging performance of the CT subsystem.

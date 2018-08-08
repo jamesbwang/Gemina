@@ -1,0 +1,1 @@
+  Layered semiconductors show promise as channel materials for field-effect transistors ( FETs). Usually , such devices incorporate solid back or top gate dielectrics. Here , we explore deionized ( DI) water as a solution top-gate for field-effect switching of layered semiconductors including SnS

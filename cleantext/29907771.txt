@@ -1,0 +1,1 @@
+  miR-30 is a microRNA frequently overexpressed in human cancers. However , the biological consequence of miR-30 overexpression in cancer has been unclear. In a genetic screen , miR-30 was found to abrogate oncogenic-induced senescence , a key tumor-suppressing mechanism that involves DNA damage responses , activation of p53 and induction of p16

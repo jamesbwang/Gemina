@@ -1,0 +1,1 @@
+ Quantitative structure-activity relationships ( QSARs) for prediction of toxicological endpoints built up with the CORAL software are discussed. Prejudices related to these QSAR models are listed. Possible ways to improve the software are discussed.

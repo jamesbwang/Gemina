@@ -1,0 +1,1 @@
+  Microbes encode many uncharacterized gene clusters that may produce antibiotics and other bioactive small molecules. Methods for activating these genes are needed to explore their biosynthetic potential. A transposon containing an inducible promoter was randomly inserted into the genome of the soil

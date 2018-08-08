@@ -1,0 +1,1 @@
+  In biomedicine , key concepts are often expressed by multiple words ( e.g. , ` zinc finger protein '). Previous work has shown treating a sequence of words as a meaningful unit , where applicable , is not only important for human understanding but also beneficial for automatic information seeking. Here we present a collection of PubMed

@@ -1,0 +1,1 @@
+  2D topological insulators exhibit insulating bulk and conducting edge states with a Dirac point , which at times is within the energy gap and could be on either side of the Fermi energy. In this study , we demonstrate a method to tune the energy of the Dirac edge state by introducing halides as dopants in Bi

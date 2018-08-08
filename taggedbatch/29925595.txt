@@ -1,0 +1,1 @@
+ We establish maximum principles and Bôcher-type theorems for superharmonic and fractional superharmonic nonnegative functions on a punctured ball. Connecting maximum principles with Bôcher-type theorems is a crucial observation.

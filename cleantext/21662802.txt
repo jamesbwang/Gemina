@@ -1,0 +1,1 @@
+  A surface-enhanced Raman scattering ( SERS) method has been developed to determine the concentration of trichloroethylene ( TCE) in environmental water. Au-core/Ag-shell nanoparticles containing 4-mercaptophenylboronic acid ( 4-MPBA) between the core and shell are used as the SERS substrate. 4-MPBA serves as an internal reference with a Raman shift at 534 cm

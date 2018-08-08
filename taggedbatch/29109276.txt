@@ -1,0 +1,1 @@
+ Avian influenza<pathogen><disease> A viruses ( AIVs) pose a threat to global health because of their sporadic zoonotic transmission and potential to cause pandemics. Genomic surveillance of AIVs has become a powerful , cost-effective approach for studying virus transmission , evolution , and dissemination , and has the potential to inform outbreak control efforts and policies.

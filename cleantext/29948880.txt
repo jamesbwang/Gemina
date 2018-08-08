@@ -1,0 +1,1 @@
+  An artificial-intelligence model based on deep learning developed units in a hidden layer that resembled mammalian grid cells in the hippocampus when the agent was taught to integrate paths. The full model performed sophisticated navigational tasks-in some cases even better than a human.

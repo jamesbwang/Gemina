@@ -1,0 +1,1 @@
+  We used a Euclidean algorithmic method of calculating mate value discrepancies to test the hypothesis that mate value discrepancies would mediate a negative association between the Dark Triad and relationship satisfaction. Participants (

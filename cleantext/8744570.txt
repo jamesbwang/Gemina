@@ -1,0 +1,1 @@
+  The core oscillator of the circadian clock of cyanobacteria consists of three proteins , KaiA , KaiB , and KaiC. The KaiABC oscillator can be re-constituted in vitro with the purified proteins in buffer containing ATP and Mg

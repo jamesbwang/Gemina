@@ -1,0 +1,1 @@
+ During the calculation of the physical component score and the mental component score , the score of the RAND 1 was erroneously coded in the opposite direction. After correcting this mistake , the interaction between low education and poor physical health on unemployment in early work life becomes statistically significant.

@@ -1,0 +1,1 @@
+ In order to investigate the application of lattice Boltzmann method ( LBM) in the numerical simulation of computed tomography angiography-derived fractional flow reserve ( FFR

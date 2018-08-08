@@ -1,0 +1,1 @@
+  Transition path-sampling calculations with several enzymes have indicated that local catalytic site femtosecond motions are linked to transition state barrier crossing. Experimentally , femtosecond motions can be perturbed by labeling the protein with amino acids containing

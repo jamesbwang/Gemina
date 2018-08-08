@@ -1,0 +1,1 @@
+ In this work , using a dual functional DNA-linker-DNA ( DLD) probe , a new concept of a symmetric signal amplification ( SSA) reaction is introduced to simultaneously analyze miRNAs. By coupling the surface-enhanced Raman scattering ( SERS) technology with symmetric amplification modes , this flexible biosensing system exhibits high sensitivity and specificity.

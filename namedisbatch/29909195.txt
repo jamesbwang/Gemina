@@ -1,0 +1,1 @@
+  A capacitive aptasensor for detecting the malaria<disease> biomarker , Plasmodium<pathogen> falciparum<pathogen> glutamate dehydrogenase ( PfGDH) , directly in human serum samples developed. A thiolated ssDNA<pathogen> aptamer ( NG3) that binds specifically to PfGDH antigen with high affinity ( K

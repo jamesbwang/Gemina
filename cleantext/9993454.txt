@@ -1,0 +1,1 @@
+  Despite numerous investigations of amorphous carbon ( a-C) films , a comprehensive study of the feasibility and optimization of sub-5-nm-thick a-C films deposited onto the write pole of heat-assisted magnetic recording ( HAMR) heads is lacking. The main objective of this study was to identify the role of pulse substrate bias voltage and C

@@ -1,0 +1,1 @@
+ The mechanistic understanding of gene-expression regulation is still evolving. In this issue of Immunity , Hosokawa et al. ( 2018) reveal that PU .1 represses transcription indirectly during early T cell development by `` stealing '' other regulators such as Runx1 and Satb1 from their DNA binding sites.

@@ -1,0 +1,1 @@
+  Implementing large arrays of gold nanowires as functional elements of a plasmonic biosensor is an important task for future medical diagnostic applications. Here we present a microfluidic-channel-integrated sensor for the label-free detection of biomolecules , relying on localized surface plasmon resonances. Large arrays ( ∼ 1 cm

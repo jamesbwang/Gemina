@@ -1,0 +1,1 @@
+ Highly pathogenic avian influenza<pathogen><disease> A<pathogen> ( H5N8<pathogen>) viruses<pathogen> have been detected in several continents. However , limited viral sequence data is available from countries in the Middle<pathogen> East. We report full-genome analyses of highly pathogenic H5N8<pathogen> viruses recently detected in different provinces in Saudi Arabia.

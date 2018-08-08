@@ -1,0 +1,1 @@
+  Three recent Science articles ( Chen et al. , 2018; Gootenberg et al. , 2018; Myhrvold et al. , 2018) describe the use of CRISPR-Cas technology to develop point-of-care diagnostics that directly detect viruses from clinical samples. These tests could radically transform approaches to diagnosing infectious<disease> diseases<disease> at the bedside and in the field.

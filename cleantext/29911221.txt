@@ -1,0 +1,1 @@
+  We report in situ atomic-scale transmission electron microscopy observations of the surface dynamics during Cu2O reduction. We show inhomogeneous oxide reduction caused by the preferential adsorption of hydrogen at step edges that induces oxygen loss and destabilizes Cu atoms within the step edge , thereby resulting in the retraction motion of atomic steps at the oxide surface.

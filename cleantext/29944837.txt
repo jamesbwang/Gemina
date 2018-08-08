@@ -1,0 +1,1 @@
+  High-level multireference ( CASPT2 , NEVPT2) calculations are reported for transition metal aqua complexes with electronic configurations from ( 3d)

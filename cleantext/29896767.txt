@@ -1,0 +1,1 @@
+  HLA-B * 15:296 differs from HLA-B * 15:01:01:01 in exon 3 by a single nucleotide.

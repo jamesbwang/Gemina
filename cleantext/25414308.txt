@@ -1,0 +1,1 @@
+  An optoelectronic oscillator ( OEO) is a hybrid microwave and photonic system incorporating an amplified positive feedback loop to enable microwave oscillation to generate a high-frequency and low-phase noise microwave signal. The low phase noise is ensured by the high

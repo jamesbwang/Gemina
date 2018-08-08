@@ -1,0 +1,1 @@
+  Ribosome often stalls on mRNA sequences harboring consecutive proline codons. Elongation factor P ( EF-P) is required for the stalled ribosome to continue translation and thus the absence of EF-P affects translation of the associated open reading frame. Here we report that EF-P controls translation of the mgtA gene encoding a Mg

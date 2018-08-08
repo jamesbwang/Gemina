@@ -1,0 +1,1 @@
+  While there is growing appreciation that the microbiome regulates gut-brain signaling , the underlying mechanisms remain elusive. In this issue of Cell Host & Microbe , Bhattarai et al. ( 2018) identify bacteria-derived tryptamine as a ligand for the gut-epithelium-expressed GPCR 5-HT4 receptor , thereby functioning as a regulator of gastrointestinal motility.
