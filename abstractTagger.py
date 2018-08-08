@@ -3,7 +3,7 @@ import pandas as pd
 from pycorenlp import StanfordCoreNLP
 import os
 import constants
-
+import shutil as sh
 
 class Tagger:
 	__nlp = StanfordCoreNLP('http://localhost:9000')
@@ -466,6 +466,7 @@ class Tagger:
 						# namedf.loc[namedf.shape[0]] = [str(key),'',word]
 			print('now tagging ' + str(key) + '.txt.')
 		self.__removeAmbiguity('taggedbatch')
+		sh.rmtree('taggedbatch')
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
 
 	def __throwJJTagging(self, d, li):
@@ -663,7 +664,6 @@ class Tagger:
 		li = self.__JumpLandTagger(d, li)
 		# final processing
 		self.__finalProcess(li)
-		self.__removeAmbiguity(d)
 
 	def tagAbstractsPlaces(self):
 		d = {}
