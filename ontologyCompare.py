@@ -8,7 +8,7 @@ from pycorenlp import StanfordCoreNLP
 
 def humanPathogenMerge(hFile):
 	humdf = pd.read_csv(hFile).sort_values(by='genus').reset_index(drop=True)
-	gemdf = pd.read_csv('combined.csv', index_col=0).sort_values(by='pathogen').reset_index(drop=True)
+	gemdf = pd.read_csv(constants.COMBINED_CSV, index_col=0).sort_values(by='pathogen').reset_index(drop=True)
 
 	for index, row in humdf.iterrows():
 		if isinstance(row['subspecies'], str):
@@ -35,7 +35,7 @@ def humanPathogenMerge(hFile):
 				with open(os.path.join(path, 'disease.txt'), 'w+', encoding='utf-8') as f:
 					f.write(row['symptoms/diseases'])
 			gemdf.loc[len(gemdf)] = li
-	gemdf.to_csv('full_ontology.csv')
+	gemdf.to_csv(constants.FULL_ONTOLOGY)
 
 
 
@@ -44,7 +44,7 @@ def humanPathogenMerge(hFile):
 def mergeOntology():
 	formatter = format.Formatter(constants.OLD_DIR)
 	formatter.combineNewCSV()
-	gemdf = pd.read_csv('combined.csv')
+	gemdf = pd.read_csv(constants.COMBINED_CSV)
 	ontdf = pd.read_csv(constants.FIRST_ONTOLOGY)
 	for index, ontrow in ontdf.iterrows():
 		if ontrow['NCBITaxon_label'].lower() not in gemdf['pathogen'].str.lower().tolist():
@@ -64,4 +64,4 @@ def mergeOntology():
 			with open(os.path.join(constants.NEW_DIR, g, 'disease.txt'), 'a', encoding='utf-8') as f:
 				f.write(';' + ontrow['DOID_label'].lower())
 			print('appended ' + ontrow['DOID_label'] + ' to ' + gemdf.iloc[i][0] + "'s disease.txt")
-	gemdf.to_csv('combined.csv')
+	gemdf.to_csv(constants.COMBINED_CSV)

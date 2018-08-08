@@ -1,15 +1,17 @@
 import pandas as pd
 import os
 import extract
+import constants
+
 
 class Formatter:
-
-
 	__dir = r''
 	__newdir = ''
+
 	def __init__(self, newDir):
 		self.__dir = newDir
 		self.__newdir = os.path.join(newDir, 'infections_new')
+
 	def reformat(self):
 		# edit the old Gemina database such that the columns are reformated appropriately
 		# create new .csv files, print the beginnings of the new csvs, and eliminate the last col. (will use for links to the folder)
@@ -25,7 +27,6 @@ class Formatter:
 				continue
 		self.__appendSuffixes()
 		extract.downloadPMID()
-
 
 	def __appendSuffixes(self):
 		# to all the pubmed links, append the correct suffix so that requests can successfully process the text and that the url listed is valid
@@ -45,7 +46,6 @@ class Formatter:
 					filename.write("&retmode=text&rettype=abstract%0A")
 					print("adding suffixes to pubmed links....")
 					filename.close()
-
 
 	def __addAbstract(self, file, fileName):
 		# for the column infection_tatts, separate the urls and the PMID's: we will treat these two cases separately.
@@ -78,7 +78,6 @@ class Formatter:
 		print(filepath)
 		# convert the dataframe to csv format
 		file.to_csv(filepath)
-
 
 	def __addAbstractHelper(self, v, path):
 		if len(v) == 0:
@@ -162,40 +161,45 @@ class Formatter:
 				v = v[1:]
 				continue
 
-
 	def combineNewCSV(self):
-		#combine all reformatted Gemina CSVs to the same file, preparing for tagging
+		# combine all reformatted Gemina CSVs to the same file, preparing for tagging
 		df = pd.DataFrame()
 		for file in os.listdir(self.__newdir):
 			if file.endswith('.csv') and file.startswith('new'):
 				print(file)
 				if df.empty:
-					df = pd.read_csv(os.path.join(self.__newdir, file), index_col=0).drop('index', axis=1).set_index('pathogen')
+					df = pd.read_csv(os.path.join(self.__newdir, file), index_col=0).drop('index', axis=1).set_index(
+						'pathogen')
 					df = df.sort_index()
 				else:
-					df = df.append(pd.read_csv(os.path.join(self.__newdir, file), index_col=0).drop('index', axis=1).drop(0).set_index('pathogen'), sort=True)
+					df = df.append(
+						pd.read_csv(os.path.join(self.__newdir, file), index_col=0).drop('index', axis=1).drop(
+							0).set_index('pathogen'), sort=True)
 		print('successfully joined all Gemina files')
 		df = df.drop('level_0', axis=1)
-		df.to_csv('combined.csv')
+		df.to_csv(constants.COMBINED_CSV)
 
 	def createUniqueCSV(self):
 		df = pd.read_csv('full_ontology.csv').sort_values(by=['pathogen'])
-		newdf = pd.DataFrame(columns=['pathogen','comments','disease','infection_atts','links,portal','source','tatts','tsource','ttype', 'symptoms'])
+		newdf = pd.DataFrame(
+			columns=['pathogen', 'comments', 'disease', 'infection_atts', 'links,portal', 'source', 'tatts', 'tsource',
+					 'ttype', 'symptoms'])
 		for index, row in df.iterrows():
-			if newdf.shape[0] - 1 < 0 or row['pathogen'] != newdf.loc[newdf.shape[0] - 1,'pathogen']:
+			if newdf.shape[0] - 1 < 0 or row['pathogen'] != newdf.loc[newdf.shape[0] - 1, 'pathogen']:
 				newdf.loc[newdf.shape[0]] = row.append(pd.Series(''))
 			else:
-				for word in str(newdf.loc[newdf.shape[0]-1]['disease']).replace(';',',').split(','):
-					if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0]-1]['disease']).replace(' ', '').replace(';', ',').split(','):
-						newdf.loc[newdf.shape[0] - 1]['disease'] = str(newdf.loc[newdf.shape[0] - 1]['disease']) + (';' + word)
+				for word in str(newdf.loc[newdf.shape[0] - 1]['disease']).replace(';', ',').split(','):
+					if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0] - 1]['disease']).replace(' ',
+																										  '').replace(
+							';', ',').split(','):
+						newdf.loc[newdf.shape[0] - 1]['disease'] = str(newdf.loc[newdf.shape[0] - 1]['disease']) + (
+									';' + word)
 			if os.path.isfile(os.path.join(row['links'], 'symptoms.txt')):
 				with open(os.path.join(row['links'], 'symptoms.txt'), 'r', encoding='utf-8') as f:
 					for word in f.read().split(','):
-						if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0]-1]['symptoms']).replace(' ', '').split(',') and word != 'nan':
-							newdf.loc[newdf.shape[0]-1]['symptoms'] = str(newdf.loc[newdf.shape[0]-1]['symptoms']) + ' ' + word + ','
-		newdf.to_csv('unique_full_ontology_plus_symptoms.csv')
-
-
-
-
-
+						if word.replace(' ', '') not in str(newdf.loc[newdf.shape[0] - 1]['symptoms']).replace(' ',
+																											   '').split(
+								',') and word != 'nan':
+							newdf.loc[newdf.shape[0] - 1]['symptoms'] = str(
+								newdf.loc[newdf.shape[0] - 1]['symptoms']) + ' ' + word + ','
+		newdf.to_csv(constants.UNIQUE_ONTOLOGY)

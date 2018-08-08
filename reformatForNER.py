@@ -1,10 +1,9 @@
 import os
 import pandas as pd
 from pycorenlp import StanfordCoreNLP
-
 nlp = StanfordCoreNLP('http://localhost:9000')
 
-def createClassifierCSV(batchDir):
+def createClassifierCSV(batchDir, filename):
 	tokendf = pd.DataFrame(columns=['sentence_number', 'word', 'pos', 'tag'])
 	sentenceNumber = 0
 	for textFile in os.listdir(batchDir):
@@ -25,5 +24,5 @@ def createClassifierCSV(batchDir):
 						token['word'] = '('
 					tokendf.loc[tokendf.shape[0]] = [sentenceNumber, token['word'], token['pos'], 'O']
 			sentenceNumber += 1
-	tokendf.to_csv('ner_trainingset.csv')
+	tokendf.to_csv(filename)
 

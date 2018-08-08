@@ -18,16 +18,18 @@ def tagEntities(NLTKDict, PMID):
 
 
 def writeTags(entities, PMID):
+	if not os.path.exists(constants.NEW_NLTK_DIR):
+		os.makedirs(constants.NEW_NLTK_DIR)
 	for node in entities:
-		with open(os.path.join('newNLTKTestBatch', str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
+		with open(os.path.join(constants.NEW_NLTK_DIR, str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
 			if node[0] not in  [':', ',', '.']:
 				f.write(' ')
 		if type(node) == nltk.Tree:
 			words, tags = zip(*node.leaves())
-			with open(os.path.join('newNLTKTestBatch', str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
+			with open(os.path.join(constants.NEW_NLTK_DIR, str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
 				f.write(' '.join(words) + '<' + node.label() + '>')
 		else:
-			with open(os.path.join('newNLTKTestBatch', str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
+			with open(os.path.join(constants.NEW_NLTK_DIR, str(PMID) + '.txt'), 'a', encoding='utf-8') as f:
 				f.write(node[0])
 
 

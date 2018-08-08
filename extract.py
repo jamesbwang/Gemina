@@ -35,11 +35,13 @@ class PubMedFetcher:
 	__fetch_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&rettype=xml&retmax=9999&query_key=1&webenv=" + __webenv
 
 	def fetchAbstracts(self):
+		if not os.path.exists(constants.BATCH_PATH):
+			os.makedirs(constants.BATCH_PATH)
 		for i in range(0, self.__total_records, 10000):
 			this_fetch = self.__fetch_url + "&retstart=" + str(i)
 			print("Getting this URL: " + this_fetch)
 			fetch_r = requests.post(this_fetch)
-			f = open('pubmed_batch_' + str(i) + '_to_' + str(i + 9999) + ".xml", 'w', encoding='utf-8')
+			f = open(os.path.join(constants.BATCH_PATH, 'pubmed_batch_' + str(i) + '_to_' + str(i + 9999) + ".xml"), 'w', encoding='utf-8')
 			f.write(fetch_r.text)
 			f.close()
 		print("Number of records found :" + str(self.__total_records))

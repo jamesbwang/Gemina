@@ -19,7 +19,7 @@ def main():
 	tagger = abstractTagger.Tagger()
 	tagger.tagAbstracts()
 	#nltkTagger.tagNLTKBatch(constants.NLTKDIR)
-	reformatForNER.createClassifierCSV('allbatch')
+	reformatForNER.createClassifierCSV(constants.ALL_BATCH, constants.TRAINING_SET)
 
 if __name__ == "__main__":
 	main()

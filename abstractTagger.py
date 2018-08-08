@@ -162,7 +162,6 @@ class Tagger:
 					if abb not in self.__abbrevKey:
 						self.__abbrevKey[abb] = set()
 					self.__abbrevKey[abb].add(row['pathogen'])
-		gemdf.to_csv('unique_full_ontology_plus_symptoms_plus_abbrev.csv')
 		return gemdf
 
 	def __abbreviate(self, arr):
@@ -327,7 +326,7 @@ class Tagger:
 			3], 0, 0, 0, 0
 		for key in d:
 			possibleDiseaseDescriptionsAdj, possibleNameDescriptionsAdj, possibleSymptomDescriptionsAdj = set(), set(), set()
-			with open(os.path.join('taggedbatch', key + '.txt'), 'w', encoding='utf-8') as f:
+			with open(os.path.join(constants.TAGGED_BATCH, key + '.txt'), 'w', encoding='utf-8') as f:
 				output = self.__nlp.annotate(d[key], properties={'annotators': 'pos,ner', 'outputFormat': 'json'})
 				prevWord, pathTaggedList = '', set()
 				for sentence in output["sentences"]:
@@ -465,8 +464,8 @@ class Tagger:
 							f.write('<pathogen>')
 						# namedf.loc[namedf.shape[0]] = [str(key),'',word]
 			print('now tagging ' + str(key) + '.txt.')
-		self.__removeAmbiguity('taggedbatch')
-		sh.rmtree('taggedbatch')
+		self.__removeAmbiguity(constants.TAGGED_BATCH)
+		sh.rmtree(constants.TAGGED_BATCH)
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
 
 	def __throwJJTagging(self, d, li):
@@ -655,9 +654,9 @@ class Tagger:
 	def tagAbstracts(self):
 		# create dict of PMID/abstract pairs
 		d = {}
-		for file in os.listdir('batch'):
+		for file in os.listdir(constants.BATCH_PATH):
 			if not file.startswith('test'):
-				self.__extractAbstractsFromXML(os.path.join('batch', file), d)
+				self.__extractAbstractsFromXML(os.path.join(constants.BATCH_PATH, file), d)
 		gemdf = self.__createDF()
 		li = self.__createSets(gemdf)
 		# getIntersections(li)
@@ -670,7 +669,7 @@ class Tagger:
 		# for file in os.listdir('batch'):
 		# 	if not file.startswith('test'):
 		# 		extractAbstractsFromXML(os.path.join('batch', file), d)
-		self.__extractAbstractsFromXML(os.path.join('batch', 'pubmed_batch_0_to_999.xml'), d)
+		self.__extractAbstractsFromXML(os.path.join(constants.BATCH_PATH, 'pubmed_batch_0_to_999.xml'), d)
 		gemdf = self.__createDF()
 		li = self.__createSets(gemdf)
 		li = self.__afterJJthrow(d, li)
@@ -682,7 +681,7 @@ class Tagger:
 		# for file in os.listdir('batch'):
 		# 	if not file.startswith('test'):
 		# 		extractAbstractsFromXML(os.path.join('batch', file), d)
-		self.__extractAbstractsFromXML(os.path.join('batch', 'pubmed_batch_0_to_999.xml'), d)
+		self.__extractAbstractsFromXML(os.path.join(constants.BATCH_PATH, 'pubmed_batch_0_to_999.xml'), d)
 
 		gemdf = self.__createDF()
 		li = self.__createSets(gemdf)
@@ -695,7 +694,7 @@ class Tagger:
 		# for file in os.listdir('batch'):
 		# 	if not file.startswith('test'):
 		# 		extractAbstractsFromXML(os.path.join('batch', file), d)
-		self.__extractAbstractsFromXML(os.path.join('batch', 'pubmed_batch_0_to_999.xml'), d)
+		self.__extractAbstractsFromXML(os.path.join(constants.BATCH_PATH, 'pubmed_batch_0_to_999.xml'), d)
 		gemdf = self.__createDF()
 		li = self.__createSets(gemdf)
 		li = self.__throwJJTagging(d, li)
@@ -753,15 +752,24 @@ class Tagger:
 						s += ' ' + toWrite + ' ' + word
 					else:
 						s += ' ' + word
-
-			finalDir = 'cleantext'
+			if not os.path.exists(constants.CLEAN_TEXT):
+				os.makedirs(constants.CLEAN_TEXT)
+			if not os.path.exists(constants.NAME_DIS_BATCH):
+				os.makedirs(constants.NAME_DIS_BATCH)
+			if not os.path.exists(constants.DIS_SYMP_BATCH):
+				os.makedirs(constants.DIS_SYMP_BATCH)
+			if not os.path.exists(constants.NAME_SYMP_BATCH):
+				os.makedirs(constants.NAME_SYMP_BATCH)
+			if not os.path.exists(constants.ALL_BATCH):
+				os.makedirs(constants.ALL_BATCH)
+			finalDir = constants.CLEAN_TEXT
 			if '<pathogen>' in s and '<disease>' in s and '<symptom>' not in s:
-				finalDir = 'namedisbatch'
+				finalDir = constants.NAME_DIS_BATCH
 			elif '<pathogen>' in s and not '<disease>' in s and '<symptom>' in s:
-				finalDir = 'namesympbatch'
+				finalDir = constants.NAME_SYMP_BATCH
 			elif '<pathogen>' not in s and '<disease>' in s and '<symptom>' in s:
-				finalDir = 'dissympbatch'
+				finalDir = constants.DIS_SYMP_BATCH
 			elif '<pathogen>' in s and '<disease>' in s and '<symptom>' in s:
-				finalDir = 'allbatch'
+				finalDir = constants.ALL_BATCH
 			with open(os.path.join(finalDir, abstractFile), 'w+', encoding='utf-8') as f:
 				f.write(s)
