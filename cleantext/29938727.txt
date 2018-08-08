@@ -1,1 +1,0 @@
-  A fast and facile approach to synthesize ultrasmall Co1 .8 V1 .2 O4 nanoparticles with an average size of 8.4 nm grown on rGO was successfully developed. The novel Co1 .8 V1 .2 O4/rGO composite anode exhibits excellent rate performance for lithium-ion batteries , delivering a high discharge capacity of 628 mA h g-1 at 2000 mA g-1.

@@ -1,1 +1,0 @@
- B<pathogen> cell receptor ( BCR) signaling has emerged as a therapeutic target in B cell lymphomas , but inhibiting this pathway in diffuse large B cell lymphoma ( DLBCL) has benefited only a subset of patients

@@ -1,1 +1,0 @@
-  This work shows a complete phase diagram of hard squares of side length σ in slit confinement for H < 4.5 , H being the wall to wall distance measured in σ units , including the maximal packing fraction limit. The phase diagram exhibits a transition between a single-row parallel 1- ( Formula: see text) and a zigzag 2- ( Formula: see text) structures for H

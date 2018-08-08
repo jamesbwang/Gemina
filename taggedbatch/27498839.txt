@@ -1,1 +1,0 @@
- Gene transcription is carried out by multi-subunit RNA polymerases ( RNAPs). Transcription initiation is a dynamic multi-step process that involves the opening of the double-stranded DNA to form a transcription bubble and delivery of the template strand deep into the RNAP for RNA synthesis. Applying cryoelectron microscopy to a unique transcription system using σ

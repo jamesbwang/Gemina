@@ -1,1 +1,0 @@
-  A major ambition of artificial intelligence lies in translating patient data to successful therapies. Machine learning models face particular challenges in biomedicine , however , including handling of extreme data heterogeneity and lack of mechanistic insight into predictions. Here , we argue for `` visible '' approaches that guide model structure with experimental biology.

@@ -1,1 +1,0 @@
- We performed Monte Carlo simulations in order to determine by means of microdosimetry calculations the average number of hits to the cell nucleus required to reach a tumour control probability ( TCP) of 0.9 , ( Formula: see text) , for the source geometry of a nucleus embedded in a homogeneous distribution of

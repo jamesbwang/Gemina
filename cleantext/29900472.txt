@@ -1,1 +1,0 @@
-  A purely topological descriptor for the quantitative classification of fully or partially fused linear quasi-one dimensional centre-symmetric molecules is proposed. The index also makes it possible to quantitatively correlate optoelectronic properties with the molecular topology without involving an explicit calculation of the molecular electronic structure.

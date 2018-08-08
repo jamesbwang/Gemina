@@ -1,1 +1,0 @@
-  An artificially evolved ribozyme can catalyse the synthesis of RNA by using trinucleotide triphosphates as building blocks.

@@ -1,1 +1,0 @@
-  Prototype matching , which involves comparing a patient clinical presentation with a prototype description of the disorder addresses some of the clinical limitations of the

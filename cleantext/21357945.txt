@@ -1,1 +1,0 @@
-  Safety evaluation of a human vaccine is critical for vaccine development and for preventing an unexpected adverse reaction in humans. Nonetheless , to date , very few systems have been described for preclinical studies of human adverse reactions

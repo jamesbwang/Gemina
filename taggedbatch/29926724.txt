@@ -1,1 +1,0 @@
- Development of high-quality organic nanoparticle inks is a significant scientific challenge for the industrial production of solution-processed organic photovoltaics ( OPVs) with eco-friendly processing methods. In this work , we demonstrate a novel , robot-based , high-throughput procedure performing automatic poly ( 3-hexylthio-phene-2,5-diyl) and indene-C

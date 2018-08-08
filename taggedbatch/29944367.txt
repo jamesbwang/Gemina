@@ -1,1 +1,0 @@
- Monte Carlo sampling calculations were performed to determine the anharmonic sum of states , N

@@ -1,1 +1,0 @@
-  Fine particulate matter is associated with adverse health outcomes. Exposure to fine particulate matter may disproportionately affect urban communities with larger numbers of vulnerable residents. We used multilevel logistic regression models to estimate the joint effects of fine particulate matter ( PM

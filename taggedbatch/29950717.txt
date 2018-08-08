@@ -1,1 +1,0 @@
- Plasmodium<pathogen><disease> vivax<pathogen><disease> is the most widely distributed malaria<disease> parasite that infects humans

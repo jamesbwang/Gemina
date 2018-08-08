@@ -1,1 +1,0 @@
-  This work shows that an incubation time reduced to 4-5 h to prepare a culture for DNA extraction followed by an automated DNA extraction can shorten the hands-on time , the turnaround time by 30 % and increase the throughput while maintaining the WGS quality assessed by high quality Single Nucleotide Polymorphism analysis.

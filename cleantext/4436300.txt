@@ -1,1 +1,0 @@
-  We provide detailed datasets from our analysis of proteins that are identified in human liver , lung , kidney and intestine microsomes by MS-based proteomics. Also included is a set of CYP450 enzymes and microsomal glutathione-

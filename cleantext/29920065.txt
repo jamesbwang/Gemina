@@ -1,1 +1,0 @@
-  We report the development of a surface-enhanced Raman spectroscopy sensor chip by decorating gold nanoparticles ( AuNPs) on ZnO nanorod ( ZnO NR) arrays vertically grown on cellulose paper ( C). We show that these chips can enhance the Raman signal by 1.25 × 10

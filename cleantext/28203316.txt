@@ -1,1 +1,0 @@
-  Discovering causal structure of a dynamical system from observed time series is a traditional and important problem. In many practical applications , observed data are obtained by applying subsampling or temporally aggregation to the original causal processes , making it difficult to discover the underlying causal relations. Subsampling refers to the procedure that for every

@@ -1,1 +1,0 @@
- In this issue of Molecular Cell , Webster et al. ( 2018) and Yi et al. ( 2018) dissect the mechanisms underlying cytoplasmic mRNA deadenylation by the Ccr4-Not ( CNOT) complex<pathogen>. Crucial to this process is the poly ( A) binding protein Pab1/PABPC1 , which both stimulates and suppresses the activity of different deadenylases.

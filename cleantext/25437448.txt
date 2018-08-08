@@ -1,1 +1,0 @@
-  When studying host responses to the presence of pathogens , the pathogen levels should be verified within the samples. The RNA-Seq samples from Davy et al. ( 2017) do not contain detectable

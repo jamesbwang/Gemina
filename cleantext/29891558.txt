@@ -1,1 +1,0 @@
-  Polycomb-repressive complex 2 ( PRC2) is a histone methyltransferase that promotes epigenetic gene silencing , but the dynamics of its interactions with chromatin are largely unknown. Here we quantitatively measured the binding of PRC2 to chromatin in human cancer cells. Genome editing of a HaloTag into the endogenous

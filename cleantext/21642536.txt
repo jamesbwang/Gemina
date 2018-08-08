@@ -1,1 +1,0 @@
-  High-throughput structure profiling ( SP) experiments that provide information at nucleotide resolution are revolutionizing our ability to study RNA structures. Of particular interest are RNA elements whose underlying structures are necessary for their biological functions. We previously introduced

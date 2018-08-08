@@ -1,1 +1,0 @@
-  A continuous tandem in-line evaporation-crystallization is presented. The process includes an in-line solvent-swap step , suitable to be coupled to a capillary based cooler. As a proof of concept , this setup is tested in a direct in-line acetonitrile mediated crystallization of Vitamin D

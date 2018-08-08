@@ -1,1 +1,0 @@
-  Here we demonstrate the method of electrochemical gating used to characterize electrical conductivity of electrode-grown microbial biofilms under physiologically relevant conditions.

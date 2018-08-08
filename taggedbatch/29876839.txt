@@ -1,1 +1,0 @@
- In Table 4 the column labeled `` p values '' and its data should be deleted.

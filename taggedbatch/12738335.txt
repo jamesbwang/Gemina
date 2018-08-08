@@ -1,1 +1,0 @@
- In this report , Chair Heterogeneity Index ( CHI) was introduced to assess the dose heterogeneity inside the target with a boost volume. CHI was defined by dividing ( V

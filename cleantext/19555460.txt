@@ -1,1 +1,0 @@
-  Bacteria respond to nutritional stresses by changing the cellular concentration of the alarmone ( p) ppGpp. This control mechanism , called the stringent response , depends on two enzymes , the ( p) ppGpp synthetase RelA and the bifunctional ( p) ppGpp synthetase/hydrolase SpoT in

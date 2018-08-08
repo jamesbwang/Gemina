@@ -1,1 +1,0 @@
-  We aimed to compare the overall survival ( OS) and standardized mortality rate ( SMR) of the male breast cancer ( MBC) with female breast cancer ( FBC) after propensity score matching. Based on the Surveillance , Epidemiology , and End Results ( SEER) , the early breast cancer patients ( T

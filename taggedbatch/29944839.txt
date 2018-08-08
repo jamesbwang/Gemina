@@ -1,1 +1,0 @@
- The iBioSim tool has been developed to facilitate the design of genetic circuits via a model-based design strategy. This paper illustrates the new features incorporated into the tool for DNA circuit design , design analysis , and design synthesis , all of which can be used in a workflow for the systematic construction of new genetic circuits.

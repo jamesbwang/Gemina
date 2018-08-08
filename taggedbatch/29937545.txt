@@ -1,1 +1,0 @@
- The hydrodynamics of secondary flow phenomena in a disc-shaped gas vortex unit ( GVU) is investigated using experimentally validated numerical simulations. The simulation using ANSYS FLUENT

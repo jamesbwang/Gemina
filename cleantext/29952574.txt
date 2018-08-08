@@ -1,1 +1,0 @@
-  A convenient method for the synthesis of 1,2,4-triazol-3-imines through a selective , formal , 1,3-dipolar cycloaddition of organo-cyanamide ions with nitrile imine dipoles is reported. Hydrolysis of the 1,2,4-triazol-3-imines yields the corresponding 1,2,4-triazol-5-ones. A stepwise mechanism , supported by DFT calculations , is invoked to explain the reaction selectivity.

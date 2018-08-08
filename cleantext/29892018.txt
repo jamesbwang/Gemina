@@ -1,1 +1,0 @@
-  Geometric frustration emerges when local interaction energies in an ordered lattice structure can not be simultaneously minimized , resulting in a large number of degenerate states. The numerous degenerate configurations may lead to practical applications in microelectronics

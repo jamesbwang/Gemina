@@ -1,1 +1,0 @@
- In this issue of Neuron , Konovalov and Krajbich ( 2018) argue that a Bayesian inference is employed when learning new sequences and identify distinct brain networks that track the uncertainty of both the current state and the underlying pattern structure.

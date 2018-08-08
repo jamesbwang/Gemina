@@ -1,1 +1,0 @@
-  The immunochromatographic ( ICA) assay is a highly promising platform for rapid and simple detection of C-reactive protein ( CRP) which is an indicator of the different phases of various diseases , as well as of inflammation<symptom> and infection. However , the hook effect in the ICA assay limits the quantification of CRP levels at high CRP concentrations.

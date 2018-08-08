@@ -1,1 +1,0 @@
-  In the current issue of Molecular Cell , Szoradi et al. ( 2018) present compelling data demonstrating how the newly identified SHRED pathway in yeast selectively shifts the E3 ligase Ubr1 specificity from N-end rule substrates to misfolded proteins in cells under proteostatic stress.

@@ -1,1 +1,0 @@
-  Recent studies have analyzed large-scale data sets of gene expression to identify genes associated with interindividual variation in phenotypes ranging from cancer subtypes to drug sensitivity , promising new avenues of research in personalized medicine. However , gene expression data alone is limited in its ability to reveal

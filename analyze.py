@@ -73,16 +73,16 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 			if t["pos"].find("NN") != -1 or t["pos"].find("JJ") != -1 or t["pos"].find("RB") != -1 or t["pos"].find("VB") != -1:
 				a.append(t["word"])
 	for w in a:
-		if (len(w) <= 3):
+		if len(w) <= 3:
 			continue
-		if (w.endswith('es')):
+		elif w.endswith('es'):
 			a.append(w[:-2])
-		if (w.endswith('s')):
+		elif w.endswith('s'):
 			a.append(w[:-1])
 		for name in filename.split(" "):
 			if name == '.txt':
 				continue
-			if (len(name) == len(w) and dist.hamming([i for i in w], [j for j in name]) * len(w) <= int(len(w) * .2)):
+			if len(name) == len(w) and dist.hamming([i for i in w], [j for j in name]) * len(w) <= int(len(w) * .2):
 				reference += 1
 		for symptom in symp.split(" "):
 			if (len(symptom) == len(w) and dist.hamming([i for i in w], [j for j in symptom]) * len(w) <= int(
@@ -104,7 +104,7 @@ def checkReference(s, filename, i, path, col1 = [], col2 = [], col3 = [], col4 =
 
 	col1.append(filename + ' no.: ' + str(i))
 	col2.append(reference)
-	if (symp != ''):
+	if symp != '':
 		col3.append(symptomReference)
 	else:
 		col3.append(-1)
@@ -142,21 +142,21 @@ def finishedStatsDOI():
 	col3 = []
 	col4 = []
 	coldisease = []
-	for file in os.listdir(constants.newdir):
+	for file in os.listdir(constants.NEW_DIR):
 		filename = file.replace('_', ' ')
 		filename = filename.replace(';', ':')
 		filename = filename.replace('!', '?')
 		filename = filename.replace('-', '/')
 		if not file.endswith('.csv'):
-			for innerFile in os.listdir(os.path.join(constants.newdir, file)):
+			for innerFile in os.listdir(os.path.join(constants.NEW_DIR, file)):
 				if innerFile.startswith('DOI'):
 					i = int(innerFile[4:5])
 					if i == 1 and innerFile[5].isdigit():
 						i = 10 * i + int(innerFile[5])
 					numDOI += 1
-					f = open(os.path.join(constants.newdir, file, innerFile), 'r', encoding='utf-8')
+					f = open(os.path.join(constants.NEW_DIR, file, innerFile), 'r', encoding='utf-8')
 					s = f.read().lower()
-					j = checkReference(s, filename.lower(), i, os.path.join(constants.newdir, file), col1, col2, col3, col4, coldisease)
+					j = checkReference(s, filename.lower(), i, os.path.join(constants.NEW_DIR, file), col1, col2, col3, col4, coldisease)
 					referenceTotal += j
 	print(
 		"On average, names are listed below the hamming threshold " + str(referenceTotal / numDOI) + ' times per DOI.')
@@ -173,7 +173,7 @@ def finishedStatsDOI():
 	finishedStats['Toxin References'] = col4
 	finishedStats['Disease References'] = coldisease
 	finishedStats.set_index('Pathogen', inplace=True)
-	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReviewDOI.csv'))
+	finishedStats.to_csv(os.path.join(constants.NEW_DIR, 'abstractReviewDOI.csv'))
 
 	#The below provides additional analysis that could be done with Excel.
 
@@ -294,23 +294,23 @@ def finishedStatsAbstracts():
 	col3 = []
 	col4 = []
 	coldisease = []
-	for file in os.listdir(constants.newdir):
+	for file in os.listdir(constants.NEW_DIR):
 		filename = file.replace('_', ' ').replace(';', ':').replace('!', '?').replace('-', '/')
 		if not file.endswith('.csv'):
 			numPathogens += 1
-			for innerFile in os.listdir(os.path.join(constants.newdir, file)):
+			for innerFile in os.listdir(os.path.join(constants.NEW_DIR, file)):
 				if innerFile.startswith('DOI'):
 					numDOI += 1
-				elif (innerFile.startswith('pubmed')):
-					f = open(os.path.join(os.path.join(constants.newdir, file), 'pubmedAbstract.txt'), 'r',
+				elif innerFile.startswith('pubmed'):
+					f = open(os.path.join(os.path.join(constants.NEW_DIR, file), 'pubmedAbstract.txt'), 'r',
 							 encoding='utf-8')
 					i = 1
 					s = ""
 					for line in f:
-						if (line.startswith(str(i) + '. ')):
+						if line.startswith(str(i) + '. '):
 							numPMID += 1
-						if (line.startswith('PMID')):
-							j = checkReference(s.lower(), filename.lower(), i, os.path.join(constants.newdir, file), col1, col2, col3, col4, coldisease)
+						elif line.startswith('PMID'):
+							j = checkReference(s.lower(), filename.lower(), i, os.path.join(constants.NEW_DIR, file), col1, col2, col3, col4, coldisease)
 							referenceTotal += j
 							i += 1
 							s = ''
@@ -334,7 +334,7 @@ def finishedStatsAbstracts():
 	finishedStats['Toxin References'] = col4
 	finishedStats['Disease References'] = coldisease
 	finishedStats.set_index('Pathogen', inplace=True)
-	finishedStats.to_csv(os.path.join(constants.newdir, 'abstractReview.csv'))
+	finishedStats.to_csv(os.path.join(constants.NEW_DIR, 'abstractReview.csv'))
 
 	# The below provides additional analysis that could be done with Excel.
 
@@ -437,11 +437,11 @@ def finishedStatsAbstracts():
 
 def remove(startsWith):
 	# remove all DOI files from the directory, in case there was some error in processing the DOIs
-	for file in os.listdir(constants.newdir):
+	for file in os.listdir(constants.NEW_DIR):
 		if not file.endswith('.csv'):
-			for innerfile in os.listdir(os.path.join(constants.newdir, file)):
-				if (innerfile.startswith(startsWith)):
-					os.remove(os.path.join(constants.newdir, file, innerfile))
+			for innerfile in os.listdir(os.path.join(constants.NEW_DIR, file)):
+				if innerfile.startswith(startsWith):
+					os.remove(os.path.join(constants.NEW_DIR, file, innerfile))
 					print('removed ' + file + "'s " + innerfile)
 
 
@@ -452,13 +452,13 @@ def examinePathogens():
 	pathogenCount = 0
 	hasAbstract = False
 	hasDOI = False
-	for file in os.listdir(constants.newdir):
+	for file in os.listdir(constants.NEW_DIR):
 		if not file.endswith('.csv') and not file.startswith('Influenza'):
 			pathogenCount += 1
-			for innerfile in os.listdir(os.path.join(constants.newdir, file)):
-				if (innerfile.startswith('DOI_')):
+			for innerfile in os.listdir(os.path.join(constants.NEW_DIR, file)):
+				if innerfile.startswith('DOI_'):
 					hasDOI = True
-				elif (innerfile.startswith('pubmedAbstract')):
+				elif innerfile.startswith('pubmedAbstract'):
 					hasAbstract = True
 			if not hasAbstract:
 				numWithoutAbstract += 1

@@ -1,1 +1,0 @@
- There is a typo in the original equation describing lean mass , and it has also been pointed out to the authors that the model is not strictly energy balanced.

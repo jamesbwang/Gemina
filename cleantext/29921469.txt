@@ -1,1 +1,0 @@
-  The minigene encoding human growth hormone ( hGH) has been incorporated into over 300 transgenic mouse lines to improve transgene expression. However , unexpected and functional hGH expression can drastically alter physiology. We list here the mouse lines in which ectopic hGH has been confirmed , and we provide a wiki for lines awaiting analysis.

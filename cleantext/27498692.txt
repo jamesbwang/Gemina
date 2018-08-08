@@ -1,1 +1,0 @@
-  In all organisms , major biological processes are controlled by complex protein-protein interactions networks ( interactomes) , yet their structural complexity presents major analytical challenges. Here , we integrate a compendium of over 4300 phenotypes with Arabidopsis interactome ( AI-1

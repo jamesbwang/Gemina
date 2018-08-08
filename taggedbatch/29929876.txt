@@ -1,1 +1,0 @@
- This paper deals with the fuzzy filtering problem for a class of nonlinear time-delay systems described by T-S fuzzy models. Different from the existing schemes in the literature , this paper aims to solve the fuzzy filtering problem by considering the H

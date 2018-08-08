@@ -1,1 +1,0 @@
-  A new technique for obtaining switched wave packets using spectrally truncated chirped laser pulses is demonstrated experimentally and numerically by one-dimensional alignment of both linear and asymmetric top molecules. Using a simple long-pass transmission filter , a pulse with a slow turn-on and a rapid turn-off is produced. The degree of alignment , characterized by ⟨ cos

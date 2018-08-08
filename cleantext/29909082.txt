@@ -1,1 +1,0 @@
-  We introduce two MAS schemes that allow manipulating the satellite-transition ( ST) populations of half-integer quadrupolar nuclei , and which both exhibit improved robustness to the quadrupolar coupling constant ( C

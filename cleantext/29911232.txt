@@ -1,1 +1,0 @@
-  The selectivity of CO2 hydrogenation can be significantly tuned by controlling the valence state of nickel using lanthanum-iron-nickel perovskites. Nickel with higher valence states weakens the binding of CO and increases the activation barrier for further CO hydrogenation , leading to a higher CO selectivity than the metallic nickel.

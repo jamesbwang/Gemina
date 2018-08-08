@@ -1,1 +1,0 @@
-  Using pyridino ( 2,3-D) pyrimidine as the core , total 13 pyridino ( 2,3-D) pyrimidine derivatives with different alkyl substituents at C2 site have been designed and synthesized to search for novel PI3Kα/mTOR dual inhibitors. Most of the target compounds showed potent mTOR inhibition activity with IC

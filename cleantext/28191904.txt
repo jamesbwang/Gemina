@@ -1,1 +1,0 @@
-  This Article contains a URL for a publically available whole-genome browser ( http://nterm.listeriomics.pasteur.fr). However , due to technical constraint , this website has been replaced with an alternative ( https://listeriomics.pasteur.fr).

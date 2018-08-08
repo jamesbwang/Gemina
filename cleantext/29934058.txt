@@ -1,1 +1,0 @@
-  The physiologic processes underlying MRI contrast enhancement in glioblastoma patients remain poorly understood. MRIs of 148 glioblastoma subjects from The Cancer Imaging Archive were segmented using Iterative Probabilistic Voxel Labeling ( IPVL). Three aspects of contrast enhancement ( CE) were parametrized: the mean intensity of all CE voxels ( CE

@@ -1,1 +1,0 @@
-  The mTOR pathway is activated in about 50 % of patients with hepatocellular carcinoma ( HCC). In an effort to identify new pathways and compounds to treat advanced HCC , we considered the ATP-competitive mTOR inhibitor INK128. ATP-competitive mTOR inhibitors attenuate both mTORC1 and mTORC2. INK128 was evaluated in sorafenib sensitive and insensitive HCC cell lines , CD44

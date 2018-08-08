@@ -1,1 +1,0 @@
- A Pd-catalyzed borylation of 2-fluoroallyl chlorides with B2pin2 in the presence of ( ( 2-MeAll) PdCl) 2/TMEDA or ( ( 2-MeAll) Pd ( IPr) Cl) was developed to afford ( 2-fluoroallyl) pinacolboronates with high Z-selectivity. The products proved to be useful for anti-selective 2-fluoroallylboration of aromatic and aliphatic aldehydes.

@@ -1,1 +1,0 @@
-  We present an efficient stochastic algorithm for the recently introduced perturbative density matrix renormalization group method for large active spaces. The stochastic implementation bypasses the computational bottleneck involved in solving the first order equation in the earlier deterministic algorithm. We demonstrate the efficiency and accuracy of the algorithm on the C

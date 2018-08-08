@@ -1,1 +1,0 @@
-  The photocatalyzed insertion of dioxygen into the Pt ( ii)- methyl bond in terpyridine platinum complexes has been shown to proceed efficiently , but its mechanism remains a challenge. In particular , there are serious counter-intuitive differences in the reactivity of structurally similar complexes. M06 calculations in solvent with a valence double-

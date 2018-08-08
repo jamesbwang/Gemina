@@ -1,1 +1,0 @@
-  A bioinspired probe based on a zinc finger peptide functionalized by a lanthanide ( iii)- DOTA monoamide complex turns out to be active for both luminescence and MRI detection of Zn2 + , depending on the lanthanide cation. A mechanism for MRI-based detection is proposed.

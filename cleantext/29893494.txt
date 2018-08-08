@@ -1,1 +1,0 @@
-  A selective , nonchelation-assisted methylation of arenes has been developed. The overall transformation , which combines a C-H functionalization reaction with a nickel-catalyzed cross-coupling , offers rapid access to methylated arenes with high para selectivity. The reaction is amenable to late-stage methylation of small-molecule pharmaceuticals.

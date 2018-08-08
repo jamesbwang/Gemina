@@ -1,1 +1,0 @@
- Herein , we develop a new nanopore sensing strategy for the selective detection of microRNAs and single nucleotide variants ( SNVs) based on triplex molecular beacon sensors. This sensing system shows very high specificity in discriminating microRNA SNVs and can be applied for the simultaneous detection of several microRNAs of the same family in a mixture.

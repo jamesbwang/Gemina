@@ -1,1 +1,0 @@
-  The purpose of this study was to determine whether metrics of brain tissue integrity derived from postmortem magnetic resonance imaging ( MRI) are associated with late-life cognitive decline , independent of cerebral vessel disease. Using data from 554 older adults , we used voxelwise regression to identify regions where the postmortem MRI transverse relaxation rate constant R

@@ -1,1 +1,0 @@
- The separation of metal ions can be challenging because of similarities in charge density , size , and binding affinities. Here , we introduce a new photochemical separation strategy that relies on the intrinsically unique photophysical properties of metal ion complexes and the selective transformation of an electroactive ligand.

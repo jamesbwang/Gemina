@@ -1,1 +1,0 @@
-  Double-viewing-position single-particle inductively coupled plasma-atomic emission spectrometry ( DVP-SP-ICP-AES) measures emission intensity at two ICP vertical positions simultaneously using a single photomultiplier tube. A particle travelling up the ICP gives two consecutive temporal emission peaks. The Yb II 328.937-nm emission intensity of the two peaks for single Yb

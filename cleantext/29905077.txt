@@ -1,1 +1,0 @@
-  Lead selenide ( PbSe) colloidal quantum dots ( CQDs) are considered to be a strong candidate for high-efficiency colloidal quantum dot solar cells ( CQDSCs) due to its efficient multiple exciton generation. However , currently , even the best PbSe CQDSCs can only display open-circuit voltage ( V

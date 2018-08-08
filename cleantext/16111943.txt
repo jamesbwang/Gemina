@@ -1,1 +1,0 @@
-  The 3 ' end methylation catalyzed by HUA Enhancer 1 ( HEN1) is a crucial step of small RNA stabilization in plants , yet how unmethylated small RNAs undergo degradation remains largely unknown. Using a reverse genetic approach , we here show that Atrimmer 2 ( ATRM2) , a DEDDy-type 3 ' to 5 ' exoribonuclease , acts in the degradation of unmethylated miRNAs and miRNA * s in

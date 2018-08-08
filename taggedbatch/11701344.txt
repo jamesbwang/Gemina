@@ -1,1 +1,0 @@
- G-protein-coupled receptors ( GPCRs) form the largest family of receptors encoded by the human genome ( around 800 genes). They transduce signals by coupling to a small number of heterotrimeric G proteins ( 16 genes encoding different α-subunits). Each human cell contains several GPCRs and G proteins. The structural determinants of coupling of G

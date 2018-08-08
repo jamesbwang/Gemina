@@ -1,1 +1,0 @@
- CRISPR/Cas9 is a powerful tool for genome editing. We constructed an easy-to-handle expression vector for application in the model organism

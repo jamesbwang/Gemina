@@ -3,18 +3,21 @@ import pandas as pd
 from pycorenlp import StanfordCoreNLP
 import os
 import constants
+
+
 class Tagger:
 	__nlp = StanfordCoreNLP('http://localhost:9000')
 	__abbrevKey = {}
 	__possibleNameDescriptions = {'cell', 'forest', 'creek', 'river', 'sewage', 'middle',
-								'black', 'rat', 'north', 'east', 'south', 'west', 'monkey', 'valley', 'mink',
-								'horse', 'lake', 'bridge', 'small', 'island', 'canal', 'hill', 'tick', 'torque', 'delta',
-								'edge', 'bat', 'farm', 'palm',
-								'white', 'new', 'western', 'eastern',
-								'swine', 'reef', 'royal', 'latino',
-								'tumor', 'keystone', 'leopard', 'australian', 'american', 'major',
-								'human', 'cross', 'ancestor',
-								'del', 'victoria', 'fusing', 'subsp', 'co', 'alb', 'as', 'sin',
+								  'black', 'rat', 'north', 'east', 'south', 'west', 'monkey', 'valley', 'mink',
+								  'horse', 'lake', 'bridge', 'small', 'island', 'canal', 'hill', 'tick', 'torque',
+								  'delta',
+								  'edge', 'bat', 'farm', 'palm',
+								  'white', 'new', 'western', 'eastern',
+								  'swine', 'reef', 'royal', 'latino',
+								  'tumor', 'keystone', 'leopard', 'australian', 'american', 'major',
+								  'human', 'cross', 'ancestor',
+								  'del', 'victoria', 'fusing', 'subsp', 'co', 'alb', 'as', 'sin',
 								  'chi', 'var', 'associated', 'rev.', 'high', 'nam', 'cor',
 								  'tel', 'aus', 'fes', 'tern', 'chr', 'nsw', 'cao', 'ein', 'ross', 'chaoyang',
 								  'hendra' 'rotterdam',
@@ -22,72 +25,82 @@ class Tagger:
 								  'equine', 'vaccinia', 'mumps', 'cowpox', 'immunodeficiency', 'whitewater',
 								  'rift', 'kunjin', 'ill', 'disease', 'fever', 'this', 'equine', 'st.'}
 	__possibleDiseaseDescriptions = {'appendix', 'bell', 'bite', 'bone', 'breast', 'catheter', 'cord', 'cramp',
-								   'crohn', 'crustacean', 'deer', 'ear', 'finger', 'fish', 'flinders', 'food',
-								   'foot', 'gas', 'hand', 'inclusion', 'infant', 'line', 'liver',
-								   'lung', 'marrow', 'miller', 'fisher', 'mud', 'postpartum', 'protozoa', 'Q',
-								   'rainbow', 'relapsing', 'ritter', 'role', 'salmon', 'site', 'snail',
-								   'system', 'tissue', 'traveler', 'trout', 'valve', 'zebrafish', 'trout'  'head', 'hip',
+									 'crohn', 'crustacean', 'deer', 'ear', 'finger', 'fish', 'flinders', 'food',
+									 'foot', 'gas', 'hand', 'inclusion', 'infant', 'line', 'liver',
+									 'lung', 'marrow', 'miller', 'fisher', 'mud', 'postpartum', 'protozoa', 'Q',
+									 'rainbow', 'relapsing', 'ritter', 'role', 'salmon', 'site', 'snail',
+									 'system', 'tissue', 'traveler', 'trout', 'valve', 'zebrafish', 'trout'  'head',
+									 'hip',
 									 'infants', 'lines', 'livers', 'lungs', 'sites', 'snails', 'systems', 'tissues',
-									 'travelers', 'valves', 'heads', 'hips', 'eyes', 'brains', 'necks', 'animal', 'urine',
+									 'travelers', 'valves', 'heads', 'hips', 'eyes', 'brains', 'necks', 'animal',
+									 'urine',
 									 'brain', 'white', 'western', 'aortic', 'bones', 'catheters', 'cerebral', 'chronic',
-									 'corneal', 'crab', 'crustaceans', 'eye', 'fingers', 'fishes', 'flora', 'foods', 'gases',
-									 'green', 'hands', 'hidden', 'homosexual', 'human', 'infectious', 'inflammatory', 'mink',
+									 'corneal', 'crab', 'crustaceans', 'eye', 'fingers', 'fishes', 'flora', 'foods',
+									 'gases',
+									 'green', 'hands', 'hidden', 'homosexual', 'human', 'infectious', 'inflammatory',
+									 'mink',
 									 'mouth', 'neck', 'potential', 'primary', 'prosthetic', 'pulmonary', 'respiratory',
 									 'sclerosing', 'skin', 'spinal', 'surgical', 't-cell', 't-cells', 'tick', 'ticks',
-									 'tiger', 'tigers', 'tract', 'tracts', 'urinary', 'viral', 'virus', 'viruses', 'western',
+									 'tiger', 'tigers', 'tract', 'tracts', 'urinary', 'viral', 'virus', 'viruses',
+									 'western',
 									 'white', 'excess', 'facial', 'shellfish', 'chest', 'crabs',
-									 'immunodeficiency', 'subacute', 'equine', 'st.', 'western', 'river', 'rivers', 'head', 'heads'}
+									 'immunodeficiency', 'subacute', 'equine', 'st.', 'western', 'river', 'rivers',
+									 'head', 'heads'}
 
 	__possibleSymptomDescriptions = {'ankle', 'arm', 'back', 'blood', 'body', 'brain', 'color', 'chest', 'cornea',
-								   'corneal', 'ears', 'face', 'gag', 'gland',
-								   'gum', 'head', 'heart', 'hip', 'jaw', 'joint', 'leg', 'limb', 'lip',
-								   'lymph', 'legs', 'limbs', 'lymphocytes', 'milk', 'muscle', 'neck', 'nerve',
-								   'organs',
-								   'oropharynx', 'abdominal',
-								   'blood', 'body', 'brain', 'brains', 'diffuse',
-								   'faces', 'feed', 'heart', 'intestinal', 'jaw',
-								   'jaws', 'low', 'memory', 'organ', 'muscle', 'muscles', 'nasal', 'nerve', 'night',
+									 'corneal', 'ears', 'face', 'gag', 'gland',
+									 'gum', 'head', 'heart', 'hip', 'jaw', 'joint', 'leg', 'limb', 'lip',
+									 'lymph', 'legs', 'limbs', 'lymphocytes', 'milk', 'muscle', 'neck', 'nerve',
+									 'organs',
+									 'oropharynx', 'abdominal',
+									 'blood', 'body', 'brain', 'brains', 'diffuse',
+									 'faces', 'feed', 'heart', 'intestinal', 'jaw',
+									 'jaws', 'low', 'memory', 'organ', 'muscle', 'muscles', 'nasal', 'nerve', 'night',
 									 'spleen', 'tendon', 'tone', 'tongue', 'skin', 'motor', 'weight', 'mucosa', 'right',
 									 'white', 'coordination', 'arms', 'ankles', 'backs', 'bodies', 'brains', 'colors',
 									 'chests', 'faces', 'glands', 'heads', 'hearts', 'hips', 'jaws', 'joints', 'limbs',
 									 'lips', 'muscles', 'nerves', 'spleens', 'tendons', 'tongues'}
 
-	__nameTagIndicators = {'virus', 'complex', 'media', 'agent', 'types', 'variant', 'strain', 'viruses', 'a', 'b', 'c', 'd',
-						 'e', 'f', 'cava', 'brevis', 'cdc', 'atcc', 'medium', 'larvae', 'subtype', 'sp.', 'fetus',
-						 'thompson', 'janus', 'syndrome', 'otitis', 'tuberculosis', 'mucosa'}
-	__disTagIndicators = {'allergy', 'deficiency', 'disease', 'infection', 'fever', 'media', 'allergies', 'deficiencies',
-						'diseases', 'infections', 'fevers', 'collection', 'collections', 'complex', 'complexes',
-						'agent', 'agents', 'significances', 'specimens', 'specimen', 'a', 'b', 'c', 'd', 'e', 'f', 'cyst',
-						'cysts'}
+	__nameTagIndicators = {'virus', 'complex', 'media', 'agent', 'types', 'variant', 'strain', 'viruses', 'a', 'b', 'c',
+						   'd',
+						   'e', 'f', 'cava', 'brevis', 'cdc', 'atcc', 'medium', 'larvae', 'subtype', 'sp.', 'fetus',
+						   'thompson', 'janus', 'syndrome', 'otitis', 'tuberculosis', 'mucosa'}
+	__disTagIndicators = {'allergy', 'deficiency', 'disease', 'infection', 'fever', 'media', 'allergies',
+						  'deficiencies',
+						  'diseases', 'infections', 'fevers', 'collection', 'collections', 'complex', 'complexes',
+						  'agent', 'agents', 'significances', 'specimens', 'specimen', 'a', 'b', 'c', 'd', 'e', 'f',
+						  'cyst',
+						  'cysts'}
 	__sympTagIndicators = {'abnormality', 'ache', 'behavior', 'birth', 'consolidation', 'discharge', 'discomfort',
-						 'distension',
-						 'disturbance', 'dysfunction', 'ears', 'enlargement', 'failure', 'feeding', 'fibrillation',
-						 'flexor',
-						 'fluctuation', 'gait', 'impairment', 'inability', 'injection', 'instability',
-						 'involvement', 'labor', 'loops', 'loss', 'motility', 'movement', 'nose', 'pain',
-						 'pressure', 'palate', 'palsies', 'paralysis', 'behavior', 'behaviors', 'bleeding', 'change',
+						   'distension',
+						   'disturbance', 'dysfunction', 'ears', 'enlargement', 'failure', 'feeding', 'fibrillation',
+						   'flexor',
+						   'fluctuation', 'gait', 'impairment', 'inability', 'injection', 'instability',
+						   'involvement', 'labor', 'loops', 'loss', 'motility', 'movement', 'nose', 'pain',
+						   'pressure', 'palate', 'palsies', 'paralysis', 'behavior', 'behaviors', 'bleeding', 'change',
 						   'changes', 'deviation', 'deviations', 'discharges', 'disturbances', 'glands', 'impairment',
 						   'impairments', 'injections', 'intestine', 'intestines', 'movements',
-						   'pulse', 'production', 'pressure', 'pupil', 'pupils', 'response', 'responses', 'rhythms', 'rhythm',
+						   'pulse', 'production', 'pressure', 'pupil', 'pupils', 'response', 'responses', 'rhythms',
+						   'rhythm',
 						   'sensation', 'sensations', 'speech', 'withdrawal', 'status', 'tendons', 'vision', 'voice',
 						   'voices',
 						   'dysfunctions', 'tract', 'excess', 'symptom', 'symptoms', 'losses', 'statuses', 'retention',
 						   'abnormalities', 'aches', 'behaviors', 'consolidations', 'discharges', 'discomforts',
 						   'dysfunctions', 'failures', 'fibrillations', 'fluctuations', 'impairments', 'inabilities',
-						   'injections', 'intestines', 'pulses', 'productions', 'pressures', 'statuses', 'tracts', 'excesses',
+						   'injections', 'intestines', 'pulses', 'productions', 'pressures', 'statuses', 'tracts',
+						   'excesses',
 						   'enlargements', 'palates', 'births', 'distensions', 'feedings', 'feather', 'feathers'}
 
 	__removeFromName = {'bacteria', 'era'}
 	__removeFromDisease = {'shock', 'abscess', 'lesion', 'cough', 'hemorrhage', 'hemorrhages', 'coughs', 'role',
-						 'significance', 'abscesses', 'lesions', 'patients', 'men', 'patient', 'man',
-						 'pathogen', 'pathogens', 'roles', 'potential', 'clostridium', 'nodules'}
+						   'significance', 'abscesses', 'lesions', 'patients', 'men', 'patient', 'man',
+						   'pathogen', 'pathogens', 'roles', 'potential', 'clostridium', 'nodules'}
 	__addToSymptoms = {'nodules', 'cyst', 'cysts'}
-	__removeFromSymptom = {'eyes', 'pneumonia', 'fluid', 'membrane', 'nodes', 'onset', ',', 'fluids', 'rate', 'rates', 'the',
-						 'weights', 'coli'}
-
+	__removeFromSymptom = {'eyes', 'pneumonia', 'fluid', 'membrane', 'nodes', 'onset', ',', 'fluids', 'rate', 'rates',
+						   'the',
+						   'weights', 'coli'}
 
 	# extracts all abstracts from the batch file
-
 
 	def __extractAbstractsFromXML(self, file, d):
 		tree = ET.parse(file)
@@ -106,57 +119,53 @@ class Tagger:
 		pd.DataFrame.from_dict(d, orient='index', columns=['abstract_text']).to_csv(constants.ABSTRACT_DATA)
 		return d
 
-
 	# create row to hold relevant PMIDs
 	def __createDF(self):
-		global __abbrevKey
 		gemdf = pd.read_csv(constants.UNIQUE_ONTOLOGY).sort_values(by='pathogen').reset_index(drop=True)
 		# annotate all names, add genus abbreviations
 		for index, row in gemdf.iterrows():
 			if row['pathogen'].lower().startswith('sars'):
 				row['pathogen'] += ' severe acute respiratory syndrome'.upper()
-				if 'SARS' not in __abbrevKey:
-					__abbrevKey['SARS'] = set()
-				if 'CoV' not in __abbrevKey:
-					__abbrevKey['CoV'] = set()
-				__abbrevKey['CoV'].add(row['pathogen'])
-				__abbrevKey['SARS'].add(row['pathogen'])
+				if 'SARS' not in self.__abbrevKey:
+					self.__abbrevKey['SARS'] = set()
+				if 'CoV' not in self.__abbrevKey:
+					self.__abbrevKey['CoV'] = set()
+				self.__abbrevKey['CoV'].add(row['pathogen'])
+				self.__abbrevKey['SARS'].add(row['pathogen'])
 			elif row['pathogen'].lower().startswith('dengue'):
 				row['pathogen'] += ' DENV'
-				if 'DENV' not in __abbrevKey:
-					__abbrevKey['DENV'] = set()
-				__abbrevKey['DENV'].add(row['pathogen'])
+				if 'DENV' not in self.__abbrevKey:
+					self.__abbrevKey['DENV'] = set()
+				self.__abbrevKey['DENV'].add(row['pathogen'])
 			elif row['pathogen'].lower().startswith('zika'):
 				row['pathogen'] += ' ZIKV'
-				if 'ZIKV' not in __abbrevKey:
-					__abbrevKey['ZIKV'] = set()
-				__abbrevKey['ZIKV'].add(row['pathogen'])
+				if 'ZIKV' not in self.__abbrevKey:
+					self.__abbrevKey['ZIKV'] = set()
+				self.__abbrevKey['ZIKV'].add(row['pathogen'])
 			elif row['pathogen'].lower().startswith('middle'):
 				row['pathogen'] += ' MERS'
-				if 'MERS' not in __abbrevKey:
-					__abbrevKey['MERS'] = set()
-				if 'CoV' not in __abbrevKey:
-					__abbrevKey['CoV'] = set()
-				__abbrevKey['CoV'].add(row['pathogen'])
-				__abbrevKey['MERS'].add(row['pathogen'])
+				if 'MERS' not in self.__abbrevKey:
+					self.__abbrevKey['MERS'] = set()
+				if 'CoV' not in self.__abbrevKey:
+					self.__abbrevKey['CoV'] = set()
+				self.__abbrevKey['CoV'].add(row['pathogen'])
+				self.__abbrevKey['MERS'].add(row['pathogen'])
 			elif 'ebola' in row['pathogen'].lower():
 				row['pathogen'] += ' EBOV'
-				if 'EBOV' not in __abbrevKey:
-					__abbrevKey['EBOV'] = set()
-				__abbrevKey['EBOV'].add(row['pathogen'])
+				if 'EBOV' not in self.__abbrevKey:
+					self.__abbrevKey['EBOV'] = set()
+				self.__abbrevKey['EBOV'].add(row['pathogen'])
 			else:
 				abb = self.__abbreviate(row['pathogen'].lower().replace('-', ' ').split(' '))
 				row['pathogen'] += (' ' + abb)
 				if abb.endswith('V'):
-					if abb not in __abbrevKey:
-						__abbrevKey[abb] = set()
-					__abbrevKey[abb].add(row['pathogen'])
+					if abb not in self.__abbrevKey:
+						self.__abbrevKey[abb] = set()
+					self.__abbrevKey[abb].add(row['pathogen'])
 		gemdf.to_csv('unique_full_ontology_plus_symptoms_plus_abbrev.csv')
 		return gemdf
 
-
 	def __abbreviate(self, arr):
-		global __abbrevKey
 		needsAppendage = False
 		abb = ''
 		for word in arr:
@@ -182,20 +191,6 @@ class Tagger:
 				return arr[0][0].upper() + '.'
 			return ''
 
-
-	def __markFPs(self, fileName):
-		df = pd.read_csv(fileName, index_col=0)
-		i = 0
-		for index, row in df.iterrows():
-			if row['tagged_As'].lower() in {'loss', 'failure', 'failures', 'involvement', 'behavior', 'production',
-											'change', 'changes', 'response', 'responses', 'disturbance', 'disturbances',
-											'inability', 'fluctuations', 'fluctuation', 'status', 'behaviors'}:
-				i += 1
-				df.loc[index, 'FPs'] = 1
-		df.to_csv(fileName)
-		print('num of neitherPosNorNeg for ' + fileName + ': ' + str(i))
-
-
 	def __finalProcess(self, li):
 		li[0].to_csv('taggedNames.csv')
 		li[1].to_csv('taggedDiseases.csv')
@@ -203,7 +198,6 @@ class Tagger:
 		li[3].to_csv('full_ontology_plus_symptoms.csv')
 		print('Tagged with pathName and diseaseName: ' + str(li[4]))
 		print('Tagged with pathName, diseaseName, and symptomName: ' + str(li[5]))
-
 
 	def __createSets(self, gemdf):
 		sympDict, nameDict, disDict = {}, {}, {}
@@ -265,8 +259,9 @@ class Tagger:
 						if (t['pos'] == 'NNS' or t['pos'] == 'NNPS') and len(t['word']) > 5:
 							sympKeyList.extend([t['word'][:-1].lower(), t['word'][:-2].lower()])
 						elif t['pos'] == 'NN':
-							sympKeyList.extend([t['word'].lower() + 's', t['word'].lower() + 'es', t['word'].lower() + 'e',
-												t['word'][:-2].lower() + 'i'])
+							sympKeyList.extend(
+								[t['word'].lower() + 's', t['word'].lower() + 'es', t['word'].lower() + 'e',
+								 t['word'][:-2].lower() + 'i'])
 						sympKeyList.append(t['word'].lower())
 				outputSymptomList = self.__nlp.annotate('. '.join([x for x in sympKeyList]), properties={
 					'annotators': 'pos',
@@ -290,7 +285,6 @@ class Tagger:
 			sympDict[i] = set('Manually_moved')
 		return [nameDict, disDict, sympDict, gemdf]
 
-
 	def __createTag(self, d, key, tag, conditional=''):
 		s = '<' + tag + ': '
 		if conditional == '':
@@ -306,7 +300,6 @@ class Tagger:
 			for i in s3:
 				s += str(i) + ','
 			return s[:-1] + '>'
-
 
 	def __createNameChain(self, d, key, arr=set(), conditional=''):
 		s = ''
@@ -326,13 +319,12 @@ class Tagger:
 				arr.add(s)
 			return [s[:-2], arr]
 
-
 	# reminder to self, all i did last night was put in the change for the adjective names...and the POS not tagging
 	def __JumpLandTagger(self, d, li):
-		global __possibleNameDescriptions, __possibleDiseaseDescriptions, __possibleSymptomDescriptions
 		namedf, disdf, sympdf = pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(
 			columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As'])
-		nameDict, disDict, sympDict, gemdf, numTag, numAll, numDisSymp, numPathSymp = li[0], li[1], li[2], li[3], 0, 0, 0, 0
+		nameDict, disDict, sympDict, gemdf, numTag, numAll, numDisSymp, numPathSymp = li[0], li[1], li[2], li[
+			3], 0, 0, 0, 0
 		for key in d:
 			possibleDiseaseDescriptionsAdj, possibleNameDescriptionsAdj, possibleSymptomDescriptionsAdj = set(), set(), set()
 			with open(os.path.join('taggedbatch', key + '.txt'), 'w', encoding='utf-8') as f:
@@ -343,21 +335,28 @@ class Tagger:
 						disTagged, pathTagged, sympTagged = False, False, False
 						word = t['word']
 						# tagging previous entries, if they depend on this entry (look ahead)
-						if (word.lower() in nameDict and prevWord.lower() in nameDict and (prevWord.lower() in __possibleNameDescriptions | possibleNameDescriptionsAdj)) and self.__createTag(nameDict, prevWord.lower(), 'pathogen', word.lower()) != '':
+						if (word.lower() in nameDict and prevWord.lower() in nameDict and (
+								prevWord.lower() in self.__possibleNameDescriptions | possibleNameDescriptionsAdj)) and self.__createTag(
+								nameDict, prevWord.lower(), 'pathogen', word.lower()) != '':
 							f.write('<pathogen>')
 							chain = self.__createNameChain(nameDict, prevWord.lower(), pathTaggedList, word.lower())
 							# namedf.loc[namedf.shape[0]] = [str(key), chain[0].replace(',', ';'), prevWord]
 							pathTaggedList = chain[1]
 
-						if (word.lower() in disDict and prevWord.lower() in disDict and prevWord.lower() in (__possibleDiseaseDescriptions | possibleDiseaseDescriptionsAdj)) and self.__createTag(disDict, prevWord.lower(), 'disease', word.lower()) != '':
+						if (word.lower() in disDict and prevWord.lower() in disDict and prevWord.lower() in (
+								self.__possibleDiseaseDescriptions | possibleDiseaseDescriptionsAdj)) and self.__createTag(
+								disDict, prevWord.lower(), 'disease', word.lower()) != '':
 							f.write('<disease>')
-							# disdf.loc[disdf.shape[0]] = [str(key), createNameChain(disDict, prevWord.lower(), set(), word.lower())[0].replace(',', ';'), prevWord]
+						# disdf.loc[disdf.shape[0]] = [str(key), createNameChain(disDict, prevWord.lower(), set(), word.lower())[0].replace(',', ';'), prevWord]
 
-						if (word.lower() in sympDict and prevWord.lower() in sympDict and prevWord.lower() in (__possibleSymptomDescriptions | possibleSymptomDescriptionsAdj)) and self.__createTag(sympDict, prevWord.lower(), 'symptom', word.lower()) != '':
+						if (word.lower() in sympDict and prevWord.lower() in sympDict and prevWord.lower() in (
+								self.__possibleSymptomDescriptions | possibleSymptomDescriptionsAdj)) and self.__createTag(
+								sympDict, prevWord.lower(), 'symptom', word.lower()) != '':
 							f.write('<symptom>')
-							# sympdf.loc[sympdf.shape[0]] = [str(key), createNameChain(sympDict, prevWord.lower(), set(), word.lower())[0].replace(',', ';'), prevWord]
+						# sympdf.loc[sympdf.shape[0]] = [str(key), createNameChain(sympDict, prevWord.lower(), set(), word.lower())[0].replace(',', ';'), prevWord]
 
-						if t['ner'] in ['LOCATION', 'COUNTRY', 'STATE_OR_PROVINCE', 'CITY', 'NATIONALITY', 'ORGANIZATION',
+						if t['ner'] in ['LOCATION', 'COUNTRY', 'STATE_OR_PROVINCE', 'CITY', 'NATIONALITY',
+										'ORGANIZATION',
 										'DATE', 'PERSON']:
 							if word.lower() in nameDict:
 								possibleNameDescriptionsAdj.add(word.lower())
@@ -397,10 +396,12 @@ class Tagger:
 						f.write(' ' + word)
 						if word.lower() in nameDict:
 							if len(word) == 2 and word[1] == '.':
-								__possibleNameDescriptions.add(word.lower())
+								self.__possibleNameDescriptions.add(word.lower())
 								prevWord = word
 								continue
-							elif (word.lower() in self.__nameTagIndicators) and prevWord.lower() in nameDict and self.__createTag(nameDict, word.lower(), 'pathogen', prevWord.lower()) != '':
+							elif (
+									word.lower() in self.__nameTagIndicators) and prevWord.lower() in nameDict and self.__createTag(
+									nameDict, word.lower(), 'pathogen', prevWord.lower()) != '':
 								f.write('<pathogen>')
 								chain = self.__createNameChain(nameDict, word.lower(), pathTaggedList, prevWord.lower())
 								# namedf.loc[namedf.shape[0]] = [str(key), chain[0].replace(',', ';'), word]
@@ -423,7 +424,8 @@ class Tagger:
 										f.write('<pathogen>')
 										# namedf.loc[namedf.shape[0]] = [str(key), tag[11:-1], word]
 										pathTagged = True
-							elif len(word) >= 3 and word.lower() not in __possibleNameDescriptions and word.lower() not in self.__nameTagIndicators and '.' not in word and ',' not in word:
+							elif len(
+									word) >= 3 and word.lower() not in self.__possibleNameDescriptions and word.lower() not in self.__nameTagIndicators and '.' not in word and ',' not in word:
 								f.write('<pathogen>')
 								chain = self.__createNameChain(nameDict, word.lower(), pathTaggedList)
 								# namedf.loc[namedf.shape[0]] = [str(key), chain[0].replace(',', ';'), word]
@@ -431,36 +433,40 @@ class Tagger:
 								pathTagged = True
 						# deal with disease entries
 						if word.lower() in disDict and not disTagged:
-							if (word.lower() in self.__disTagIndicators) and prevWord.lower() in disDict and self.__createTag(
-								disDict, word.lower(), 'disease', prevWord.lower()) != '':
+							if (
+									word.lower() in self.__disTagIndicators) and prevWord.lower() in disDict and self.__createTag(
+									disDict, word.lower(), 'disease', prevWord.lower()) != '':
 								# f.write(word + createTag(disDict, word.lower(), 'disease', prevWord.lower()))
 								f.write('<disease>')
 								# disdf.loc[disdf.shape[0]] = [str(key), createNameChain(disDict, word.lower(), set(),prevWord.lower())[0].replace(',',';'),word]
 								disTagged = True
 							elif len(
-									word) > 3 and word.lower() not in self.__disTagIndicators and word.lower() not in __possibleDiseaseDescriptions:
+									word) > 3 and word.lower() not in self.__disTagIndicators and word.lower() not in self.__possibleDiseaseDescriptions:
 								# f.write(word + createTag(disDict, word.lower(), 'disease'))
 								f.write('<disease>')
 								# disdf.loc[disdf.shape[0]] = [str(key), createNameChain(disDict, word.lower())[0].replace(',', ';'), word]
 								disTagged = True
 						if word.lower() in sympDict and not sympTagged:
-							if (word.lower() in self.__sympTagIndicators) and prevWord.lower() in sympDict and self.__createTag(sympDict, word.lower(), 'symptom', prevWord.lower()) != '':
+							if (
+									word.lower() in self.__sympTagIndicators) and prevWord.lower() in sympDict and self.__createTag(
+									sympDict, word.lower(), 'symptom', prevWord.lower()) != '':
 								f.write('<symptom>')
 								# sympdf.loc[sympdf.shape[0]] = [str(key), createNameChain(sympDict, word.lower(), set(), prevWord.lower())[0].replace(',', ';'),word]
 								sympTagged = True
-							elif len(word) > 3 and word.lower() not in self.__sympTagIndicators and word.lower() not in __possibleSymptomDescriptions:
+							elif len(
+									word) > 3 and word.lower() not in self.__sympTagIndicators and word.lower() not in self.__possibleSymptomDescriptions:
 								# f.write(word + createTag(sympDict, word.lower(), 'symptom'))
 								f.write('<symptom>')
 								# sympdf.loc[sympdf.shape[0]] = [str(key), createNameChain(sympDict, word.lower())[0].replace(',', ';'),word]
 								sympTagged = True
 						prevWord = word
-						if word.lower() in ['virus', 'bacteria'] and word.lower() != 'virus' and word.lower() != 'bacteria' and not pathTagged:
+						if word.lower() in ['virus',
+											'bacteria'] and word.lower() != 'virus' and word.lower() != 'bacteria' and not pathTagged:
 							f.write('<pathogen>')
-							# namedf.loc[namedf.shape[0]] = [str(key),'',word]
+						# namedf.loc[namedf.shape[0]] = [str(key),'',word]
 			print('now tagging ' + str(key) + '.txt.')
 		self.__removeAmbiguity('taggedbatch')
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
-
 
 	def __throwJJTagging(self, d, li):
 		namedf, disdf, sympdf = pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(
@@ -496,13 +502,15 @@ class Tagger:
 						elif word.lower() in disDict:
 							f.write(word + self.__createTag(disDict, word.lower(), 'disease'))
 							disdf.loc[disdf.shape[0]] = [str(key),
-														 self.__createNameChain(disDict, word.lower())[0].replace(',', ';'),
+														 self.__createNameChain(disDict, word.lower())[0].replace(',',
+																												  ';'),
 														 word]
 							hasDis = True
 						elif word.lower() in sympDict:
 							f.write(word + self.__createTag(sympDict, word.lower(), 'symptom'))
 							sympdf.loc[sympdf.shape[0]] = [str(key),
-														   self.__createNameChain(sympDict, word.lower())[0].replace(',', ';'),
+														   self.__createNameChain(sympDict, word.lower())[0].replace(
+															   ',', ';'),
 														   word]
 							hasSymp = True
 
@@ -510,7 +518,6 @@ class Tagger:
 							f.write(word)
 			print('now tagging ' + str(key) + '.txt.')
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
-
 
 	def __afterJJthrow(self, d, li):
 		namedf, disdf, sympdf = pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(
@@ -544,13 +551,15 @@ class Tagger:
 						elif word.lower() in disDict:
 							f.write(word + self.__createTag(disDict, word.lower(), 'disease'))
 							disdf.loc[disdf.shape[0]] = [str(key),
-														 self.__createNameChain(disDict, word.lower())[0].replace(',', ';'),
+														 self.__createNameChain(disDict, word.lower())[0].replace(',',
+																												  ';'),
 														 word]
 							hasDis = True
 						elif word.lower() in sympDict:
 							f.write(word + self.__createTag(sympDict, word.lower(), 'symptom'))
 							sympdf.loc[sympdf.shape[0]] = [str(key),
-														   self.__createNameChain(sympDict, word.lower())[0].replace(',', ';'),
+														   self.__createNameChain(sympDict, word.lower())[0].replace(
+															   ',', ';'),
 														   word]
 							hasSymp = True
 						else:
@@ -561,7 +570,6 @@ class Tagger:
 				numAll += 1
 			print('now tagging ' + str(key) + '.txt.')
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
-
 
 	def __oldTagging(self, d, li):
 		namedf, disdf, sympdf = pd.DataFrame(columns=['PMID', 'pathNames', 'tagged_As']), pd.DataFrame(
@@ -595,13 +603,15 @@ class Tagger:
 						elif word.lower() in disDict:
 							f.write(word + self.__createTag(disDict, word.lower(), 'disease'))
 							disdf.loc[disdf.shape[0]] = [str(key),
-														 self.__createNameChain(disDict, word.lower())[0].replace(',', ';'),
+														 self.__createNameChain(disDict, word.lower())[0].replace(',',
+																												  ';'),
 														 word]
 							hasDis = True
 						elif word.lower() in sympDict:
 							f.write(word + self.__createTag(sympDict, word.lower(), 'symptom'))
 							sympdf.loc[sympdf.shape[0]] = [str(key),
-														   self.__createNameChain(sympDict, word.lower())[0].replace(',', ';'),
+														   self.__createNameChain(sympDict, word.lower())[0].replace(
+															   ',', ';'),
 														   word]
 							hasSymp = True
 						else:
@@ -613,7 +623,6 @@ class Tagger:
 
 			print('now tagging ' + str(key) + '.txt.')
 		return [namedf, disdf, sympdf, gemdf, numTag, numAll]
-
 
 	def __getIntersections(self, li):
 		gemdf = li[3]
@@ -641,7 +650,6 @@ class Tagger:
 			for i in allSet:
 				f.write(i + '\n')
 
-
 	# tag all abstracts extracted from the XML
 	def tagAbstracts(self):
 		# create dict of PMID/abstract pairs
@@ -655,8 +663,7 @@ class Tagger:
 		li = self.__JumpLandTagger(d, li)
 		# final processing
 		self.__finalProcess(li)
-		self.__removeAmbiguity()
-
+		self.__removeAmbiguity(d)
 
 	def tagAbstractsPlaces(self):
 		d = {}
@@ -669,7 +676,6 @@ class Tagger:
 		li = self.__afterJJthrow(d, li)
 		#	 final processing
 		self.__finalProcess(li)
-
 
 	def tagAbstractsOld(self):
 		d = {}
@@ -684,7 +690,6 @@ class Tagger:
 		#	 final processing
 		self.__finalProcess(li)
 
-
 	def tagAbstractsMid(self):
 		d = {}
 		# for file in os.listdir('batch'):
@@ -696,7 +701,6 @@ class Tagger:
 		li = self.__throwJJTagging(d, li)
 		#	 final processing
 		self.__finalProcess(li)
-
 
 	def __removeAmbiguity(self, abstractDirectory):
 		df = pd.read_csv('unique_full_ontology_plus_symptoms.csv')
@@ -717,11 +721,18 @@ class Tagger:
 					cleanedTags.append(word)
 				else:
 					toWrite = ' '.join([x for x in cleanedTags])
-					cleantext = toWrite.replace('<pathogen>', '').replace('<disease>', '').replace('<symptom>', '').replace(')', '').replace(',', '').replace('.', '').replace(';', '').replace(':', '')
+					cleantext = toWrite.replace('<pathogen>', '').replace('<disease>', '').replace('<symptom>',
+																								   '').replace(')',
+																											   '').replace(
+						',', '').replace('.', '').replace(';', '').replace(':', '')
 					if len(cleanedTags) != 0:
-						if len(cleanedTags) == 1 and (self.__nlp.annotate(cleantext, properties={'annotators': 'pos', 'outputFormat': 'json'})['sentences'][0]['tokens'][0]['pos'] == 'JJ' or len(cleantext) == 1):
+						if len(cleanedTags) == 1 and (self.__nlp.annotate(cleantext, properties={'annotators': 'pos',
+																								 'outputFormat': 'json'})[
+														  'sentences'][0]['tokens'][0]['pos'] == 'JJ' or len(
+								cleantext) == 1):
 							toWrite = cleantext
-						elif any(x in set(df['pathogen'].str.lower()) for x in [cleantext.lower(), cleantext.lower() + ' 1']):
+						elif any(x in set(df['pathogen'].str.lower()) for x in
+								 [cleantext.lower(), cleantext.lower() + ' 1']):
 							toWrite = cleantext.replace(' ', '<pathogen> ') + '<pathogen>'
 						elif cleantext.lower() in disSet:
 							toWrite = cleantext.replace(' ', '<disease> ') + '<disease>'
@@ -743,14 +754,14 @@ class Tagger:
 					else:
 						s += ' ' + word
 
-			dir = 'cleantext'
+			finalDir = 'cleantext'
 			if '<pathogen>' in s and '<disease>' in s and '<symptom>' not in s:
-				dir = 'namedisbatch'
+				finalDir = 'namedisbatch'
 			elif '<pathogen>' in s and not '<disease>' in s and '<symptom>' in s:
-				dir = 'namesympbatch'
+				finalDir = 'namesympbatch'
 			elif '<pathogen>' not in s and '<disease>' in s and '<symptom>' in s:
-				dir = 'dissympbatch'
+				finalDir = 'dissympbatch'
 			elif '<pathogen>' in s and '<disease>' in s and '<symptom>' in s:
-				dir = 'allbatch'
-			with open(os.path.join(dir, abstractFile), 'w+', encoding='utf-8') as f:
+				finalDir = 'allbatch'
+			with open(os.path.join(finalDir, abstractFile), 'w+', encoding='utf-8') as f:
 				f.write(s)

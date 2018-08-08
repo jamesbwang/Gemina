@@ -1,1 +1,0 @@
-  Herein , a general protein conversion and analysis strategy was developed for homogeneous , label-free , and sensitive protein detection , on the basis of the affinity binding-induced Hg

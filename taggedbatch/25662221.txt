@@ -1,1 +1,0 @@
- In the present work , molecular dynamics simulations have been carried out to study the dependence of counterion distribution around the DNA double helix on the character of ion hydration. The simulated systems consisted of DNA fragment d ( CGCGAATTCGCG) in water solution with the counterions Na

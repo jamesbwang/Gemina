@@ -1,1 +1,0 @@
-  Proteins are intrinsically dynamic molecules and undergo exchanges among multiple conformations to perform biological functions. The CPMG relaxation dispersion and CEST experiments are two important solution NMR techniques for characterizing the conformational exchange processes on the millisecond timescale. Traditional pseudo 3D

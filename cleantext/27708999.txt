@@ -1,1 +1,0 @@
-  Phase-change memory is one of the most promising candidates for future memory technologies. However , most of the phase-change memories are based on chalcogenides , while other families of materials for this purpose remain insufficiently studied. In this work , we investigate the optical properties and microstructure of Ga

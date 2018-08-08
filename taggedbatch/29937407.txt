@@ -1,1 +1,0 @@
- Protein phosphorylation regulates diverse processes in eukaryotic cells. Strategies for installing site-specific phosphorylation in target proteins in eukaryotic cells , through routes that are orthogonal to enzymatic post-translational modification , would provide a powerful route for defining the consequences of particular phosphorylations. Here we show that the SepRS

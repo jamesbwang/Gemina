@@ -1,1 +1,0 @@
-  Adaptation of bacteria to phage predation poses a major obstacle for phage therapy. Bacteria adopt multiple mechanisms , such as inhibition of phage adsorption and CRISPR/Cas systems , to resist phage infection. Here , a phage-resistant mutant of

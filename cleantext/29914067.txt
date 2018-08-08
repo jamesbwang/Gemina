@@ -1,1 +1,0 @@
-  The results of analytical and numerical studies of the buckling behavior of laminated multilayered tensioned sheets with circular and elliptical openings are presented. The analysis shows the significant influence of stress concentration effects on buckling modes and loads , particularly taking into consideration variations in the

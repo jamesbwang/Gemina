@@ -1,1 +1,0 @@
- Genomic prediction ( GP) is now routinely performed in crop plants to predict unobserved phenotypes. The use of predicted phenotypes to make selections is an active area of research. Here , we evaluate GP for predicting grain yield and compare genomic and phenotypic selection by tracking lines advanced. We examined four independent nurseries of F

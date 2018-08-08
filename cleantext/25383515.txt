@@ -1,1 +1,0 @@
-  Energy storage science calls for techniques to elucidate ion transport over a range of conditions and scales. We introduce a new technique , pascalammetry , in which stress is applied to a solid-state electrochemical device and induced faradaic current transients are measured and analyzed. Stress-step pascalammetry measurements are performed on operando microbattery probes ( Li

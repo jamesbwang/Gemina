@@ -7,9 +7,9 @@ class Formatter:
 
 	__dir = r''
 	__newdir = ''
-	def __init__(self, dir):
-		self.__dir = dir
-		self.__newdir = os.path.join(dir, 'infections_new')
+	def __init__(self, newDir):
+		self.__dir = newDir
+		self.__newdir = os.path.join(newDir, 'infections_new')
 	def reformat(self):
 		# edit the old Gemina database such that the columns are reformated appropriately
 		# create new .csv files, print the beginnings of the new csvs, and eliminate the last col. (will use for links to the folder)

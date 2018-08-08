@@ -27,7 +27,7 @@ def humanPathogenMerge(hFile):
 						f.write(' ' + str(i))
 		if test:
 			print('Did not find ' + name + ' in Gemina, creating...')
-			path = os.path.join(constants.newdir, name.replace(' ', '_').replace(':', ';').replace('?', '!').replace('/', '-').replace('<', 'p').replace('>', 'd'))
+			path = os.path.join(constants.NEW_DIR, name.replace(' ', '_').replace(':', ';').replace('?', '!').replace('/', '-').replace('<', 'p').replace('>', 'd'))
 			li = [name, '', row['symptoms/diseases'], '', path ,'' ,'' ,'' ,'' ,'']
 			if not os.path.exists(path):
 				os.makedirs(path)
@@ -42,13 +42,14 @@ def humanPathogenMerge(hFile):
 #merge the Neo4J OWL query with the Gemina Database to prepare for tagging
 
 def mergeOntology():
-	format.combineNewCSV()
+	formatter = format.Formatter(constants.OLD_DIR)
+	formatter.combineNewCSV()
 	gemdf = pd.read_csv('combined.csv')
-	ontdf = pd.read_csv(constants.firstOntology)
+	ontdf = pd.read_csv(constants.FIRST_ONTOLOGY)
 	for index, ontrow in ontdf.iterrows():
 		if ontrow['NCBITaxon_label'].lower() not in gemdf['pathogen'].str.lower().tolist():
 			o = ontrow['NCBITaxon_label'].replace(' ', '_').replace(':', ';').replace('?', '!').replace('/', '-').replace('<', 'p').replace('>', 'd')
-			path = os.path.join(constants.newdir, o)
+			path = os.path.join(constants.NEW_DIR, o)
 			l = [ontrow['NCBITaxon_label'], '', ontrow['DOID_label'], '', path, '', '', '', '' ,'']
 			print('Saved ' + l[0] + ' to ' + path)
 			gemdf.loc[len(gemdf)] = l
@@ -60,7 +61,7 @@ def mergeOntology():
 			i = gemdf['pathogen'].str.lower().tolist().index(ontrow['NCBITaxon_label'].lower())
 			gemdf.iloc[i, 2] = str(gemdf.iloc[i][2]) + ';' + str(ontrow['DOID_label'])
 			g = str(gemdf.iloc[i][0]).replace(' ', '_').replace(':', ';').replace('?', '!').replace('/', '-').replace('<', 'p').replace('>', 'd')
-			with open(os.path.join(constants.newdir, g, 'disease.txt'), 'a', encoding='utf-8') as f:
+			with open(os.path.join(constants.NEW_DIR, g, 'disease.txt'), 'a', encoding='utf-8') as f:
 				f.write(';' + ontrow['DOID_label'].lower())
 			print('appended ' + ontrow['DOID_label'] + ' to ' + gemdf.iloc[i][0] + "'s disease.txt")
 	gemdf.to_csv('combined.csv')

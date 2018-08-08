@@ -1,1 +1,0 @@
-  Conformational entropy is expected to contribute significantly to the thermodynamics of structural transitions in intrinsically disordered proteins or regions in response to protein/ligand binding , posttranslational modifications , and environmental changes. We calculated the backbone ( dihedral) conformational entropy of oligoglycine ( Gly

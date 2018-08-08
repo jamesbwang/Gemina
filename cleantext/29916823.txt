@@ -1,1 +1,0 @@
-  Typographical errors are present in the Table 2 of the paper stated above. The correct table is give below. All numerical results and conclusions of the paper remains unchanged.

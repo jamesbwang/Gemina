@@ -1,1 +1,0 @@
-  We propose a method to reconstruct the optical properties of a scattering medium with subwavelength resolution. The method is based on the solution to the inverse scattering problem with internal sources. Applications to photoactivated localization microscopy are described.

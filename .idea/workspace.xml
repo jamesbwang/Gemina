@@ -7,14 +7,11 @@
     <list default="true" id="2871e313-6eee-4769-a377-82d0bd8b2db8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/abstractTagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstractTagger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/format.py" beforeDir="false" afterPath="$PROJECT_DIR$/format.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ontologyCompare.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontologyCompare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pmabstracts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pmabstracts.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reformatForNER.py" beforeDir="false" afterPath="$PROJECT_DIR$/reformatForNER.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapeGemina.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeGemina.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taggedDiseases.csv" beforeDir="false" afterPath="$PROJECT_DIR$/taggedDiseases.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taggedNames.csv" beforeDir="false" afterPath="$PROJECT_DIR$/taggedNames.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taggedSymptoms.csv" beforeDir="false" afterPath="$PROJECT_DIR$/taggedSymptoms.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="extract.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="extract.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="119">
+              <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapeGemina.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scrapeGemina.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="238">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -54,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/nltkTagger.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,8 +62,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="44" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -74,8 +71,8 @@
       <file leaf-file-name="analyze.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2431">
-              <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -83,8 +80,8 @@
       <file leaf-file-name="format.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -95,8 +92,8 @@
       <file leaf-file-name="ontologyCompare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="629">
+              <caret line="41" column="6" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="6" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -107,8 +104,8 @@
       <file leaf-file-name="abstractTagger.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/abstractTagger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10387">
-              <caret line="611" column="27" selection-start-line="611" selection-start-column="27" selection-end-line="611" selection-end-column="27" />
+            <state relative-caret-position="2023">
+              <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -119,7 +116,7 @@
       <file leaf-file-name="reformatForNER.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reformatForNER.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="68">
               <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -139,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>chi</find>
       <find>ZIKV</find>
       <find>fever</find>
       <find>createtag</find>
@@ -169,6 +165,7 @@
       <find>agent</find>
       <find>iter</find>
       <find>extract</find>
+      <find>merge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,18 +185,19 @@
         <option value="$PROJECT_DIR$/.idea/format.py" />
         <option value="$PROJECT_DIR$/.idea/analyze.py" />
         <option value="$PROJECT_DIR$/../pubMed_mass/script.py" />
-        <option value="$PROJECT_DIR$/analyze.py" />
         <option value="$PROJECT_DIR$/Pathogen.iml" />
         <option value="$PROJECT_DIR$/../monarch-to-neo4j-master/src/main/java/monarch2neo4j.java" />
-        <option value="$PROJECT_DIR$/constants.py" />
         <option value="$PROJECT_DIR$/nltkTagger.py" />
         <option value="$PROJECT_DIR$/.idea/createCSV.py" />
         <option value="$PROJECT_DIR$/createCSV.py" />
         <option value="$PROJECT_DIR$/reformatForNER.py" />
-        <option value="$PROJECT_DIR$/ontologyCompare.py" />
-        <option value="$PROJECT_DIR$/format.py" />
-        <option value="$PROJECT_DIR$/abstractTagger.py" />
         <option value="$PROJECT_DIR$/scrapeGemina.py" />
+        <option value="$PROJECT_DIR$/ontologyCompare.py" />
+        <option value="$PROJECT_DIR$/abstractTagger.py" />
+        <option value="$PROJECT_DIR$/format.py" />
+        <option value="$PROJECT_DIR$/analyze.py" />
+        <option value="$PROJECT_DIR$/constants.py" />
+        <option value="$PROJECT_DIR$/extract.py" />
       </list>
     </option>
   </component>
@@ -209,7 +207,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="945" />
     <option name="y" value="360" />
     <option name="width" value="980" />
@@ -220,11 +218,26 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Pathogen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pathogen" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -367,7 +380,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -382,7 +395,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.069798656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -599,10 +612,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reformatForNER.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abstractTagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="204">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -611,72 +654,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nltkTagger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ontologyCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/abstractTagger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10387">
-          <caret line="611" column="27" selection-start-line="611" selection-start-column="27" selection-end-line="611" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reformatForNER.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapeGemina.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="238">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

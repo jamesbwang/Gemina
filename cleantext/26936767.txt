@@ -1,1 +1,0 @@
-  The design and characterization of a proteomimetic foldamer that displays lateral flexibility endowed by intramolecular bifurcated hydrogen bonds is reported. The MAMBA scaffold , derived from meta-aminomethylbenzoic acid , adopts a serpentine conformation that mimics the side chain projection of all four residues in a β-hairpin turn.

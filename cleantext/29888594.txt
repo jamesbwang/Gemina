@@ -1,1 +1,0 @@
-  Wide-band-gap ( WB) perovskite devices are promising as the top cell of silicon-perovskite tandem devices to boost the efficiency beyond the Shockley-Queisser limit. Here , we tailor the performance parameters of WB mixed-halide perovskite solar cell with long alkyl chain-substituted fullerene derivatives as an electron transport layer ( ETL). The device with C

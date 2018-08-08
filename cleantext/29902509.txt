@@ -1,1 +1,0 @@
-  A pair of nested PCR universal primers ( NGIOF and NGIOR) specific for genogroup I ( GI) noroviruses was designed based on all GI sequences available in public databases. The primers were evaluated for their specificity , sensitivity and coverage , which demonstrate their reliable performance upon detection of GI noroviruses in oysters.

@@ -1,1 +1,0 @@
-  This paper presents a gaseous oxygen detection system based on time-resolved phosphorimetry ( time-domain) , which is used to investigate O2 optical transducers. The primary sensing elements were formed by incorporating iridium ( III) and palladium ( II)

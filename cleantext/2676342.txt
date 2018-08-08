@@ -1,1 +1,0 @@
-  Skeletal muscle bulges when it contracts. These three-dimensional ( 3D) dynamic shape changes play an important role in muscle performance by altering the range of fascicle velocities over which a muscle operates. However traditional muscle models are one-dimensional ( 1D) and can not fully explain

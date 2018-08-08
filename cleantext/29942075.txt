@@ -1,1 +1,0 @@
-  Developing adaptive materials with geometries that change in response to external stimuli provides fundamental insights into the links between the physical forces involved and the resultant morphologies and creates a foundation for technologically relevant dynamic systems

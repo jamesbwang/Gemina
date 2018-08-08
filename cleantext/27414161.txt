@@ -1,1 +1,0 @@
-  The central goal of crystal engineering is to control material function via rational design of structure. A particularly successful realisation of this paradigm is hybrid improper ferroelectricity in layered perovskite materials , where layering and cooperative octahedral tilts combine to break inversion symmetry. However , in the parent family of inorganic ABX

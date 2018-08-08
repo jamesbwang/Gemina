@@ -1,1 +1,0 @@
-  OTULIN ( OTU deubiquitinase with linear linkage specificity) removes linear polyubiquitin from proteins that have been modified by LUBAC ( linear ubiquitin chain assembly complex) and is critical for preventing auto-inflammatory disease

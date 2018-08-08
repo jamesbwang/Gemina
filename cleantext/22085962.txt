@@ -1,1 +1,0 @@
-  GTPases are molecular switches that cycle between the inactive GDP-bound state and the active GTP-bound state. GTPases exchange nucleotides either by its intrinsic nucleotide exchange or by interaction with guanine nucleotide exchange factors ( GEFs). Monitoring the nucleotide exchange

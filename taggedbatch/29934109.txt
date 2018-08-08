@@ -1,1 +1,0 @@
- An innovative template , based on thoracic cage surface reconstructions for breast interstitial brachytherapy was developed. Hybrid-inverse-planning-optimisation-based implantations and brachytherapy plans , using three custom anthropomorphic breast phantoms , were utilised for its validation. A user independent , inverse planning and inverse implanting technique is proposed.

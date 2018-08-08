@@ -1,1 +1,0 @@
-  Studies of long-distance transport of tracer isotopes in plants offer a high potential for functional phenotyping , but so far measurement time is a bottleneck because continuous time series of at least 1 h are required to obtain reliable estimates of transport properties. Hence , usual throughput values are between 0.5 and 1 samples h

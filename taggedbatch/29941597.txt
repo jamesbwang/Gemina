@@ -1,1 +1,0 @@
- Kv2 .1 exhibits two distinct forms of localization patterns on the neuronal plasma membrane: One population is freely diffusive and regulates electrical activity via voltage-dependent K

@@ -1,1 +1,0 @@
- Buffering dosage imbalance of early- and late-replicating genes is important for dividing eukaryotic cells. Voichek et al. ( 2018) described critical roles of H3K4 methylation and Paf1C in this process , which was regulated by the S phase checkpoint and H3K56 acetylation.

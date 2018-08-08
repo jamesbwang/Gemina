@@ -1,1 +1,0 @@
- Animal-associated microorganisms ( ` microbiota ') dramatically influence nutritional and physiological traits of their hosts. To expand our understanding of such influences , we predicted bacterial genes that influence a quantitative animal trait by a comparative genomic approach and extended these predictions via mutant analysis. We focus on

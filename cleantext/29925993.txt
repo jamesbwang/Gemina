@@ -1,1 +1,0 @@
-  To tackle the complexity of cross-reactive and pathogen-specific T cell responses against related Salmonella<pathogen> serovars , we used mass cytometry , unbiased single-cell cloning , live fluorescence barcoding , and T cell-receptor sequencing to reconstruct the Salmonella-specific repertoire of circulating effector CD4

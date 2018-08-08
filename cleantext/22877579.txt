@@ -1,1 +1,0 @@
-  Understanding the link between structure , function and development in the brain is a key topic in neuroimaging that benefits from the tremendous progress of multi-modal MRI and its computational analysis. It implies ,

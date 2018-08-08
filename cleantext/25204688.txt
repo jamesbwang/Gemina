@@ -1,1 +1,0 @@
-  A large-scale molecular dynamics ( MD) simulation of nano-indentation was carried out to provide insight into the influence of the Al-Al

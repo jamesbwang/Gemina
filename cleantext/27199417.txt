@@ -1,1 +1,0 @@
-  This article provides a proof of concept for an approach to modeling child-nature interaction based on the idea of

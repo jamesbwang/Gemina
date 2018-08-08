@@ -1,1 +1,0 @@
- The KRASG12C protein product is an attractive , yet challenging , target for small molecule inhibition. One option for therapeutic intervention is to design small molecule ligands capable of binding to and inactivating KRASG12C via formation of a covalent bond to the sulfhydryl group of cysteine 12. In order to better understand the cellular off-target interactions of

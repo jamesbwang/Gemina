@@ -1,1 +1,0 @@
- New-generation methods for point of care based coagulation monitoring enable fully automated viscoelastic analyses for the assessment of particular parts of hemostasis. Contrary to the measuring techniques of former models , the viscoelastic ROTEM

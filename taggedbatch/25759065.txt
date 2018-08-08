@@ -1,1 +1,0 @@
- Facebook , with a record 1.7 + billion monthly active users , is increasingly the platform of choice for a multitude of e-health applications. This work presents our experience in exercise monitoring using a custom-built Facebook application for activity self-reporting. A group of young adults (

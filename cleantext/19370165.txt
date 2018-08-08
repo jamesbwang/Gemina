@@ -1,1 +1,0 @@
-  Aerobic respiratory growth generates endogenous reactive oxygen species ( ROS). ROS oxidize protein-bound methionine residues into methionine sulfoxide. Methionine sulfoxide reductases catalyze the reduction of methionine sulfoxide to methionine in proteins. Here , we use high-throughput nanoLC-MS/MS methodology to establish detailed maps of oxidized proteins from

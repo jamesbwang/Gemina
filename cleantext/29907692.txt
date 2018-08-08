@@ -1,1 +1,0 @@
-  Deficiency of ZNF341 , a transcription factor featuring 12 Cys2His2 zinc fingers that regulates the expression and autoinduction of STAT3 ( signal transducer and activator of transcription 3) , results in hyper-immunoglobulin E syndrome<disease> and defective T helper 17 cell differentiation in humans.

@@ -1,1 +1,0 @@
- Concepts of planning target volume and plan robustness in proton therapy are described. Implementation of these concepts into treatment planning is described. Proton plan sensitivity and interfractional and intrafractional anatomical variation are also discussed.

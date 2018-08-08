@@ -1,1 +1,0 @@
-  By controlling the morphology and particle size of the epsilon polymorph of vanadyl phosphate , ε-VOPO4 , it can fully reversibly intercalate two Li-ions and reach the theoretical capacity of 305 mA h g-1 over two voltage plateaus at about 4.0 and 2.5 V.

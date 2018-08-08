@@ -1,1 +1,0 @@
-  In the article , we provide several sharp upper and lower bounds for two Sándor-Yang means in terms of combinations of arithmetic and contra-harmonic means.

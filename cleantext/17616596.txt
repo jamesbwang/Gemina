@@ -1,1 +1,0 @@
-  Persistence is a reversible and low-frequency phenomenon allowing a subpopulation of a clonal bacterial population to survive antibiotic treatments. Upon removal of the antibiotic , persister cells resume growth and give rise to viable progeny. Type II toxin-antitoxin ( TA) systems were assumed to play a key role in the formation of persister cells in

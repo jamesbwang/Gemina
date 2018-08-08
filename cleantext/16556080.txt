@@ -1,1 +1,0 @@
-  We elucidate the role of p21/Waf -1 , a cyclin-dependent kinase inhibitor , on the oncolytic infection and replication cycle of adenovirus<pathogen> by studying both mRNA and adenoviral proteins expression. We found that infection in the absence of p21 causes a significant increase in adenoviral genomes and late gene expression. Similarly , the oncolytic adenoviral infected p21

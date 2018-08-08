@@ -1,1 +1,0 @@
-  Using data from biodiversity informatics resources , Dallas et al. ( Ecol. Lett. , 20 , 2017 , 1526-1533) suggested limited relationships between climate and local abundance among several taxonomic groups. Investigation of a subset of these data suggests that their results may be misleading due to inappropriate application of the biodiversity data.

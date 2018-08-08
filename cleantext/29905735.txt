@@ -1,1 +1,0 @@
-  We report a wideband optical parametric amplification ( OPA) over 14 THz covering telecom S , C , and L bands with observed maximum parametric gain of 38.3 dB. The OPA is realized through cascaded second-harmonic generation and difference-frequency generation ( cSHG-DFG) in a 2 cm periodically poled LiNbO

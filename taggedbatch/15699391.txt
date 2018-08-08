@@ -1,1 +1,0 @@
- The failure of DNA ligases to complete their catalytic reactions generates cytotoxic adenylated DNA strand breaks. The APTX RNA-DNA deadenylase protects genome integrity and corrects abortive DNA ligation arising during ribonucleotide excision repair and base excision DNA repair , and

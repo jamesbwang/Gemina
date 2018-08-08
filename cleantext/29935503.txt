@@ -1,1 +1,0 @@
-  The hierarchical equations of motion ( HEOM) theory is in principle exact for describing the dissipative dynamics of quantum systems linearly coupled to Gaussian environments. In practice , the hierarchy needs to be truncated at a finite tier. We demonstrate that , for general systems described by the fermionic HEOM , the ( n + L̃) th-tier truncation with L̃ = 2N

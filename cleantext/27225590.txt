@@ -1,1 +1,0 @@
-  Ten-eleven translocation enzymes ( TET1 , TET2 , and TET3) , which induce DNA demethylation and gene regulation by converting 5-methylcytosine ( 5mC) to 5-hydroxymethylcytosine ( 5hmC) , are often down-regulated in cancer. We uncover , in basal-like breast cancer ( BLBC) , genome-wide 5hmC changes related to

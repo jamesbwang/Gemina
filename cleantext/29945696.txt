@@ -1,1 +1,0 @@
-  IntroductionParticipatory surveillance systems provide rich crowdsourced data , profiling individuals and their health status at a given time. We explored the usefulness of data from GrippeNet.fr , a participatory surveillance system , to estimate influenza-related illness incidence in France.

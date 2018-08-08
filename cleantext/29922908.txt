@@ -1,1 +1,0 @@
-  This paper discusses difficulties of pharmacogenomic data integration into clinical practice. It emphasizes the need for developing simple and easy to use bioinformatics tools to help prescribers to rapidly access and use genetic data in clinical decision-making at the point of encounter.

@@ -1,1 +1,0 @@
- Takahashi et al. ( 2018) report that the peptide CLE25 together with the BAM1 , BAM3 LRR receptor-like kinases are involved in root-to-shoot communication during dehydration<symptom> stress in Arabidopsis.

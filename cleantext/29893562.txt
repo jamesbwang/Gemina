@@ -1,1 +1,0 @@
-  The acidities of 40 commonly seen cations of ionic liquids ( CILs) in dimethyl sulfoxide ( DMSO) were investigated by a well-established theoretical method , SMD/M06 -2 X/6 -311 + + G ( 2df ,2 p)// B3LYP/6 -31 + G ( d). The calculated p K

@@ -1,1 +1,0 @@
-  Questions of relevance to those working in the field of natural products synthesis that can be answered , at least in part , using computational chemistry approaches are described. Illustrative examples are provided , as are descriptions of limitations.

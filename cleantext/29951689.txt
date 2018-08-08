@@ -1,1 +1,0 @@
-  Density functional theory calculations were performed to investigate the mechanism and origins of the NHC-controlled selectivity of Ni-catalyzed C-H activation of arenes with vinylsilanes. The key to the selectivity is the different impacts of NHCs on the C-Si/C-C reductive elimination of the square-planar/T-shaped intermediate.
