@@ -1,0 +1,1 @@
+  Genetic networks can characterize complex genetic relationships among groups of individuals , which can be used to rank nodes most important to the overall connectivity of the system. Ranking allows scarce resources to be guided toward nodes integral to connectivity. The greater sage-grouse (

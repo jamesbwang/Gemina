@@ -1,0 +1,1 @@
+  This study compares the accuracy of ( Q) SAR/read-across predictions with the experimental variability of chronic lowest-observed-adverse-effect levels ( LOAELs) from

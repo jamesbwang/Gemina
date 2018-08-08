@@ -1,0 +1,1 @@
+ This paper studies the interaction of the fundamental symmetric Lamb wave mode S0 with delaminations in 8-layered glass fibre reinforced polymer ( GFRP) laminated composites , using numerical models validated against experiments. The validation is performed using experiments on the eight layer quasi-isotropic GFRP composite laminate ( 0/90/45/ -45)

@@ -25,5 +25,5 @@ def createClassifierCSV(batchDir):
 						token['word'] = '('
 					tokendf.loc[tokendf.shape[0]] = [sentenceNumber, token['word'], token['pos'], 'O']
 			sentenceNumber += 1
-	tokendf.to_csv('ner_dataset.csv')
+	tokendf.to_csv('ner_trainingset.csv')
 

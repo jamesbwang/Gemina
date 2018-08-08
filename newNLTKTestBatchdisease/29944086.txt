@@ -1,0 +1,1 @@
+ Purpose<GPE> To evaluate MRI T1<ORGANIZATION> and T2 mapping with calculation of extracellular volume ( ECV<ORGANIZATION> ) for diagnosis and grading of liver fibrosis. Materials and Methods<ORGANIZATION> Different grades of fibrosis were induced in 60 male Sprague-Dawley rats by bile duct ligation ( BDL<ORGANIZATION> ) and carbon-tetrachloride ( CCl<ORGANIZATION>

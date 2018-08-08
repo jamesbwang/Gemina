@@ -1,0 +1,1 @@
+  Quiescence is a reversible cell-cycle arrest which allows cancer stem-like cells to evade killing following therapies. Here , we show that proliferating glioblastoma stem-like cells ( GSLCs) can be induced and maintained in a quiescent state by lowering the extracellular pH. Through RNAseq analysis we identified Ca

@@ -1,0 +1,1 @@
+ Single-molecule ( SM) microscopy is a powerful tool capable of visualizing individual molecules and events in real time. SM imaging may rely on proteins or nucleic acids labelled with a fluorophore. Unfortunately photobleaching of fluorophores leads to irreversible loss of signal , impacting the collection of data from SM experiments. Trace amounts of dissolved oxygen ( O

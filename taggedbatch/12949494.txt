@@ -1,0 +1,1 @@
+ DC-SIGN ( CD209/CLEC4L) is a C-type lectin receptor ( CLR) that serves as a reliable cell-surface marker of interleukin 4 ( IL-4)- activated human macrophages ( M ( IL-4)) , which historically represent the most studied subset within the M2 spectrum of macrophage activation. Although DC-SIGN plays important roles in

@@ -1,0 +1,1 @@
+  Bile acids fulfill a variety of metabolic functions including regulation of glucose and lipid metabolism. Since changes of bile acid metabolism accompany obesity , Type 2 Diabetes Mellitus and bariatric surgery , there is great interest in their role in metabolic health. Here , we developed a mathematical model of systemic bile acid metabolism , and subsequently performed

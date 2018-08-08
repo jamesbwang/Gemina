@@ -1,0 +1,1 @@
+  Influenza<disease> A<pathogen> viruses attach to sialic acids on host cells. In this issue of Cell Host & Microbe , Fujioka et al. ( 2018) show that binding to a specific sialylated cellular protein facilitates infection: engagement of sialic acids linked to the Ca

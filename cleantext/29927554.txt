@@ -1,0 +1,1 @@
+  This article describes a detailed set of protocols for mouse brain imaging using MRI. We focus primarily on measuring changes in neuroanatomy , and provide both instructions for mouse preparation and details on image acquisition , image processing , and statistics. Practical details as well as theoretical considerations are provided. © 2018 by John Wiley & Sons , Inc..

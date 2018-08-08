@@ -1,0 +1,1 @@
+ In 2016 the World Health Organization identified 21 countries that could eliminate malaria<disease> by 2020. Monitoring progress towards this goal requires tracking ongoing transmission. Here we develop methods that estimate individual reproduction numbers and their variation through time and space. Individual reproduction numbers , R

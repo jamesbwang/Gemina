@@ -1,0 +1,1 @@
+  Two multivariate calibration methods , namely principal component regression ( PCR) and partial least squares ( PLS-2) have been developed , validated and compared for the simultaneous determination of bisphenol-A-diglycidyl ether ( BADGE) and some of its reaction products , including BADGE · HCl · H

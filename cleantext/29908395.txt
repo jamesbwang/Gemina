@@ -1,0 +1,1 @@
+  Arterial compliance has been recognized as a critical parameter in governing pulsatile flow dynamics. It has traditionally been assumed constant throughout the cardiac cycle and its computation has been based either on the classic Windkessel model ( C) in diastole or the stroke volume over pulse pressure ( C

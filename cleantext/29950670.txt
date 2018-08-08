@@ -1,0 +1,1 @@
+  A localized transcriptome at the synapse facilitates synapse- , stimulus- and transcript-specific local protein synthesis in response to neuronal activity. While enzyme-mediated mRNA modifications are known to regulate cellular mRNA turnover , the role of these modifications in regulating synaptic RNA has not been studied. We established low-input m

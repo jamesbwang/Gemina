@@ -8,19 +8,17 @@ import nltkTagger
 import reformatForNER
 
 def main():
-	#format.reformat()
+	#formatter = format.Formatter(constants.dir)
+	#formatter.reformat()
+	#formatter.createUniqueCSV()
 	#analyze.finishedStatsDOI()
 	#analyze.finishedStatsAbstracts()
 	#analyze.examinePathogens()
 	#ontologyCompare.mergeOntology()
 	#ontologyCompare.humanPathogenMerge(constants.mFile)
-	#abstractTagger.tagAbstractsOld()
-	#abstractTagger.tagAbstractsMid()
-	#abstractTagger.markFPs('taggedSymptoms.csv')
-	abstractTagger.tagAbstracts()
-	#format.createUniqueCSV()
+	tagger = abstractTagger.Tagger()
+	tagger.tagAbstracts()
 	#nltkTagger.tagNLTKBatch(constants.NLTKDIR)
-	abstractTagger.removeAmbiguity('taggedbatch')
 	reformatForNER.createClassifierCSV('allbatch')
 
 if __name__ == "__main__":

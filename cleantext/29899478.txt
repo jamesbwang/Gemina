@@ -1,0 +1,1 @@
+  Sharing information coherently between nodes of a quantum network is fundamental to distributed quantum information processing. In this scheme , the computation is divided into subroutines and performed on several smaller quantum registers that are connected by classical and quantum channels

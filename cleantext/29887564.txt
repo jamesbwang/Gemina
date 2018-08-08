@@ -1,0 +1,1 @@
+  ICP-QMS/QMS was applied to whole blood samples to determine the quantity of trace As. It was found that Fe also causes polyatomic interference with As in conventional ICP-QMS , in addition to Ca and Cl , and ICP-QMS/QMS can remove these interferences in mass-shift mode using O

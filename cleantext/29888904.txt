@@ -1,0 +1,1 @@
+  The NMR-observable nuclei of the acidic and basic compounds experience pH dependence in chemical shift. This phenomenon can be exploited in NMR titrations to determine p K

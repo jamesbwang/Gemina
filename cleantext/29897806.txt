@@ -1,0 +1,1 @@
+  Particle capture is important for ecological processes in aquatic and terrestrial ecosystems. The current model is based on a stationary collector for which predictions about capture efficiency ( η; flux of captured particles ∶ flux of particles) are based on the collector flow environment ( i.e. , collector Reynolds number , Re

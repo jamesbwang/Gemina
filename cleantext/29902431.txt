@@ -1,0 +1,1 @@
+  Listeriolysin O ( LLO) perforates host vacuoles , allowing Listeria<pathogen> monocytogenes<pathogen> to escape to the cytosol. How cytosolic LLO prevents cell lysis was not understood. In this issue of Cell Host & Microbe , Chen et al. ( 2018) show that a PEST sequence prevents cytotoxicity by mediating LLO endocytosis from the plasma membrane.

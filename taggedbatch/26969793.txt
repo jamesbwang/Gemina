@@ -1,0 +1,1 @@
+ We have developed a protocol to purify RNA from DSS ( Dextran Sulfate Sodium)- treated mouse tissues. This method , which prevents downstream inhibition of q-RT-PCR observed in DSS-treated tissues , relies on successive precipitations with lithium chloride.

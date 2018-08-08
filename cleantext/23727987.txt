@@ -1,0 +1,1 @@
+  Metabolic pathway assembly typically involves the expression of enzymes from multiple organisms in a single heterologous host. Ensuring that each enzyme functions effectively can be challenging , since many potential factors can disrupt proper pathway flux. Here , we compared the performance of two enzyme homologs in a pathway engineered to allow

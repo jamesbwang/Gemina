@@ -1,0 +1,1 @@
+ The outer membrane ( OM) of Gram-negative bacteria forms a robust permeability barrier that blocks entry of toxins and antibiotics. Most OM proteins ( OMPs) assume a β-barrel fold , and some form aqueous channels for nutrient uptake and efflux of intracellular toxins. The Bam machine catalyzes rapid folding and assembly of OMPs. Fidelity of OMP biogenesis is monitored by the σ

@@ -1,0 +1,1 @@
+  To easily analyse and visualize cell kill dynamics measured by survival fraction after single or combined treatments a MATLAB ®- based application was developed. A statistical analysis with different options of visualisation of single and combined treatment effects can be performed in a few steps not requiring advanced knowledge of statistical programs.

@@ -1,0 +1,1 @@
+  Drug-receptor interaction plays an important role in a series of biological effects , such as cell proliferation , immune response , tumor metastasis , and drug delivery. Therefore , the research on drug-receptor interaction is growing rapidly. The equilibrium dissociation constant (

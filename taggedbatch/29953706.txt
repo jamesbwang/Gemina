@@ -1,0 +1,1 @@
+ A readily available small molecular hole-transporting material ( HTM) , OMe-TATPyr , was synthesized and tested in perovskite solar cells ( PSCs). OMe-TATPyr is a two-dimensional π-conjugated molecule with a pyrene core and four phenyl-thiophene bridged triarylamine groups. It can be readily synthesized in gram scale with a low lab cost of around US$ 50 g

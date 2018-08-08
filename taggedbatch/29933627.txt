@@ -1,0 +1,1 @@
+ Tuberculosis<pathogen><disease> is the leading cause of death from a single infectious<disease> agent<disease> worldwide; therefore , the need for new antitubercular drugs is desperate. The recently validated target salicylate synthase MbtI is the first enzyme involved in the biosynthesis of mycobactins , compounds able to chelate iron , an essential cofactor for the survival of

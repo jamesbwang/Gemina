@@ -1,0 +1,1 @@
+  Cell size , cell growth , and cell cycle events are necessarily intertwined to achieve robust bacterial replication. Yet , a comprehensive and integrated view of these fundamental processes is lacking. Here , we describe an image-based quantitative screen of the single-gene knockout collection of

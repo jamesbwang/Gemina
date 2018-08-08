@@ -1,0 +1,1 @@
+  The voltage-dependent protein SLC26a5 ( prestin) underlies outer hair cell electromotility ( eM) , which is responsible for cochlear amplification in mammals. The electrical signature of eM is a bell-shaped nonlinear capacitance ( NLC) , deriving from prestin sensor-charge ( Q

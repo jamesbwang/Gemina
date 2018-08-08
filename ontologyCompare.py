@@ -5,6 +5,7 @@ import os
 from pycorenlp import StanfordCoreNLP
 
 #merges the human pathogen database with the Gemina/ontology database
+
 def humanPathogenMerge(hFile):
 	humdf = pd.read_csv(hFile).sort_values(by='genus').reset_index(drop=True)
 	gemdf = pd.read_csv('combined.csv', index_col=0).sort_values(by='pathogen').reset_index(drop=True)

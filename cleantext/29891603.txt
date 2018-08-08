@@ -1,0 +1,1 @@
+  Enoyl-acyl carrier protein reductases ( ENR) , such as FabI , FabL , FabK , and FabV , catalyze the last reduction step in bacterial type II fatty acid biosynthesis. Previously , we reported metagenome-derived ENR homologs resistant to triclosan ( TCL) and highly similar to 7-α hydroxysteroid dehydrogenase ( 7-AHSDH). These homologs are commonly found in

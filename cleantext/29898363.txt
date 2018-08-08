@@ -1,0 +1,1 @@
+  Ligand field molecular mechanics simulation has been used to model the interactions of copper ( II) and platinum ( II) with the amyloid-β

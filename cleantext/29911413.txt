@@ -1,0 +1,1 @@
+  A nonintrusive method for flow gas temperature measurement using differential optical absorption spectroscopy ( DOAS) was demonstrated. A temperature-dependent spectra ( TDS) originated from the DOAS spectra of sulfur dioxide ( SO

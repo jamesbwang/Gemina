@@ -1,0 +1,1 @@
+  Proteins , synapses , and neural connections are in constant flux , yet motor behaviors somehow remain stable. In this issue of Neuron , Katlowitz et al. ( 2018) show that temporally precise neural activity driving birdsong production is stable for weeks.
